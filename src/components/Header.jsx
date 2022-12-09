@@ -1,3 +1,3 @@
 export default function Header() {
-  return <div>Header</div>;
+  return <div className="container__main__header">Header</div>;
 }

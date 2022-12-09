@@ -1,1 +1,2 @@
-export { default as react } from "./react.svg";
+export { default as logo } from "./logo.svg";
+export { default as avatar } from "./avatar.png";
