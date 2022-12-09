@@ -1,3 +1,11 @@
+html {
+  --backgroundColor: #fefdfd;
+  --backgroundDarkColor: #ffffff;
+}
+html[data-theme="dark"] {
+  --backgroundColor: #333333;
+  --backgroundDarkColor: #242424;
+}
 *,
 *::after,
 *::before {
@@ -5,8 +13,47 @@
   scroll-behavior: smooth;
   font-family: sans-serif; // replace this with font family
 }
+*::-webkit-scrollbar {
+  width: 5px;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 50px;
+}
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
 body {
   margin: 0;
   padding: 0;
   font-size: 16px;
+  background-color: var(--backgroundColor);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1500px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 2em;
+}
+.container__main {
+  width: calc(100% - 300px - 2em);
+  height: 100%;
+  background-color: aqua;
+  position: relative;
+}
+.container__main__header {
+  height: 100px;
+  padding: 0em 2em;
+  display: flex;
+  align-items: center;
+  background-color: var(--backgroundDarkColor);
+  margin-bottom: 2em;
+}
+.container__main__content {
+  min-height: calc(100vh - 100px - 6em);
+  overflow: auto;
+  background-color: var(--backgroundDarkColor);
 }

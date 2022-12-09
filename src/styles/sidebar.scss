@@ -1,0 +1,24 @@
+.container__sidebar {
+  background-color: var(--backgroundDarkColor);
+  padding: 1.5em 0em;
+  border-radius: 10px;
+  width: 100%;
+  max-height: calc(100vh - 4em);
+  max-width: 300px;
+  margin-right: 2em;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 2em;
+}
+.container__sidebar__logo {
+  padding: 0em 1.5em;
+}
+.container__sidebar__logo__img {
+  height: 30px;
+}
+.container__sidebar__content {
+  margin-top: 1em;
+  height: calc(100% - 30px - 1em);
+  padding: 0em 1.5em;
+  overflow-y: auto;
+}
