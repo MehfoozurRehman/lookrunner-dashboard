@@ -5,7 +5,13 @@ import { logo } from "../assets";
 import { sidebarEnteries } from "../global";
 
 export default function Sidebar({ setSidebarOpen }) {
-  const sidebarCategories = ["", "User Management", "Order Management"];
+  const sidebarCategories = [
+    "",
+    "User Management",
+    "Order Management",
+    "Inventory Management",
+    "Settings",
+  ];
 
   return (
     <div className="container__sidebar">
