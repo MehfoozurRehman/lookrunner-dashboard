@@ -264,6 +264,11 @@
   border-radius: 10px;
   min-width: 100% !important;
 }
+.container__main__content__listing__table__content__list__entry__img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+}
 @media (max-width: 1000px) {
   .container__main__content__listing__header {
     flex-direction: column;

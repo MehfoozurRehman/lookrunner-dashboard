@@ -1,5 +1,6 @@
 import { Edit2, Eye, Search, Trash2 } from "react-feather";
 
+import Avatar from "../../../components/Avatar";
 import { Link } from "router";
 import Select from "react-select";
 import { useLocation } from "react-router";
@@ -131,7 +132,7 @@ function TableEntry() {
         Action
       </div>
       <div className="container__main__content__listing__table__content__list__entry">
-        Action
+        <Avatar className="container__main__content__listing__table__content__list__entry__img" />
       </div>
       <div className="container__main__content__listing__table__content__list__entry">
         {description.length > 50 ? (
