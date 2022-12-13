@@ -1,5 +1,5 @@
 html {
-  --backgroundColor: #fefdfd;
+  --backgroundColor: #f5f6fa;
   --backgroundDarkColor: #ffffff;
   --white: #ffffff;
   --gray: #f5f6fa;
@@ -28,6 +28,7 @@ html[data-theme="dark"] {
 }
 *::-webkit-scrollbar {
   width: 5px;
+  height: 5px;
 }
 *::-webkit-scrollbar-thumb {
   background-color: black;
@@ -55,12 +56,12 @@ body {
   padding: 2em;
 }
 .container__main {
-  width: calc(100% - 300px - 2em);
+  width: calc(100% - 300px - 1.5em);
   height: 100%;
   position: relative;
 }
 .container__main__content {
-  min-height: calc(100vh - 80px - 5em);
+  min-height: calc(100vh - 80px - 5.5em);
   overflow: auto;
 }
 @media (max-width: 820px) {
@@ -68,6 +69,6 @@ body {
     width: 100%;
   }
   .container__main__content {
-    min-height: calc(100vh - 80px - 3em);
+    min-height: calc(100vh - 80px - 3.5em);
   }
 }

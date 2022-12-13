@@ -19,7 +19,8 @@
     "react-feather": "^2.0.10",
     "react-helmet": "^6.1.0",
     "react-router-dom": "6.4.5",
-    "react-theme-switch-css": "^1.0.0"
+    "react-theme-switch-css": "^1.0.0",
+    "recharts": "^2.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",
