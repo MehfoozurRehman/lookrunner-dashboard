@@ -1,7 +1,13 @@
 import { atomWithStorage } from "jotai/utils";
 
 export const userAtom = atomWithStorage("user", null);
-
+export const sidebarCategories = [
+  "",
+  "User Management",
+  "Order Management",
+  "Inventory Management",
+  "Settings",
+];
 export const sidebarEnteries = [
   {
     category: "",

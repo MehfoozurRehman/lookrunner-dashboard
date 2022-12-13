@@ -43,10 +43,10 @@ export default function Header({ setSidebarOpen }) {
           )
           .map((entry) => (
             <Fragment key={entry.path}>
-              {location.pathname === "/dashboard" ? null : (
+              {entry.path === location.pathname ? null : (
                 <button
                   onClick={() => {
-                    navigate(entry.backPath ? entry.backPath : -1);
+                    navigate(entry.path ? entry.path : -1);
                   }}
                   className="container__main__header__left__button"
                 >
@@ -58,15 +58,17 @@ export default function Header({ setSidebarOpen }) {
               </div>
             </Fragment>
           ))}
-        {location.pathname === "/dashboard" ? (
-          <div className="container__main__header__left__heading">
-            {location.pathname.replace("/dashboard/", "").replace("/", "")}{" "}
-          </div>
-        ) : (
-          <div className="container__main__header__left__heading">
-            {location.pathname.replace("/dashboard/", "").replace("/", " -> ")}
-          </div>
-        )}
+        <div className="container__main__header__left__heading">
+          {location.pathname === "/dashboard"
+            ? location.pathname
+                .replace("/dashboard/", "")
+                .replace("/", "")
+                .replace("-", " ")
+            : location.pathname
+                .replace("/dashboard/", "")
+                .replace("/", " -> ")
+                .replace("-", " ")}
+        </div>
       </div>
       <div className="container__main__header__right">
         <div className="container__main__header__right__panel">
