@@ -8,7 +8,7 @@ export default function Sidebar({ setSidebarOpen }) {
   return (
     <div className="container__sidebar">
       <div className="container__sidebar__header">
-        <Link path="/dashboard" className="container__sidebar__logo">
+        <Link to="/dashboard" className="container__sidebar__logo">
           <img
             src={logo}
             alt="logo"

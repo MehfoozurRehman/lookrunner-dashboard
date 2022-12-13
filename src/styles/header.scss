@@ -12,11 +12,12 @@
 .container__main__header__left {
   display: flex;
   align-items: center;
-  font-size: 18px;
   text-transform: capitalize;
   font-weight: bold;
 }
-
+.container__main__header__left__heading {
+  font-size: 18px;
+}
 .container__main__header__left__button {
   width: 35px;
   height: 35px;
