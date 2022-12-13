@@ -9,6 +9,7 @@ export default function App() {
   const location = useLocation();
   const [user] = useAtom(userAtom);
   const navigate = useNavigate();
+
   useEffect(() => {
     if (
       user === null &&
