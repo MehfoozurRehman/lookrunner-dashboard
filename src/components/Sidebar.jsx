@@ -39,6 +39,11 @@ export default function Sidebar({ setSidebarOpen }) {
               .filter((entry) => entry.category === category)
               .map((entry) => (
                 <NavLink
+                  onClick={() => {
+                    if (window.innerWidth < 820) {
+                      setSidebarOpen(false);
+                    }
+                  }}
                   end
                   to={entry.path}
                   className="container__sidebar__entry__content__entry"
@@ -58,6 +63,11 @@ export default function Sidebar({ setSidebarOpen }) {
                   .map((entry) => (
                     <NavLink
                       to={entry.path}
+                      onClick={() => {
+                        if (window.innerWidth < 820) {
+                          setSidebarOpen(false);
+                        }
+                      }}
                       className="container__sidebar__entry__content__entry"
                     >
                       <div className="container__sidebar__entry__content__entry__icon">
