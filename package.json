@@ -18,6 +18,7 @@
     "react-feather": "^2.0.10",
     "react-helmet": "^6.1.0",
     "react-router-dom": "6.4.5",
+    "react-select": "^5.7.0",
     "react-theme-switch-css": "^1.0.1",
     "recharts": "^2.2.0"
   },
