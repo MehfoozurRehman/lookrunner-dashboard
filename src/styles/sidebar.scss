@@ -9,16 +9,105 @@
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.container__sidebar__logo {
+.container__sidebar__header {
   padding: 0em 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container__sidebar__button {
+  display: none;
 }
 .container__sidebar__logo__img {
-  height: 30px;
+  height: 45px;
 }
 .container__sidebar__content {
-  margin-top: 1em;
-  height: calc(100% - 30px - 1em);
+  margin-top: 2em;
+  height: calc(100% - 45px - 2em);
   padding: 0em 1.5em;
+  width: 100%;
   overflow-y: auto;
+}
+.container__sidebar__content .active {
+  transition: 300ms ease-in-out;
+  background-color: var(--primary);
+  color: white;
+}
+.container__sidebar__content .active:hover {
+  transition: 300ms ease-in-out;
+  background-color: var(--primaryDark);
+  color: white;
+}
+.container__sidebar__entry {
+  background-color: var(--gray);
+  padding: 1em;
+  border-radius: 20px;
+  margin-bottom: 1em;
+}
+.container__sidebar__entry__label {
+  font-size: 12px;
+  margin-bottom: 1em;
+  background-color: black;
+  width: fit-content;
+  color: white;
+  padding: 0.1em 1em;
+  border-radius: 50px;
+}
+.container__sidebar__entry__content__entry {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 50px;
+  color: var(--darkWhite);
+  padding: 0em 1.3em;
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 1em;
+}
+.container__sidebar__entry__content__entry:hover {
+  background-color: #ebecec;
+}
+.container__sidebar__entry__content__entry:last-child {
+  margin-bottom: 0em;
+}
+.container__sidebar__entry__content__entry__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1em;
+}
+@media (max-width: 768px) {
+  .container__sidebar {
+    position: absolute;
+    z-index: 999;
+    max-width: 100%;
+    top: 0px;
+    max-height: 100vh;
+    margin-right: 0em;
+  }
+  .container__sidebar__header {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .container__sidebar__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0em;
+    width: 35px;
+    height: 35px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .container__sidebar__button:hover {
+    background-color: var(--primaryDark);
+  }
 }

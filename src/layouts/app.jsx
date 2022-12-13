@@ -1,14 +1,26 @@
 import { Header, Sidebar } from "components";
 import { Outlet, useLocation, useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 import { useAtom } from "jotai";
-import { useEffect } from "react";
 import { userAtom } from "../global";
 
 export default function App() {
+  const [sidebarOpen, setSidebarOpen] = useState(true);
   const location = useLocation();
   const [user] = useAtom(userAtom);
   const navigate = useNavigate();
+  function toggleSidebar() {
+    if (window.innerWidth < 768) {
+      setSidebarOpen(false);
+    } else {
+      setSidebarOpen(true);
+    }
+  }
+  useEffect(() => {
+    toggleSidebar();
+    window.addEventListener("resize", toggleSidebar);
+  }, []);
 
   useEffect(() => {
     if (
@@ -28,9 +40,9 @@ export default function App() {
         <Outlet />
       ) : (
         <div className="container">
-          <Sidebar />
+          {sidebarOpen && <Sidebar setSidebarOpen={setSidebarOpen} />}
           <div className="container__main">
-            <Header />
+            <Header setSidebarOpen={setSidebarOpen} />
             <div className="container__main__content">
               <Outlet />
             </div>

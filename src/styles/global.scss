@@ -2,16 +2,22 @@ html {
   --backgroundColor: #fefdfd;
   --backgroundDarkColor: #ffffff;
   --white: #ffffff;
+  --gray: #f5f6fa;
+  --darkWhite: #9698ab;
 }
 html[data-theme="dark"] {
   --backgroundColor: #333333;
   --backgroundDarkColor: #242424;
   --white: #242424;
+  --gray: #242424;
+  --darkWhite: #ffffff;
 }
 
 :root {
   --primary: #2a5e59;
+  --primaryDark: #204744;
   --secondary: #f39971;
+  --secondaryDark: #ee8a5f;
 }
 *,
 *::after,
