@@ -14,7 +14,10 @@ export default function Index() {
         className="login__container__form"
         onSubmit={(e) => {
           e.preventDefault();
-          setUser({ profilePic: avatar, name: "John Doe" });
+          setUser({
+            profilePic: avatar,
+            name: "John doe",
+          });
           navigate("/dashboard", { replace: true });
         }}
       >

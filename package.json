@@ -10,7 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@builder.io/partytown": "^0.7.3",
     "clsx": "^1.2.1",
     "jotai": "^1.11.1",
     "react": "^18.2.0",

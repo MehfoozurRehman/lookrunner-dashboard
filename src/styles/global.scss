@@ -57,19 +57,17 @@ body {
 .container__main {
   width: calc(100% - 300px - 2em);
   height: 100%;
-  background-color: aqua;
   position: relative;
 }
-.container__main__header {
-  height: 100px;
-  padding: 0em 2em;
-  display: flex;
-  align-items: center;
-  background-color: var(--backgroundDarkColor);
-  margin-bottom: 2em;
-}
 .container__main__content {
-  min-height: calc(100vh - 100px - 6em);
+  min-height: calc(100vh - 80px - 5em);
   overflow: auto;
-  background-color: var(--backgroundDarkColor);
+}
+@media (max-width: 820px) {
+  .container__main {
+    width: 100%;
+  }
+  .container__main__content {
+    min-height: calc(100vh - 80px - 3em);
+  }
 }

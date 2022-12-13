@@ -7,7 +7,6 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 
-import { Partytown } from "@builder.io/partytown/react";
 import { eagerRoutes } from "./eagerRoutes";
 import { lazyRoutes } from "./lazyRoutes";
 import { protectedRoutes } from "./protectedRoutes";
@@ -22,7 +21,6 @@ if (Object.keys(ROUTES).length === 0) console.error("No routes found");
 
 const Router = () => (
   <Suspense fallback={<Loading />}>
-    <Partytown debug={true} forward={["dataLayer.push"]} />
     <RouterProvider
       router={createBrowserRouter(
         createRoutesFromElements(

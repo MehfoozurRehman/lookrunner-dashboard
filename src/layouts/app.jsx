@@ -11,7 +11,7 @@ export default function App() {
   const [user] = useAtom(userAtom);
   const navigate = useNavigate();
   function toggleSidebar() {
-    if (window.innerWidth < 768) {
+    if (window.innerWidth <= 820) {
       setSidebarOpen(false);
     } else {
       setSidebarOpen(true);
@@ -33,7 +33,7 @@ export default function App() {
       navigate("/dashboard", { replace: true });
     }
   }, [location]);
-  console.log(user);
+
   return (
     <>
       {!location.pathname.toLowerCase().includes("/dashboard") ? (
