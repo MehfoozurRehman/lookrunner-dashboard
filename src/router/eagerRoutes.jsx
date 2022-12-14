@@ -8,6 +8,8 @@ const EAGER_ROUTES = import.meta.glob("/src/screens/**/[a-z[]*.jsx", {
   eager: true,
 });
 
+if (Object.keys(ROUTES).length === 0) console.error("No routes found");
+
 export const eagerRoutes = Object.keys(EAGER_ROUTES)
   .filter((route) => !route.includes(".lazy"))
   .filter((route) => !route.includes(".protected"))

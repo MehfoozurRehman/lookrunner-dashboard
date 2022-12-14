@@ -46,7 +46,9 @@ export default function App() {
           <div className="container__main">
             <Header setSidebarOpen={setSidebarOpen} />
             <div className="container__main__content">
-              <SuspenseAfterInitialRender fallback={<Loading />}>
+              <SuspenseAfterInitialRender
+                fallback={<Loading dashboard={true} />}
+              >
                 <Outlet />
               </SuspenseAfterInitialRender>
             </div>

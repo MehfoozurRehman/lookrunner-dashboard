@@ -13,11 +13,7 @@ import { protectedRoutes } from "./protectedRoutes";
 
 import.meta.glob("/src/styles/*.(scss|css)", { eager: true });
 
-const ROUTES = import.meta.glob("/src/screens/**/[a-z[]*.jsx");
-
 const routes = [...eagerRoutes, ...lazyRoutes];
-
-if (Object.keys(ROUTES).length === 0) console.error("No routes found");
 
 const Router = () => (
   <Suspense fallback={<Loading />}>

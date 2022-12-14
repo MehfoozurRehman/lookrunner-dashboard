@@ -38,7 +38,7 @@ html[data-theme="dark"] {
 *::-webkit-scrollbar-track {
   background-color: transparent;
 }
-button,
+button:hover,
 a:hover {
   transition: 300ms ease-in-out;
 }
