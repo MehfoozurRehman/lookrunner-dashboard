@@ -1,9 +1,7 @@
-import { Eye, EyeOff } from "react-feather";
+import { Input, Select, Textarea } from "components";
 
 import { Link } from "router";
-import ReactSelect from "react-select";
 import { useBackLocation } from "global";
-import { useState } from "react";
 
 export default function EmployeeAdd() {
   const backLocation = useBackLocation();
@@ -203,7 +201,12 @@ export default function EmployeeAdd() {
             { value: "3", label: "3" },
           ]}
         />
-        <Textarea label="Name" placeholder="Enter your name" id="name" />
+        <Textarea
+          label="Name"
+          placeholder="Enter your name"
+          id="name"
+          error="errejaklfdjksajdflkjsdfkj"
+        />
       </div>
       <div className="container__main__content__details__buttons">
         <Link
@@ -219,110 +222,6 @@ export default function EmployeeAdd() {
           Delete
         </Link>
       </div>
-    </div>
-  );
-}
-
-function Select({ label, id, error, ...props }) {
-  return (
-    <div className="container__main__content__details__main__input">
-      <label
-        htmlFor={id}
-        className="container__main__content__details__main__input__label"
-      >
-        {label}
-      </label>
-      <div
-        className="container__main__content__details__main__input__field__wrapper"
-        style={{ height: "fit-content" }}
-      >
-        <ReactSelect
-          {...props}
-          theme={(theme) => ({
-            ...theme,
-            borderRadius: 0,
-            colors: {
-              ...theme.colors,
-              primary75: "#2a5e59",
-              primary25: "#2a5e595e",
-              primary50: "#2a5e595e",
-              primary: "#2a5e59",
-            },
-          })}
-        />
-      </div>
-      {error && (
-        <div className="container__main__content__details__main__input__error">
-          {error}
-        </div>
-      )}
-    </div>
-  );
-}
-
-function Input({ label, id, error, type, secure, ...props }) {
-  const [isSecure, setIsSecure] = useState(true);
-  return (
-    <div className="container__main__content__details__main__input">
-      <label
-        htmlFor={id}
-        className="container__main__content__details__main__input__label"
-      >
-        {label}
-      </label>
-      <div className="container__main__content__details__main__input__field__wrapper">
-        <input
-          type={isSecure ? type : "text"}
-          id={id}
-          name={id}
-          className="container__main__content__details__main__input__field"
-          {...props}
-        />
-        {secure && (
-          <button
-            className="container__main__content__details__main__input__button"
-            onClick={() => {
-              setIsSecure(!isSecure);
-            }}
-          >
-            {isSecure ? (
-              <EyeOff size={20} color="currentColor" />
-            ) : (
-              <Eye size={20} color="currentColor" />
-            )}
-          </button>
-        )}
-      </div>
-      {error && (
-        <div className="container__main__content__details__main__input__error">
-          {error}
-        </div>
-      )}
-    </div>
-  );
-}
-function Textarea({ label, id, error, type, ...props }) {
-  return (
-    <div className="container__main__content__details__main__input">
-      <label
-        htmlFor={id}
-        className="container__main__content__details__main__input__label"
-      >
-        {label}
-      </label>
-      <div className="container__main__content__details__main__input__field__wrapper container__main__content__details__main__input__field__wrapper__textarea">
-        <textarea
-          id={id}
-          name={id}
-          className="container__main__content__details__main__input__field"
-          {...props}
-        />
-      </div>
-      {error && (
-        <div className="container__main__content__details__main__input__error">
-          {error}
-        </div>
-      )}
     </div>
   );
 }

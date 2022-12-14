@@ -4,3 +4,6 @@ export { default as ThemeSwitch } from "./ThemeSwitch";
 export { default as LoginInput } from "./LoginInput";
 export { default as DetailsEntry } from "./DetailsEntry";
 export { default as Avatar } from "./Avatar";
+export { default as Input } from "./Input";
+export { default as Textarea } from "./Textarea";
+export { default as Select } from "./Select";
