@@ -113,29 +113,48 @@ export default function Dashboard() {
             Movements
           </div>
           <div className="dashboard__container__left__entry__content">
-            <DashboardStartEntry />
-            <DashboardStartEntry />
-            <DashboardStartEntry />
-            <DashboardStartEntry />
-            <DashboardStartEntry />
-            <DashboardStartEntry />
-            <DashboardStartEntry />
-            <DashboardStartEntry />
-            <DashboardStartEntry />
-            <DashboardStartEntry />
+            <DashboardStartEntry
+              value="1212"
+              info=" Total Articles in Warehouse"
+            />
+            <DashboardStartEntry
+              value="23.232"
+              info="Total Articles in Trial"
+            />
+            <DashboardStartEntry value="233.544" info="Total No. of Order" />
+            <DashboardStartEntry
+              value="1212"
+              info="Total No. of Articles Sold"
+            />
+            <DashboardStartEntry value="1212" info="Total Customer" />
+            <DashboardStartEntry
+              value="121.343"
+              info="Total No. of Articles Damaged"
+            />
+            <DashboardStartEntry value="121.343" info="Total Customer" />
           </div>
         </div>
         <div className="dashboard__container__left__entry">
           <div className="dashboard__container__left__entry__title">Orders</div>
           <div className="dashboard__container__left__entry__content">
-            <DashboardStartEntry />
-            <DashboardStartEntry />
-            <DashboardStartEntry />
-            <DashboardStartEntry />
-            <DashboardStartEntry />
-            <DashboardStartEntry />
-            <DashboardStartEntry />
-            <DashboardStartEntry />
+            <DashboardStartEntry
+              value="651.343"
+              info="Total Articles in Return"
+            />
+            <DashboardStartEntry value="121.343" info="Total Articles Sold" />
+            <DashboardStartEntry value="121.343" info="Total No. of Booking" />
+            <DashboardStartEntry
+              value="231.343"
+              info="Total Current Returns scheduled with pickup dates"
+            />
+            <DashboardStartEntry
+              value="121.343"
+              info="Total Articles Damaged"
+            />
+            <DashboardStartEntry
+              value="121.343"
+              info="Total No. of articles in Marketing"
+            />
           </div>
         </div>
       </div>
@@ -169,14 +188,14 @@ export default function Dashboard() {
   );
 }
 
-function DashboardStartEntry() {
+function DashboardStartEntry({ value, info }) {
   return (
     <div className="dashboard__container__left__entry__content__entry">
       <div className="dashboard__container__left__entry__content__entry__heading">
-        13.343
+        {value}
       </div>
       <div className="dashboard__container__left__entry__content__entry__info">
-        Total Articles in Warehouse
+        {info}
       </div>
     </div>
   );
