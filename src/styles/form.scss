@@ -1,0 +1,114 @@
+.container__main__content__details__main__special {
+  flex-direction: column;
+}
+.container__main__content__details__main__row {
+  display: flex;
+  width: 100%;
+}
+.container__main__content__details__main__row__entry {
+  width: 50%;
+}
+.container__main__content__details__main__row__entry:first-child {
+  margin-right: 3em;
+}
+.container__main__content__details__main__input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 2em;
+}
+.container__main__content__details__main__input__label {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+.container__main__content__details__main__input__field__wrapper {
+  display: flex;
+  border-radius: 50px;
+  background-color: #f5f6fa;
+  height: 40px;
+  border: 1px solid #f5f6fa;
+  outline: 1px solid #f5f6fa;
+}
+.container__main__content__details__main__input__field__wrapper
+  .css-b62m3t-container {
+  width: 100%;
+}
+.container__main__content__details__main__input__field__wrapper
+  .css-1im77uy-control {
+  border-radius: 50px;
+  border: none;
+  background-color: transparent;
+  padding: 0em 0.8em;
+}
+.container__main__content__details__main__input__field__wrapper
+  .css-s9p5rr-control {
+  border-radius: 50px;
+  border: none;
+  background-color: transparent;
+  padding: 0em 0.8em;
+}
+.container__main__content__details__main__input__field__wrapper__textarea {
+  height: fit-content;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.container__main__content__details__main__input__field__wrapper__textarea
+  textarea {
+  min-height: 200px;
+  padding: 1em 1.5em;
+}
+.container__main__content__details__main__input__field__wrapper:hover {
+  border-color: var(--primary);
+}
+.container__main__content__details__main__input__field__wrapper:focus-within {
+  border-color: var(--primary);
+  outline-color: var(--primary);
+}
+.container__main__content__details__main__input__field {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0em 1.5em;
+  height: 100%;
+  border-radius: 50px;
+}
+.container__main__content__details__main__input__button {
+  background-color: transparent;
+  border: none;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0em;
+  width: 40px;
+  height: 100%;
+  cursor: pointer;
+  outline: none;
+}
+.container__main__content__details__main__input__button svg {
+  width: 15px;
+  height: 15px;
+}
+.container__main__content__details__main__input__error {
+  font-size: 12px;
+  color: red;
+  position: absolute;
+  bottom: -20px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: none;
+  -webkit-text-fill-color: black;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
