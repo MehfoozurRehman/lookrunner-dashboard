@@ -71,6 +71,29 @@ export default function Employees() {
         </div>
         <div className="container__main__content__listing__table__content">
           <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
         </div>
       </div>
     </div>
