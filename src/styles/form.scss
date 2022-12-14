@@ -1,3 +1,6 @@
+:root {
+  --ck-color-base-focus: --primary !important;
+}
 .container__main__content__details__main__special {
   flex-direction: column;
 }
@@ -57,6 +60,45 @@
   textarea {
   min-height: 200px;
   padding: 1em 1.5em;
+}
+.container__main__content__details__main__input__field__wrapper__textarea
+  .ck-editor {
+  background-color: transparent !important;
+  width: 100% !important;
+}
+.container__main__content__details__main__input__field__wrapper__textarea
+  .ck-editor
+  * {
+  box-shadow: none !important;
+}
+.container__main__content__details__main__input__field__wrapper__textarea
+  .ck-toolbar {
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0em 1em !important;
+}
+.container__main__content__details__main__input__field__wrapper__textarea
+  .ck-toolbar
+  * {
+  font-size: 13px !important;
+}
+.container__main__content__details__main__input__field__wrapper__textarea
+  .ck-editor
+  *
+  svg {
+  width: 18px;
+  height: 18px;
+}
+.container__main__content__details__main__input__field__wrapper__textarea
+  .ck-content {
+  min-height: 200px;
+  max-height: 200px;
+  border-right: none !important;
+  border-left: none !important;
+  border-bottom: none !important;
+  border-top-color: #a8a8a8 !important;
+  padding: 0em 1.5em !important;
+  background-color: transparent !important;
 }
 .container__main__content__details__main__input__field__wrapper:hover {
   border-color: var(--primary);

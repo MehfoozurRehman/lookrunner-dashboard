@@ -1,4 +1,4 @@
-import { Input, Select, Textarea } from "components";
+import { Input, RichTextarea, Select, Textarea } from "../../../components";
 
 import { Link } from "router";
 import { useBackLocation } from "global";
@@ -202,6 +202,12 @@ export default function EmployeeAdd() {
           ]}
         />
         <Textarea
+          label="Name"
+          placeholder="Enter your name"
+          id="name"
+          error="errejaklfdjksajdflkjsdfkj"
+        />
+        <RichTextarea
           label="Name"
           placeholder="Enter your name"
           id="name"
