@@ -66,7 +66,7 @@ export default function Header({ setSidebarOpen }) {
                 .replace("-", " ")
             : location.pathname
                 .replace("/dashboard/", "")
-                .replace("/", " -> ")
+                .replace("/", " > ")
                 .replace("-", " ")}
         </div>
       </div>

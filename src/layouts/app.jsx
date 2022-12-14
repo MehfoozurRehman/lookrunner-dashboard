@@ -2,6 +2,8 @@ import { Header, Sidebar } from "components";
 import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
+import Loading from "./loading";
+import { SuspenseAfterInitialRender } from "../router";
 import { useAtom } from "jotai";
 import { userAtom } from "global";
 
@@ -44,7 +46,9 @@ export default function App() {
           <div className="container__main">
             <Header setSidebarOpen={setSidebarOpen} />
             <div className="container__main__content">
-              <Outlet />
+              <SuspenseAfterInitialRender fallback={<Loading />}>
+                <Outlet />
+              </SuspenseAfterInitialRender>
             </div>
           </div>
         </div>

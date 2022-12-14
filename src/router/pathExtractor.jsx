@@ -1,4 +1,4 @@
-export const pathExtractor = (path: string) =>
+export const pathExtractor = (path) =>
   path
     .replace(/\/src\/screens|index|\.jsx$/g, "")
     .replace(/\[\.{3}.+\]/, "*")

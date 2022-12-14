@@ -1,20 +1,9 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
-import { NavLink as RouterLink } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
 import { getMatchingRoute } from "./getMatchingRoute";
 
-interface Props {
-  children: React.ReactNode;
-  to: string;
-  prefetch?: boolean;
-}
-
-export default function NavLink({
-  children,
-  to,
-  prefetch = true,
-  ...props
-}: Props) {
+export default function Link({ children, to, prefetch = true, ...props }) {
   const ref = useRef(null);
   const [prefetched, setPrefetched] = useState(false);
 

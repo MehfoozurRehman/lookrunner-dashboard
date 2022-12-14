@@ -1,14 +1,6 @@
 import { Suspense, useEffect, useState } from "react";
 
-interface Props {
-  fallback: React.ReactNode;
-  children: React.ReactNode;
-}
-
-export default function SuspenseAfterInitialRender({
-  fallback,
-  children,
-}: Props) {
+export default function SuspenseAfterInitialRender({ fallback, children }) {
   let [isInitialRender, setIsInitialRender] = useState(true);
 
   return isInitialRender ? (
@@ -21,11 +13,7 @@ export default function SuspenseAfterInitialRender({
   );
 }
 
-interface LifecycleProps {
-  afterRender: () => void;
-}
-
-function Lifecycle({ afterRender }: LifecycleProps) {
+function Lifecycle({ afterRender }) {
   useEffect(() => {
     afterRender();
   }, [afterRender]);

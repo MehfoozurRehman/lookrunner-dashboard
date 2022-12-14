@@ -1,6 +1,6 @@
-export function loaderFunction(routes: any) {
+export function actionFunction(routes) {
   return async (...args) =>
     routes()
-      .then((mod) => mod?.loader)
+      .then((mod) => mod?.action)
       .then((res) => (res === undefined ? null : res?.(...args)));
 }
