@@ -1,9 +1,7 @@
 import { Edit2, Eye, Search, Trash2 } from "react-feather";
 
 import { Link } from "router";
-import Select from "react-select";
 import { useLocation } from "react-router";
-import VatRateDetails from "./../vat-rates/[slug]";
 
 export default function variants() {
   const location = useLocation();

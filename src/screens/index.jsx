@@ -1,9 +1,9 @@
 import { avatar, logo } from "assets";
 
-import { LoginInput } from "../components/LoginInput";
+import { LoginInput } from "components";
 import { useAtom } from "jotai";
 import { useNavigate } from "react-router-dom";
-import { userAtom } from "../global";
+import { userAtom } from "global";
 
 export default function Index() {
   const navigate = useNavigate();

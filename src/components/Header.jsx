@@ -1,12 +1,12 @@
 import { ArrowLeft, ChevronDown, LogOut, Menu, User } from "react-feather";
 import { Fragment, useEffect, useState } from "react";
-import { sidebarEnteries, userAtom } from "../global";
+import { sidebarEnteries, userAtom } from "global";
 import { useLocation, useNavigate } from "react-router-dom";
 
 import Avatar from "./Avatar";
 import ClickAwayListener from "react-click-away-listener";
 import { Link } from "router";
-import ThemeSwitch from "react-theme-switch-css";
+import { ThemeSwitch } from "components";
 import { useAtom } from "jotai";
 
 export default function Header({ setSidebarOpen }) {

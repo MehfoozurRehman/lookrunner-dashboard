@@ -3,7 +3,7 @@ import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 import { useAtom } from "jotai";
-import { userAtom } from "../global";
+import { userAtom } from "global";
 
 export default function App() {
   const [sidebarOpen, setSidebarOpen] = useState(true);

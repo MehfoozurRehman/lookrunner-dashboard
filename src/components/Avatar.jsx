@@ -1,4 +1,4 @@
-import { placeholderAvatar } from "../assets";
+import { placeholderAvatar } from "assets";
 
 export default function Avatar({ src, alt, className, ...props }) {
   return src ? (
@@ -8,6 +8,7 @@ export default function Avatar({ src, alt, className, ...props }) {
       src={placeholderAvatar}
       alt="placeholderAvatar"
       className={className}
+      {...props}
     />
   );
 }

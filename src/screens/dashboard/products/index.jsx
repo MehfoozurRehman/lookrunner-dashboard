@@ -1,9 +1,9 @@
 import { Edit2, Eye, Search, Trash2 } from "react-feather";
 
+import { Avatar } from "components";
 import { Link } from "router";
 import Select from "react-select";
 import { useLocation } from "react-router";
-// import Avatar from "../../../components/Avatar";
 
 export default function Employees() {
   const location = useLocation();
@@ -114,8 +114,6 @@ export default function Employees() {
   );
 }
 function TableEntry() {
-  const description =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies lacinia, nisl nisl aliquam nisl, eu aliquam nisl nisl sit amet nisl.";
   return (
     <div className="container__main__content__listing__table__content__list">
       <div className="container__main__content__listing__table__content__list__entry">
@@ -190,8 +188,18 @@ function TableEntry() {
       <div className="container__main__content__listing__table__content__list__entry">
         30
       </div>
-      <div className="container__main__content__listing__table__content__list__entry">
-        {/* <Avatar  /> */}
+      <div
+        className="container__main__content__listing__table__content__list__entry"
+        style={{ gap: 10, flexWrap: "wrap" }}
+      >
+        <Avatar className="container__main__content__listing__table__content__list__entry__img" />
+        <Avatar className="container__main__content__listing__table__content__list__entry__img" />
+        <Avatar className="container__main__content__listing__table__content__list__entry__img" />
+        <Avatar className="container__main__content__listing__table__content__list__entry__img" />
+        <Avatar className="container__main__content__listing__table__content__list__entry__img" />
+        <Avatar className="container__main__content__listing__table__content__list__entry__img" />
+        <Avatar className="container__main__content__listing__table__content__list__entry__img" />
+        <Avatar className="container__main__content__listing__table__content__list__entry__img" />
       </div>
     </div>
   );

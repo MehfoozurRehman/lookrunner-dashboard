@@ -1,4 +1,4 @@
-export function LoginInput({ label, id, error, ...rest }) {
+export default function LoginInput({ label, id, error, ...rest }) {
   return (
     <div className="login__container__form__input">
       {label && (
