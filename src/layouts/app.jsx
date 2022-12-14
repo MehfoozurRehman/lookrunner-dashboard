@@ -31,7 +31,7 @@ export default function App() {
     ) {
       navigate("/", { replace: true });
     }
-    if (user !== null && location.pathname === "/") {
+    if (user !== null && location.pathname.toLowerCase() === "/") {
       navigate("/dashboard", { replace: true });
     }
   }, [location]);

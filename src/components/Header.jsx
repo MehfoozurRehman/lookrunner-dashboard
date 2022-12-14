@@ -33,17 +33,20 @@ export default function Header({ setSidebarOpen }) {
         </button>
         {sidebarEnteries
           .filter((entry) =>
-            location.pathname === "/dashboard"
-              ? entry.path === location.pathname
+            location.pathname.toLowerCase() === "/dashboard"
+              ? entry.path === location.pathname.toLowerCase()
               : entry.path
                   .replace("/dashboard/")
                   .includes(
-                    location.pathname.replace("/dashboard", "").split("/")[1]
+                    location.pathname
+                      .toLowerCase()
+                      .replace("/dashboard", "")
+                      .split("/")[1]
                   )
           )
           .map((entry) => (
             <Fragment key={entry.path}>
-              {entry.path === location.pathname ? null : (
+              {entry.path === location.pathname.toLowerCase() ? null : (
                 <button
                   onClick={() => {
                     navigate(entry.path ? entry.path : -1);
@@ -59,12 +62,14 @@ export default function Header({ setSidebarOpen }) {
             </Fragment>
           ))}
         <div className="container__main__header__left__heading">
-          {location.pathname === "/dashboard"
+          {location.pathname.toLowerCase() === "/dashboard"
             ? location.pathname
+                .toLowerCase()
                 .replace("/dashboard/", "")
                 .replace("/", "")
                 .replace("-", " ")
             : location.pathname
+                .toLowerCase()
                 .replace("/dashboard/", "")
                 .replace("/", " > ")
                 .replace("-", " ")}

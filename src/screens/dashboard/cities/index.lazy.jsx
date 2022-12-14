@@ -23,7 +23,7 @@ export default function Employees() {
         </div>
         <div className="container__main__content__listing__header__right">
           <Link
-            to={location.pathname + "/add"}
+            to={location.pathname.toLowerCase() + "/add"}
             className="container__main__content__listing__header__right__button"
           >
             Add
@@ -70,13 +70,13 @@ function TableEntry() {
     <div className="container__main__content__listing__table__content__list">
       <div className="container__main__content__listing__table__content__list__entry">
         <Link
-          to={location.pathname + "/detail"}
+          to={location.pathname.toLowerCase() + "/detail"}
           className="container__main__content__listing__table__content__list__entry__button"
         >
           <Eye size={20} color="currentColor" />
         </Link>
         <Link
-          to={location.pathname + "/edit"}
+          to={location.pathname.toLowerCase() + "/edit"}
           className="container__main__content__listing__table__content__list__entry__button"
         >
           <Edit2 size={20} color="currentColor" />
