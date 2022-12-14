@@ -1,11 +1,11 @@
 import { Edit2, Eye, Search, Trash2 } from "react-feather";
 
-import Avatar from "../../../components/Avatar";
 import { Link } from "router";
 import Select from "react-select";
 import { useLocation } from "react-router";
+// import Avatar from "../../../components/Avatar";
 
-export default function Products() {
+export default function Employees() {
   const location = useLocation();
   return (
     <div className="container__main__content__listing">
@@ -21,42 +21,6 @@ export default function Products() {
               <Search size={20} color="currentColor" />
             </button>
           </form>
-          <div className="container__main__content__listing__header__left__filter">
-            <Select
-              options={[
-                { value: "one", label: "One" },
-                { value: "two", label: "Two" },
-              ]}
-              theme={(theme) => ({
-                ...theme,
-                borderRadius: 0,
-                colors: {
-                  ...theme.colors,
-                  primary75: "#2a5e59",
-                  primary25: "#2a5e595e",
-                  primary50: "#2a5e595e",
-                  primary: "#2a5e59",
-                },
-              })}
-            />
-            <Select
-              options={[
-                { value: "one", label: "One" },
-                { value: "two", label: "Two" },
-              ]}
-              theme={(theme) => ({
-                ...theme,
-                borderRadius: 0,
-                colors: {
-                  ...theme.colors,
-                  primary75: "#2a5e59",
-                  primary25: "#2a5e595e",
-                  primary50: "#2a5e595e",
-                  primary: "#2a5e59",
-                },
-              })}
-            />
-          </div>
         </div>
         <div className="container__main__content__listing__header__right">
           <Link
@@ -72,6 +36,42 @@ export default function Products() {
           <div className="container__main__content__listing__table__header__entry">
             Action
           </div>
+          <div className="container__main__content__listing__table__header__entry">
+            Status
+          </div>
+          <div className="container__main__content__listing__table__header__entry">
+            Name
+          </div>
+          <div className="container__main__content__listing__table__header__entry">
+            Supplier
+          </div>
+          <div className="container__main__content__listing__table__header__entry">
+            Brand
+          </div>
+          <div className="container__main__content__listing__table__header__entry">
+            Category
+          </div>
+          <div className="container__main__content__listing__table__header__entry">
+            Sub-Category
+          </div>
+          <div className="container__main__content__listing__table__header__entry">
+            Tag
+          </div>
+          <div className="container__main__content__listing__table__header__entry">
+            Cost of unit
+          </div>
+          <div className="container__main__content__listing__table__header__entry">
+            Selling price
+          </div>
+          <div className="container__main__content__listing__table__header__entry">
+            Discounted price
+          </div>
+          <div className="container__main__content__listing__table__header__entry">
+            Variants
+          </div>
+          <div className="container__main__content__listing__table__header__entry">
+            Images
+          </div>
         </div>
         <div className="container__main__content__listing__table__content">
           <TableEntry />
@@ -80,7 +80,6 @@ export default function Products() {
     </div>
   );
 }
-
 function TableEntry() {
   const description =
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies lacinia, nisl nisl aliquam nisl, eu aliquam nisl nisl sit amet nisl.";
@@ -107,12 +106,12 @@ function TableEntry() {
         <Select
           options={[
             {
-              value: "one",
-              label: "One",
+              value: "Active",
+              label: "Active",
             },
             {
-              value: "two",
-              label: "Two",
+              value: "Deactive",
+              label: "Deactive",
             },
           ]}
           theme={(theme) => ({
@@ -129,30 +128,37 @@ function TableEntry() {
         />
       </div>
       <div className="container__main__content__listing__table__content__list__entry">
-        Action
+        john
       </div>
       <div className="container__main__content__listing__table__content__list__entry">
-        <Avatar className="container__main__content__listing__table__content__list__entry__img" />
+        Deved
       </div>
       <div className="container__main__content__listing__table__content__list__entry">
-        {description.length > 50 ? (
-          <div className="container__main__content__listing__table__content__list__entry__details">
-            <button className="container__main__content__listing__table__content__list__entry__details__button">
-              View Details
-            </button>
-            <div className="container__main__content__listing__table__content__list__entry__details__content">
-              {description}
-            </div>
-          </div>
-        ) : (
-          description
-        )}
+        stylo
       </div>
       <div className="container__main__content__listing__table__content__list__entry">
-        Action
+        knitted cloths
       </div>
       <div className="container__main__content__listing__table__content__list__entry">
-        Action
+        kindom
+      </div>
+      <div className="container__main__content__listing__table__content__list__entry">
+        absd
+      </div>
+      <div className="container__main__content__listing__table__content__list__entry">
+        34000
+      </div>
+      <div className="container__main__content__listing__table__content__list__entry">
+        12356
+      </div>
+      <div className="container__main__content__listing__table__content__list__entry">
+        20
+      </div>
+      <div className="container__main__content__listing__table__content__list__entry">
+        30
+      </div>
+      <div className="container__main__content__listing__table__content__list__entry">
+        {/* <Avatar  /> */}
       </div>
     </div>
   );

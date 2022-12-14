@@ -1,3 +1,3 @@
-export default function SlugDetails() {
-  return <div>SlugDetails</div>;
+export default function StockDetails() {
+  return <div>StockDetails</div>;
 }
