@@ -1,6 +1,6 @@
 import { Edit2, Eye, Search, Trash2 } from "react-feather";
 
-import { Avatar } from "components";
+import { Avatar } from "../../../components";
 import { Link } from "router";
 import Select from "react-select";
 import { useLocation } from "react-router";

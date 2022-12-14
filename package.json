@@ -11,18 +11,15 @@
   "dependencies": {
     "@ckeditor/ckeditor5-build-classic": "^35.4.0",
     "@ckeditor/ckeditor5-react": "^5.0.3",
-    "clsx": "^1.2.1",
     "jotai": "^1.11.2",
     "react": "^18.2.0",
     "react-click-away-listener": "^2.2.2",
-    "react-critical-css": "^2.1.0",
     "react-dom": "^18.2.0",
     "react-feather": "^2.0.10",
     "react-helmet": "^6.1.0",
     "react-router-dom": "6.4.5",
     "react-select": "^5.7.0",
     "react-spinners": "^0.13.7",
-    "react-theme-switch-css": "^1.0.1",
     "recharts": "^2.2.0"
   },
   "devDependencies": {

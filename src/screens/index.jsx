@@ -1,6 +1,6 @@
 import { avatar, logo } from "assets";
 
-import { LoginInput } from "components";
+import { LoginInput } from "../components";
 import { useAtom } from "jotai";
 import { useNavigate } from "react-router-dom";
 import { userAtom } from "global";

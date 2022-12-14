@@ -9,9 +9,6 @@ import viteImagemin from "vite-plugin-imagemin";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  esbuild: {
-    jsxInject: `export const loader = () => null`,
-  },
   resolve: {
     alias: [
       {

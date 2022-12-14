@@ -225,7 +225,7 @@ export default function EmployeeAdd() {
           to={backLocation}
           className="container__main__content__details__buttons__button container__main__content__details__buttons__secondary"
         >
-          Delete
+          Discard
         </Link>
       </div>
     </div>

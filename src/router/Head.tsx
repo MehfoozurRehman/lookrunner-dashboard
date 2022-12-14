@@ -1,6 +1,12 @@
 import { Helmet } from "react-helmet";
 
-export default function Head({ title, description, children }) {
+interface Props {
+  title: string;
+  description: string;
+  children?: React.ReactNode;
+}
+
+export default function Head({ title, description, children }: Props) {
   return (
     <Helmet>
       <title>{title}</title>

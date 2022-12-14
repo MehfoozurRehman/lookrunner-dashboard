@@ -219,13 +219,13 @@ export default function EmployeeEdit() {
           to={backLocation}
           className="container__main__content__details__buttons__button container__main__content__details__buttons__primary"
         >
-          Add
+          Edit
         </Link>
         <Link
           to={backLocation}
           className="container__main__content__details__buttons__button container__main__content__details__buttons__secondary"
         >
-          Delete
+          Discard
         </Link>
       </div>
     </div>
