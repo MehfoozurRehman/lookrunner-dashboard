@@ -39,32 +39,16 @@ export default function Employees() {
             Name
           </div>
           <div className="container__main__content__listing__table__header__entry">
-            Phone
+            Delivery Charges
           </div>
           <div className="container__main__content__listing__table__header__entry">
-            Email
+            VAT
           </div>
           <div className="container__main__content__listing__table__header__entry">
-            Address
-          </div>
-          <div className="container__main__content__listing__table__header__entry">
-            Longitude
-          </div>
-          <div className="container__main__content__listing__table__header__entry">
-            Latitude
+            Status
           </div>
         </div>
         <div className="container__main__content__listing__table__content">
-          <TableEntry value="1212" info="Total Articles in Warehouse" />
-          <TableEntry />
-          <TableEntry />
-          <TableEntry />
-          <TableEntry />
-          <TableEntry />
-          <TableEntry />
-          <TableEntry />
-          <TableEntry />
-          <TableEntry />
           <TableEntry />
           <TableEntry />
         </div>
@@ -100,31 +84,36 @@ function TableEntry() {
         john devved
       </div>
       <div className="container__main__content__listing__table__content__list__entry">
-        +22-209384
+        9384
       </div>
 
       <div className="container__main__content__listing__table__content__list__entry">
-        johnn44@gmail.com
+        77777
       </div>
       <div className="container__main__content__listing__table__content__list__entry">
-        {description.length > 50 ? (
-          <div className="container__main__content__listing__table__content__list__entry__details">
-            <button className="container__main__content__listing__table__content__list__entry__details__button">
-              View Details
-            </button>
-            <div className="container__main__content__listing__table__content__list__entry__details__content">
-              {description}
-            </div>
-          </div>
-        ) : (
-          description
-        )}
-      </div>
-      <div className="container__main__content__listing__table__content__list__entry">
-        45463
-      </div>
-      <div className="container__main__content__listing__table__content__list__entry">
-        34345
+        <Select
+          options={[
+            {
+              value: "Active",
+              label: "Active",
+            },
+            {
+              value: "Deactive",
+              label: "Deactive",
+            },
+          ]}
+          theme={(theme) => ({
+            ...theme,
+            borderRadius: 0,
+            colors: {
+              ...theme.colors,
+              primary75: "#2a5e59",
+              primary25: "#2a5e595e",
+              primary50: "#2a5e595e",
+              primary: "#2a5e59",
+            },
+          })}
+        />
       </div>
     </div>
   );
