@@ -3,8 +3,9 @@ import { Edit2, Eye, Search, Trash2 } from "react-feather";
 import { Link } from "router";
 import Select from "react-select";
 import { useLocation } from "react-router";
+import VatRateDetails from "./../vat-rates/[slug]";
 
-export default function Employees() {
+export default function variants() {
   const location = useLocation();
   return (
     <div className="container__main__content__listing">
@@ -39,28 +40,10 @@ export default function Employees() {
             Name
           </div>
           <div className="container__main__content__listing__table__header__entry">
-            Description
-          </div>
-          <div className="container__main__content__listing__table__header__entry">
-            Parent Category
-          </div>
-          <div className="container__main__content__listing__table__header__entry">
-            Image
+            Category
           </div>
         </div>
         <div className="container__main__content__listing__table__content">
-          <TableEntry />
-          <TableEntry />
-          <TableEntry />
-          <TableEntry />
-          <TableEntry />
-          <TableEntry />
-          <TableEntry />
-          <TableEntry />
-          <TableEntry />
-          <TableEntry />
-          <TableEntry />
-          <TableEntry />
           <TableEntry />
           <TableEntry />
           <TableEntry />
@@ -103,27 +86,10 @@ function TableEntry() {
       </div>
 
       <div className="container__main__content__listing__table__content__list__entry">
-        john devved
-      </div>
-      <div className="container__main__content__listing__table__content__list__entry">
-        {description.length > 50 ? (
-          <div className="container__main__content__listing__table__content__list__entry__details">
-            <button className="container__main__content__listing__table__content__list__entry__details__button">
-              View Details
-            </button>
-            <div className="container__main__content__listing__table__content__list__entry__details__content">
-              {description}
-            </div>
-          </div>
-        ) : (
-          description
-        )}
-      </div>
-      <div className="container__main__content__listing__table__content__list__entry">
         Choice By Armina
       </div>
       <div className="container__main__content__listing__table__content__list__entry">
-        image
+        catname
       </div>
     </div>
   );
