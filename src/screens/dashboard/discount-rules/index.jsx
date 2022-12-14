@@ -9,7 +9,16 @@ export default function Employees() {
     <div className="container__main__content__listing">
       <div className="container__main__content__listing__header">
         <div className="container__main__content__listing__header__left">
-          Discount
+          <form className="container__main__content__listing__header__left__search">
+            <input
+              type="text"
+              placeholder="Search"
+              className="container__main__content__listing__header__left__search__field"
+            />
+            <button className="container__main__content__listing__header__left__search__button">
+              <Search size={20} color="currentColor" />
+            </button>
+          </form>
         </div>
         <div className="container__main__content__listing__header__right">
           <Link
