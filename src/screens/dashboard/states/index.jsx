@@ -39,33 +39,10 @@ export default function Employees() {
             Name
           </div>
           <div className="container__main__content__listing__table__header__entry">
-            Phone
-          </div>
-          <div className="container__main__content__listing__table__header__entry">
-            Email
-          </div>
-          <div className="container__main__content__listing__table__header__entry">
-            Address
-          </div>
-          <div className="container__main__content__listing__table__header__entry">
-            Longitude
-          </div>
-          <div className="container__main__content__listing__table__header__entry">
-            Latitude
+            status
           </div>
         </div>
         <div className="container__main__content__listing__table__content">
-          <TableEntry />
-          <TableEntry />
-          <TableEntry />
-          <TableEntry />
-          <TableEntry />
-          <TableEntry />
-          <TableEntry />
-          <TableEntry />
-          <TableEntry />
-          <TableEntry />
-          <TableEntry />
           <TableEntry />
         </div>
       </div>
@@ -99,33 +76,8 @@ function TableEntry() {
       <div className="container__main__content__listing__table__content__list__entry">
         john devved
       </div>
-      <div className="container__main__content__listing__table__content__list__entry">
-        +22-209384
-      </div>
 
-      <div className="container__main__content__listing__table__content__list__entry">
-        johnn44@gmail.com
-      </div>
-      <div className="container__main__content__listing__table__content__list__entry">
-        {description.length > 50 ? (
-          <div className="container__main__content__listing__table__content__list__entry__details">
-            <button className="container__main__content__listing__table__content__list__entry__details__button">
-              View Details
-            </button>
-            <div className="container__main__content__listing__table__content__list__entry__details__content">
-              {description}
-            </div>
-          </div>
-        ) : (
-          description
-        )}
-      </div>
-      <div className="container__main__content__listing__table__content__list__entry">
-        45463
-      </div>
-      <div className="container__main__content__listing__table__content__list__entry">
-        34345
-      </div>
+      <div className="container__main__content__listing__table__content__list__entry"></div>
     </div>
   );
 }

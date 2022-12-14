@@ -23,8 +23,8 @@ export default function Employees() {
           <div className="container__main__content__listing__header__left__filter">
             <Select
               options={[
-                { value: "one", label: "One" },
-                { value: "two", label: "Two" },
+                { value: "Department", label: "Department" },
+                { value: "Role", label: "Role" },
               ]}
               theme={(theme) => ({
                 ...theme,
@@ -40,8 +40,8 @@ export default function Employees() {
             />
             <Select
               options={[
-                { value: "one", label: "One" },
-                { value: "two", label: "Two" },
+                { value: "Role", label: "Role" },
+                { value: "Department", label: "Department" },
               ]}
               theme={(theme) => ({
                 ...theme,
@@ -70,6 +70,34 @@ export default function Employees() {
         <div className="container__main__content__listing__table__header">
           <div className="container__main__content__listing__table__header__entry">
             Action
+          </div>
+          <div className="container__main__content__listing__table__header__entry">
+            Status
+          </div>
+          <div className="container__main__content__listing__table__header__entry">
+            First Name
+          </div>
+          <div className="container__main__content__listing__table__header__entry">
+            Last Name
+          </div>
+          <div className="container__main__content__listing__table__header__entry">
+            Mobile No.
+          </div>
+          <div className="container__main__content__listing__table__header__entry">
+            Email
+          </div>
+          <div className="container__main__content__listing__table__header__entry">
+            Referred By
+          </div>
+          <div className="container__main__content__listing__table__header__entry">
+            Department
+          </div>
+
+          <div className="container__main__content__listing__table__header__entry">
+            Username
+          </div>
+          <div className="container__main__content__listing__table__header__entry">
+            Role
           </div>
         </div>
         <div className="container__main__content__listing__table__content">
@@ -106,12 +134,12 @@ function TableEntry() {
         <Select
           options={[
             {
-              value: "one",
-              label: "One",
+              value: "Active",
+              label: "Active",
             },
             {
-              value: "two",
-              label: "Two",
+              value: "Deactivate",
+              label: "Deactivate",
             },
           ]}
           theme={(theme) => ({
@@ -128,10 +156,10 @@ function TableEntry() {
         />
       </div>
       <div className="container__main__content__listing__table__content__list__entry">
-        Action
+        john
       </div>
       <div className="container__main__content__listing__table__content__list__entry">
-        Action
+        deved
       </div>
       <div className="container__main__content__listing__table__content__list__entry">
         {description.length > 50 ? (
@@ -148,10 +176,22 @@ function TableEntry() {
         )}
       </div>
       <div className="container__main__content__listing__table__content__list__entry">
-        Action
+        +92-20395731
       </div>
       <div className="container__main__content__listing__table__content__list__entry">
-        Action
+        asm232@gmail.com
+      </div>
+      <div className="container__main__content__listing__table__content__list__entry">
+        arsii
+      </div>
+      <div className="container__main__content__listing__table__content__list__entry">
+        Horticulture
+      </div>
+      <div className="container__main__content__listing__table__content__list__entry">
+        asaaam
+      </div>
+      <div className="container__main__content__listing__table__content__list__entry">
+        Admin
       </div>
     </div>
   );
