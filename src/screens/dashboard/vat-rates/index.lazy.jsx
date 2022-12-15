@@ -1,6 +1,12 @@
-import { Edit2, Eye, Search, Trash2 } from "react-feather";
+import {
+  TableEntryDeleteButton,
+  TableEntryEditButton,
+  TableEntryText,
+  TableEntryViewButton,
+} from "components";
 
 import { Link } from "router";
+import { Search } from "react-feather";
 import { useLocation } from "react-router";
 
 export default function Employees() {
@@ -64,37 +70,16 @@ export default function Employees() {
 }
 
 function TableEntry() {
-  const description =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies lacinia, nisl nisl aliquam nisl, eu aliquam nisl nisl sit amet nisl.";
   return (
     <div className="container__main__content__listing__table__content__list">
       <div className="container__main__content__listing__table__content__list__entry">
-        <Link
-          to={location.pathname.toLowerCase() + "/detail"}
-          className="container__main__content__listing__table__content__list__entry__button"
-        >
-          <Eye size={20} color="currentColor" />
-        </Link>
-        <Link
-          to={location.pathname.toLowerCase() + "/edit"}
-          className="container__main__content__listing__table__content__list__entry__button"
-        >
-          <Edit2 size={20} color="currentColor" />
-        </Link>
-        <button className="container__main__content__listing__table__content__list__entry__button">
-          <Trash2 size={20} color="currentColor" />
-        </button>
+        <TableEntryViewButton />
+        <TableEntryEditButton />
+        <TableEntryDeleteButton />
       </div>
-
-      <div className="container__main__content__listing__table__content__list__entry">
-        john devved
-      </div>
-      <div className="container__main__content__listing__table__content__list__entry">
-        23434
-      </div>
-      <div className="container__main__content__listing__table__content__list__entry">
-        Percentage
-      </div>
+      <TableEntryText>john devved</TableEntryText>
+      <TableEntryText>23434</TableEntryText>
+      <TableEntryText>Percentage</TableEntryText>
     </div>
   );
 }

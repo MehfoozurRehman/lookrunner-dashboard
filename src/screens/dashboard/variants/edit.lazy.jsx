@@ -1,4 +1,4 @@
-import { Input, Select } from "../../../components";
+import { Input, Select } from "components";
 
 import { Link } from "router";
 import { useBackLocation } from "global";
@@ -14,7 +14,6 @@ export default function variantsedit() {
           placeholder="Enter Varient Name"
           id="Name"
         />
-
         <Select
           label="Category"
           placeholder="Select Category"

@@ -1,7 +1,14 @@
-import { Edit2, Eye, Search, Trash2 } from "react-feather";
+import {
+  TableEntryDeleteButton,
+  TableEntryDescription,
+  TableEntryEditButton,
+  TableEntryStatus,
+  TableEntryText,
+  TableEntryViewButton,
+} from "components";
 
 import { Link } from "router";
-import Select from "react-select";
+import { Search } from "react-feather";
 import { useLocation } from "react-router";
 
 export default function Employees() {
@@ -100,104 +107,32 @@ export default function Employees() {
   );
 }
 function TableEntry() {
-  const description =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies lacinia, nisl nisl aliquam nisl, eu aliquam nisl nisl sit amet nisl.";
   return (
     <div className="container__main__content__listing__table__content__list">
       <div className="container__main__content__listing__table__content__list__entry">
-        <Link
-          to={location.pathname.toLowerCase() + "/detail"}
-          className="container__main__content__listing__table__content__list__entry__button"
-        >
-          <Eye size={20} color="currentColor" />
-        </Link>
-        <Link
-          to={location.pathname.toLowerCase() + "/edit"}
-          className="container__main__content__listing__table__content__list__entry__button"
-        >
-          <Edit2 size={20} color="currentColor" />
-        </Link>
-        <button className="container__main__content__listing__table__content__list__entry__button">
-          <Trash2 size={20} color="currentColor" />
-        </button>
+        <TableEntryViewButton />
+        <TableEntryEditButton />
+        <TableEntryDeleteButton />
       </div>
-      <div className="container__main__content__listing__table__content__list__entry">
-        <Select
-          options={[
-            {
-              value: "Active",
-              label: "Active",
-            },
-            {
-              value: "Deactive",
-              label: "Deactive",
-            },
-          ]}
-          theme={(theme) => ({
-            ...theme,
-            borderRadius: 0,
-            colors: {
-              ...theme.colors,
-              primary75: "#2a5e59",
-              primary25: "#2a5e595e",
-              primary50: "#2a5e595e",
-              primary: "#2a5e59",
-            },
-          })}
-        />
-      </div>
-      <div className="container__main__content__listing__table__content__list__entry">
-        comeers
-      </div>
-      <div className="container__main__content__listing__table__content__list__entry">
-        Hello Brand
-      </div>
-      <div className="container__main__content__listing__table__content__list__entry">
-        12344
-      </div>
-      <div className="container__main__content__listing__table__content__list__entry">
-        asmcompan@gmail.com
-      </div>
-      <div className="container__main__content__listing__table__content__list__entry">
-        +92-20039394
-      </div>
-      <div className="container__main__content__listing__table__content__list__entry">
-        {description.length > 50 ? (
-          <div className="container__main__content__listing__table__content__list__entry__details">
-            <button className="container__main__content__listing__table__content__list__entry__details__button">
-              View Details
-            </button>
-            <div className="container__main__content__listing__table__content__list__entry__details__content">
-              {description}
-            </div>
-          </div>
-        ) : (
-          description
-        )}
-      </div>
-      <div className="container__main__content__listing__table__content__list__entry">
-        Lhr
-      </div>
-      <div className="container__main__content__listing__table__content__list__entry">
-        khaber
-      </div>
-      <div className="container__main__content__listing__table__content__list__entry">
-        30999
-      </div>
-      <div className="container__main__content__listing__table__content__list__entry">
-        {description.length > 50 ? (
-          <div className="container__main__content__listing__table__content__list__entry__details">
-            <button className="container__main__content__listing__table__content__list__entry__details__button">
-              View Details
-            </button>
-            <div className="container__main__content__listing__table__content__list__entry__details__content">
-              {description}
-            </div>
-          </div>
-        ) : (
-          description
-        )}
-      </div>
+      <TableEntryStatus />
+      <TableEntryText>comeers</TableEntryText>
+      <TableEntryText>Hello Brand</TableEntryText>
+      <TableEntryText>12344</TableEntryText>
+      <TableEntryText>asmcompan@gmail.com</TableEntryText>
+      <TableEntryText>+92-20039394</TableEntryText>
+      <TableEntryDescription>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor,
+        nisl eget ultricies lacinia, nisl nisl aliquam nisl, eu aliquam nisl
+        nisl sit amet nisl.
+      </TableEntryDescription>
+      <TableEntryText>Lhr</TableEntryText>
+      <TableEntryText>khaber</TableEntryText>
+      <TableEntryText>30999</TableEntryText>
+      <TableEntryDescription>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor,
+        nisl eget ultricies lacinia, nisl nisl aliquam nisl, eu aliquam nisl
+        nisl sit amet nisl.
+      </TableEntryDescription>
     </div>
   );
 }

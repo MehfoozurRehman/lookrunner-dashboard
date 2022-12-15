@@ -1,4 +1,4 @@
-import { Input } from "../../../components";
+import { Input } from "components";
 import { Link } from "router";
 import { useBackLocation } from "global";
 

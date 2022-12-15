@@ -1,7 +1,13 @@
-import { Edit2, Eye, Search, Trash2 } from "react-feather";
+import {
+  TableEntryDeleteButton,
+  TableEntryEditButton,
+  TableEntryStatus,
+  TableEntryText,
+  TableEntryViewButton,
+} from "components";
 
 import { Link } from "router";
-import Select from "react-select";
+import { Search } from "react-feather";
 import { useLocation } from "react-router";
 
 export default function Employees() {
@@ -64,64 +70,22 @@ export default function Employees() {
             <TableEntry />
           </div>
         </div>
-      </div>{" "}
+      </div>
     </>
   );
 }
 
 function TableEntry() {
-  const description =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies lacinia, nisl nisl aliquam nisl, eu aliquam nisl nisl sit amet nisl.";
   return (
     <div className="container__main__content__listing__table__content__list">
       <div className="container__main__content__listing__table__content__list__entry">
-        <Link
-          to={location.pathname.toLowerCase() + "/detail"}
-          className="container__main__content__listing__table__content__list__entry__button"
-        >
-          <Eye size={20} color="currentColor" />
-        </Link>
-        <Link
-          to={location.pathname.toLowerCase() + "/edit"}
-          className="container__main__content__listing__table__content__list__entry__button"
-        >
-          <Edit2 size={20} color="currentColor" />
-        </Link>
-        <button className="container__main__content__listing__table__content__list__entry__button">
-          <Trash2 size={20} color="currentColor" />
-        </button>
+        <TableEntryViewButton />
+        <TableEntryEditButton />
+        <TableEntryDeleteButton />
       </div>
-      <div className="container__main__content__listing__table__content__list__entry">
-        <Select
-          options={[
-            {
-              value: "Active",
-              label: "Active",
-            },
-            {
-              value: "Deactive",
-              label: "Deactive",
-            },
-          ]}
-          theme={(theme) => ({
-            ...theme,
-            borderRadius: 0,
-            colors: {
-              ...theme.colors,
-              primary75: "#2a5e59",
-              primary25: "#2a5e595e",
-              primary50: "#2a5e595e",
-              primary: "#2a5e59",
-            },
-          })}
-        />
-      </div>
-      <div className="container__main__content__listing__table__content__list__entry">
-        Accountant
-      </div>
-      <div className="container__main__content__listing__table__content__list__entry">
-        User management, Order management
-      </div>
+      <TableEntryStatus />
+      <TableEntryText>Accountant</TableEntryText>
+      <TableEntryText>User management, Order management</TableEntryText>
     </div>
   );
 }

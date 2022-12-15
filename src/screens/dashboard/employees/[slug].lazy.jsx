@@ -1,4 +1,4 @@
-import { DetailsEntry } from "../../../components";
+import { DetailsEntry } from "components";
 import { Link } from "router";
 import { useBackLocation } from "global";
 

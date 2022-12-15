@@ -1,4 +1,4 @@
-import { Input, Textarea } from "../../../components";
+import { Input, Textarea } from "components";
 
 import { Link } from "router";
 import { useBackLocation } from "global";
