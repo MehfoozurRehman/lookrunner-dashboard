@@ -3,6 +3,7 @@ import { Edit2, Eye, Search, Trash2 } from "react-feather";
 import { Link } from "router";
 import Select from "react-select";
 import { useLocation } from "react-router";
+import { Avatar } from "../../../components";
 
 export default function Employees() {
   const location = useLocation();
@@ -107,7 +108,7 @@ function TableEntry() {
         )}
       </div>
       <div className="container__main__content__listing__table__content__list__entry">
-        image
+        <Avatar className="container__main__content__listing__table__content__list__entry__img" />
       </div>
     </div>
   );
