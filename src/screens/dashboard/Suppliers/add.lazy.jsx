@@ -89,21 +89,17 @@ export default function supplierAdd() {
           </div>
         </div>
 
-        <div className="container__main__content__details__main__row">
-          <div className="container__main__content__details__main__row__entry">
-            <Input
-              type="text"
-              label="Address"
-              placeholder="Enter your Address"
-              id="Address"
-            />
-          </div>
-        </div>
+        <Input
+          type="text"
+          label="Address"
+          placeholder="Enter your Address"
+          id="Address"
+        />
 
         <Textarea
           label="Description"
-          placeholder="Enter your Description..."
-          id="naDescriptionme"
+          placeholder="Enter your Description"
+          id="Description"
           error="Enter your Description"
         />
       </div>

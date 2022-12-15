@@ -12,22 +12,17 @@ export default function EmployeeAdd() {
           <div className="container__main__content__details__main__row__entry">
             <Input
               type="text"
-              label="Name"
-              placeholder="Enter your name"
-              id="name"
+              label="First Name"
+              placeholder="Enter your first name"
+              id="First Name"
             />
           </div>
           <div className="container__main__content__details__main__row__entry">
-            <Select
-              label="Name"
-              placeholder="Enter your name"
-              id="name"
-              error="sdfkjsdkjflskajdflkjsdf"
-              options={[
-                { value: "1", label: "1" },
-                { value: "2", label: "2" },
-                { value: "3", label: "3" },
-              ]}
+            <Input
+              type="text"
+              label="Last Name"
+              placeholder="Enter your last name"
+              id="Last Name"
             />
           </div>
         </div>
