@@ -19,7 +19,6 @@ export default function Header({ setSidebarOpen }) {
       setProfilePanelOpen(false);
     });
   }, []);
-
   return (
     <div className="container__main__header">
       <div className="container__main__header__left">
