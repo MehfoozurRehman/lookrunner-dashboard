@@ -1,7 +1,9 @@
-import { Input, Select, Textarea } from "../../../components";
-import { useBackLocation } from "global";
+import { Input, Textarea } from "../../../components";
+
 import { Link } from "router";
-export default function stateAdd() {
+import { useBackLocation } from "global";
+
+export default function FaqAdd() {
   const backLocation = useBackLocation();
   return (
     <div className="container__main__content__details">

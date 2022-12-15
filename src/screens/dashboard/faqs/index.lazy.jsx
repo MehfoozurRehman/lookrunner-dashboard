@@ -1,10 +1,9 @@
 import { Edit2, Eye, Search, Trash2 } from "react-feather";
 
 import { Link } from "router";
-import Select from "react-select";
 import { useLocation } from "react-router";
 
-export default function Employees() {
+export default function Faqs() {
   const location = useLocation();
   return (
     <div className="container__main__content__listing">

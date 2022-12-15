@@ -1,5 +1,3 @@
-import React from "react";
-
-export default function discountrulesAdd() {
+export default function DiscountRuleAdd() {
   return <div>discountrulesAdd</div>;
 }

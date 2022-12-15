@@ -1,5 +1,3 @@
-import React from "react";
-
-export default function index() {
+export default function ReturnSchedule() {
   return <div>index</div>;
 }

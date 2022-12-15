@@ -1,6 +1,8 @@
-import { Input, Select, Textarea, RichTextarea } from "../../../components";
-import { useBackLocation } from "global";
+import { Input, Textarea } from "../../../components";
+
 import { Link } from "router";
+import { useBackLocation } from "global";
+
 export default function supplierAdd() {
   const backLocation = useBackLocation();
   return (

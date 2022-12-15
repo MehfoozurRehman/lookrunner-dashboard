@@ -1,6 +1,8 @@
 import { Input, Textarea } from "../../../components";
-import { useBackLocation } from "global";
+
 import { Link } from "router";
+import { useBackLocation } from "global";
+
 export default function supplierAdd() {
   const backLocation = useBackLocation();
   return (
@@ -12,7 +14,6 @@ export default function supplierAdd() {
           placeholder="Enter your name"
           id="Name"
         />
-
         <Textarea
           label="Description"
           placeholder="Enter your Description"
