@@ -1,4 +1,4 @@
-import { Input, Select, Textarea } from "../../../components";
+import { Input, Textarea } from "../../../components";
 import { useBackLocation } from "global";
 import { Link } from "router";
 export default function supplierAdd() {
