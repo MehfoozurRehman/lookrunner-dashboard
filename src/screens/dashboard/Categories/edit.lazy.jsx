@@ -3,7 +3,7 @@ import { Input, Select, Textarea } from "components";
 import { Link } from "router";
 import { useBackLocation } from "global";
 
-export default function EmployeeEdit() {
+export default function CategorieEdit() {
   const backLocation = useBackLocation();
   return (
     <div className="container__main__content__details">

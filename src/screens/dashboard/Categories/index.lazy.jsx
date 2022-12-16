@@ -11,7 +11,7 @@ import { Search } from "react-feather";
 import { useLocation } from "react-router";
 import { Link } from "react-router-dom";
 
-export default function Employees() {
+export default function Categories() {
   const location = useLocation();
   return (
     <div className="container__main__content__listing">
@@ -90,7 +90,7 @@ function TableEntry() {
   return (
     <div className="container__main__content__listing__table__content__list">
       <div className="container__main__content__listing__table__content__list__entry">
-        <TableEntryViewButton />
+        {/* <TableEntryViewButton /> */}
         <TableEntryEditButton />
         <TableEntryDeleteButton />
       </div>
