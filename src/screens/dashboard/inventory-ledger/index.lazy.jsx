@@ -48,66 +48,31 @@ export default function InventoryLedger() {
                 },
               })}
             />
-            <Select
-              options={[
-                { value: "Role", label: "Role" },
-                { value: "Department", label: "Department" },
-              ]}
-              theme={(theme) => ({
-                ...theme,
-                borderRadius: 0,
-                colors: {
-                  ...theme.colors,
-                  primary75: "#2a5e59",
-                  primary25: "#2a5e595e",
-                  primary50: "#2a5e595e",
-                  primary: "#2a5e59",
-                },
-              })}
-            />
           </div>
-        </div>
-        <div className="container__main__content__listing__header__right">
-          <Link
-            to={location.pathname.toLowerCase() + "/add"}
-            className="container__main__content__listing__header__right__button"
-          >
-            Add
-          </Link>
         </div>
       </div>
       <div className="container__main__content__listing__table">
         <div className="container__main__content__listing__table__header">
           <div className="container__main__content__listing__table__header__entry">
-            Action
+            Date
           </div>
           <div className="container__main__content__listing__table__header__entry">
-            Status
+            User
           </div>
           <div className="container__main__content__listing__table__header__entry">
-            First Name
+            Warehouse
           </div>
           <div className="container__main__content__listing__table__header__entry">
-            Last Name
+            Product name/code
           </div>
           <div className="container__main__content__listing__table__header__entry">
-            Mobile No.
+            SKU
           </div>
           <div className="container__main__content__listing__table__header__entry">
-            Email
+            Quantity
           </div>
           <div className="container__main__content__listing__table__header__entry">
-            Referred By
-          </div>
-          <div className="container__main__content__listing__table__header__entry">
-            Department
-          </div>
-
-          <div className="container__main__content__listing__table__header__entry">
-            Username
-          </div>
-          <div className="container__main__content__listing__table__header__entry">
-            Role
+            Operation
           </div>
         </div>
         <div className="container__main__content__listing__table__content">
@@ -122,24 +87,14 @@ export default function InventoryLedger() {
 function TableEntry() {
   return (
     <div className="container__main__content__listing__table__content__list">
-      <div className="container__main__content__listing__table__content__list__entry">
-        <TableEntryViewButton />
-        <TableEntryEditButton />
-        <TableEntryDeleteButton />
-      </div>
-      <TableEntryStatus />
-      <TableEntryText>john</TableEntryText>
+      <TableEntryText>10/10/22</TableEntryText>
       <TableEntryText>deved</TableEntryText>
-      <TableEntryDescription>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor,
-        nisl eget ultricies lacinia, nisl nisl aliquam nisl, eu aliquam nisl
-        nisl sit amet nisl.
-      </TableEntryDescription>
-      <TableEntryText>+92-20395731</TableEntryText>
-      <TableEntryText>asm232@gmail.com</TableEntryText>
-      <TableEntryText>arsii</TableEntryText>
-      <TableEntryText>Horticulture</TableEntryText>
-      <TableEntryText>asaaam</TableEntryText>
+
+      <TableEntryText>WH # 03</TableEntryText>
+      <TableEntryText>a23</TableEntryText>
+      <TableEntryText>abbs</TableEntryText>
+      <TableEntryText>12</TableEntryText>
+      <TableEntryText>Addition</TableEntryText>
     </div>
   );
 }
