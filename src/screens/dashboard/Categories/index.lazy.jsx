@@ -9,6 +9,7 @@ import {
 
 import { Search } from "react-feather";
 import { useLocation } from "react-router";
+import { Link } from "react-router-dom";
 
 export default function Employees() {
   const location = useLocation();
