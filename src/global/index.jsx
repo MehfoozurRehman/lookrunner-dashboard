@@ -217,7 +217,7 @@ export const sidebarEnteries = [
       </svg>
     ),
     name: "Adjustment",
-    path: "/dashboard/adjustment",
+    path: "/dashboard/inventory-adjustment",
   },
   {
     category: "Inventory Management",
@@ -237,7 +237,7 @@ export const sidebarEnteries = [
       </svg>
     ),
     name: "Ledger",
-    path: "/dashboard/Ledger",
+    path: "/dashboard/inventory-ledger",
   },
 
   {
