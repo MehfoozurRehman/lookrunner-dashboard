@@ -10,7 +10,7 @@ import { Link } from "router";
 import { Search } from "react-feather";
 import { useLocation } from "react-router";
 
-export default function Employees() {
+export default function Roles() {
   const location = useLocation();
   return (
     <>

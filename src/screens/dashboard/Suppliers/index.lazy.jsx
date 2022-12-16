@@ -11,7 +11,7 @@ import { Link } from "router";
 import { Search } from "react-feather";
 import { useLocation } from "react-router";
 
-export default function Employees() {
+export default function Suppliers() {
   const location = useLocation();
   return (
     <div className="container__main__content__listing">

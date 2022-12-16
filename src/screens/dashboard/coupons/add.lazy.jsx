@@ -1,3 +1,3 @@
-export default function couponsAdd() {
+export default function CouponsAdd() {
   return <div>couponsAdd</div>;
 }

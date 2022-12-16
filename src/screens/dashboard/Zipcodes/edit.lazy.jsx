@@ -3,7 +3,7 @@ import { Input, Select } from "components";
 import { Link } from "router";
 import { useBackLocation } from "global";
 
-export default function zipcodeEdit() {
+export default function ZipcodeEdit() {
   const backLocation = useBackLocation();
   return (
     <div className="container__main__content__details">
