@@ -125,10 +125,12 @@ function TableEntry() {
           type="number"
           placeholder="number"
           id="number"
-          options={[
-            { value: "12", label: "12" },
-            { value: "23", label: "12" },
-          ]}
+          min="1"
+          max="5"
+          // options={[
+          //   { value: "12", label: "12" },
+          //   { value: "23", label: "12" },
+          // ]}
         />
       </TableEntryText>
       <TableEntryText>
