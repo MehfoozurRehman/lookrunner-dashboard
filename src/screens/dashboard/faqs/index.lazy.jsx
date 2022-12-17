@@ -3,7 +3,6 @@ import {
   TableEntryDescription,
   TableEntryEditButton,
   TableEntryText,
-  TableEntryViewButton,
 } from "components";
 
 import { Link } from "router";

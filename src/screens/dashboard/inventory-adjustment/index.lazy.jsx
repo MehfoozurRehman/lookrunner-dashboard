@@ -4,6 +4,7 @@ import Select from "react-select";
 import { useLocation } from "react-router";
 import Avatar from "../../../components/Avatar";
 import { Link } from "react-router-dom";
+import { useBackLocation } from "../../../global";
 
 export default function Inventoryadjustment() {
   const location = useLocation();
@@ -65,6 +66,18 @@ export default function Inventoryadjustment() {
         <div className="container__main__content__listing__table__content">
           <TableEntry />
           <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
         </div>
       </div>
     </div>
@@ -76,6 +89,31 @@ function TableEntry() {
     <div className="container__main__content__listing__table__content__list">
       <TableEntryText>
         <Avatar className="container__main__content__listing__table__content__list__entry__img" />
+        <div
+          style={{
+            padding: "0px 18px",
+          }}
+          className="container__main__content__listing__table__content__list__entry__img__wraper"
+        >
+          <div
+            style={{
+              fontWeight: "bold",
+              fontSize: "16px",
+            }}
+            className="container__main__content__listing__table__content__list__entry__img__heading"
+          >
+            RBM-102
+          </div>
+          <div
+            style={{
+              paddingTop: "4px",
+              fontSize: "16px",
+            }}
+            className="container__main__content__listing__table__content__list__entry__img__heading"
+          >
+            XS
+          </div>
+        </div>
       </TableEntryText>
 
       <TableEntryText>Crosby Green Crochet Sweater - Small</TableEntryText>
@@ -87,7 +125,6 @@ function TableEntry() {
           type="number"
           placeholder="number"
           id="number"
-          error="select state"
           options={[
             { value: "12", label: "12" },
             { value: "23", label: "12" },
@@ -96,7 +133,7 @@ function TableEntry() {
       </TableEntryText>
       <TableEntryText>
         <Link
-          // to={backLocation}
+          to={useBackLocation}
           className="container__main__content__details__buttons__button container__main__content__details__buttons__primary"
         >
           Save

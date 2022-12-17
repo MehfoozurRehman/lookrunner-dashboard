@@ -1,9 +1,9 @@
-import { Input, Select } from "components";
+import { Input, Textarea } from "components";
 
 import { Link } from "router";
 import { useBackLocation } from "global";
 
-export default function VariantsAdd() {
+export default function variants() {
   const backLocation = useBackLocation();
   return (
     <div className="container__main__content__details">
@@ -11,25 +11,15 @@ export default function VariantsAdd() {
         <Input
           type="text"
           label="Name"
-          placeholder="Enter Varient Name"
-          id="Question"
+          placeholder="Enter your name"
+          id="Name"
         />
-        <Select
-          label="Category"
-          isMulti
-          placeholder="Select Category"
-          id="name"
-          error="sdfkjsdkjflskajdflkjsdf"
-          options={[
-            { value: "1", label: "1" },
-            { value: "2", label: "2" },
-            { value: "3", label: "3" },
-            { value: "4", label: "4" },
-            { value: "5", label: "5" },
-            { value: "6", label: "6" },
-            { value: "7", label: "7" },
-            { value: "8", label: "8" },
-          ]}
+
+        <Textarea
+          label="Description"
+          placeholder="Enter your Description"
+          id="Description"
+          error="Enter your Description"
         />
       </div>
 

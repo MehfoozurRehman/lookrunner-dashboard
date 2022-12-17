@@ -487,6 +487,7 @@ export const sidebarEnteries = [
     name: "Coupons",
     path: "/dashboard/coupons",
   },
+
   {
     category: "Settings",
     icon: (

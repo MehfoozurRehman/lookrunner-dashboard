@@ -1,18 +1,8 @@
-import {
-  Avatar,
-  TableEntryDeleteButton,
-  TableEntryEditButton,
-  TableEntryImage,
-  TableEntryStatus,
-  TableEntryText,
-  TableEntryViewButton,
-} from "components";
-
-import { Link } from "router";
+import { TableEntryText } from "components";
 import { Search } from "react-feather";
 import { useLocation } from "react-router";
 
-export default function Products() {
+export default function Reports() {
   const location = useLocation();
   return (
     <div className="container__main__content__listing">
@@ -29,62 +19,47 @@ export default function Products() {
             </button>
           </form>
         </div>
-        <div className="container__main__content__listing__header__right">
-          <Link
-            to={location.pathname.toLowerCase() + "/add"}
-            className="container__main__content__listing__header__right__button"
-          >
-            Add
-          </Link>
-        </div>
       </div>
       <div className="container__main__content__listing__table">
         <div className="container__main__content__listing__table__header">
           <div className="container__main__content__listing__table__header__entry">
-            Action
+            Total Items
           </div>
           <div className="container__main__content__listing__table__header__entry">
-            Status
+            Total Quantity
+          </div>
+          <div className="container__main__content__listing__table__header__entry">
+            Stock Value by price
+          </div>
+          <div className="container__main__content__listing__table__header__entry">
+            Stock Value by Cost
+          </div>
+          <div className="container__main__content__listing__table__header__entry">
+            Profit Estimation
+          </div>
+          <div className="container__main__content__listing__table__header__entry">
+            Product Code
           </div>
           <div className="container__main__content__listing__table__header__entry">
             Name
           </div>
           <div className="container__main__content__listing__table__header__entry">
-            Supplier
+            Sold
           </div>
           <div className="container__main__content__listing__table__header__entry">
-            Brand
+            Profit / Loss
           </div>
           <div className="container__main__content__listing__table__header__entry">
-            Category
+            Stock Qty
           </div>
           <div className="container__main__content__listing__table__header__entry">
-            Sub-Category
+            Stock Amount
           </div>
           <div className="container__main__content__listing__table__header__entry">
-            Tag
-          </div>
-          <div className="container__main__content__listing__table__header__entry">
-            Cost of unit
-          </div>
-          <div className="container__main__content__listing__table__header__entry">
-            Selling price
-          </div>
-          <div className="container__main__content__listing__table__header__entry">
-            Discounted price
-          </div>
-          <div className="container__main__content__listing__table__header__entry">
-            Variants
-          </div>
-          <div className="container__main__content__listing__table__header__entry">
-            Images
+            Total View
           </div>
         </div>
         <div className="container__main__content__listing__table__content">
-          <TableEntry />
-          <TableEntry />
-          <TableEntry />
-          <TableEntry />
           <TableEntry />
           <TableEntry />
           <TableEntry />
@@ -123,52 +98,42 @@ export default function Products() {
 function TableEntry() {
   return (
     <div className="container__main__content__listing__table__content__list">
-      <div className="container__main__content__listing__table__content__list__entry">
-        <TableEntryViewButton />
-        <TableEntryEditButton />
-        <TableEntryDeleteButton />
-      </div>
-      <TableEntryStatus />
       <TableEntryText className="container__main__content__listing__table__content__list__entry">
-        john
+        23232
       </TableEntryText>
       <TableEntryText className="container__main__content__listing__table__content__list__entry">
-        Deved
+        2323
       </TableEntryText>
       <TableEntryText className="container__main__content__listing__table__content__list__entry">
-        stylo
+        65456
       </TableEntryText>
       <TableEntryText className="container__main__content__listing__table__content__list__entry">
-        knitted cloths
+        344
       </TableEntryText>
       <TableEntryText className="container__main__content__listing__table__content__list__entry">
-        kindom
+        1212
       </TableEntryText>
       <TableEntryText className="container__main__content__listing__table__content__list__entry">
-        absd
+        121
       </TableEntryText>
       <TableEntryText className="container__main__content__listing__table__content__list__entry">
-        34000
+        Irsiii
       </TableEntryText>
       <TableEntryText className="container__main__content__listing__table__content__list__entry">
-        12356
+        66
       </TableEntryText>
       <TableEntryText className="container__main__content__listing__table__content__list__entry">
-        20
+        66
       </TableEntryText>
       <TableEntryText className="container__main__content__listing__table__content__list__entry">
-        30
+        88
       </TableEntryText>
-      <TableEntryImage
-        className="container__main__content__listing__table__content__list__entry"
-        style={{ gap: 10, flexWrap: "wrap" }}
-      >
-        <Avatar className="container__main__content__listing__table__content__list__entry__img" />
-        <Avatar className="container__main__content__listing__table__content__list__entry__img" />
-        <Avatar className="container__main__content__listing__table__content__list__entry__img" />
-        <Avatar className="container__main__content__listing__table__content__list__entry__img" />
-        <Avatar className="container__main__content__listing__table__content__list__entry__img" />
-      </TableEntryImage>
+      <TableEntryText className="container__main__content__listing__table__content__list__entry">
+        88
+      </TableEntryText>
+      <TableEntryText className="container__main__content__listing__table__content__list__entry">
+        1212
+      </TableEntryText>
     </div>
   );
 }

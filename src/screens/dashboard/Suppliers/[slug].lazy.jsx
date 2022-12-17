@@ -10,15 +10,16 @@ export default function SupplierDetails() {
         <DetailsEntry label="Company">Hello Pakistsan</DetailsEntry>
         <DetailsEntry label="Brand name">Stylo</DetailsEntry>
         <DetailsEntry label="Vat number">+12345678</DetailsEntry>
-        <DetailsEntry label="Email Address">
-          iabrarkhalidofficial@gmail.com
-        </DetailsEntry>
+        <DetailsEntry label="Email Address">irsii444@gmail.com</DetailsEntry>
         <DetailsEntry label="Mobile no.">+93 546 45667654</DetailsEntry>
-        <DetailsEntry label="Address"></DetailsEntry>
+        <DetailsEntry label="Address">streat #3 House no.21</DetailsEntry>
         <DetailsEntry label="City">Lahore</DetailsEntry>
         <DetailsEntry label="State">Punjab</DetailsEntry>
         <DetailsEntry label="Postal code">37000</DetailsEntry>
-        <DetailsEntry label="Company description"></DetailsEntry>
+        <DetailsEntry label="Company description">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+          laborum accusantium dolores?
+        </DetailsEntry>
       </div>
       <div className="container__main__content__details__buttons">
         <Link
