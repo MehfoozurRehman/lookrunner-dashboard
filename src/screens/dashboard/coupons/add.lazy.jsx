@@ -52,6 +52,24 @@ export default function CouponsAdd() {
             />
           </div>
         </div>
+        <div className="container__main__content__details__main__row">
+          <div className="container__main__content__details__main__row__entry">
+            <Input
+              type="text"
+              label="Start Date"
+              placeholder="Enter your start date"
+              id="Start Date"
+            />
+          </div>
+          <div className="container__main__content__details__main__row__entry">
+            <Input
+              type="text"
+              label="End Date"
+              placeholder="Enter your end date"
+              id="End Date"
+            />
+          </div>
+        </div>
         <Select
           label="Status"
           placeholder="Select Status"
