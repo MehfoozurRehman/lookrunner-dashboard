@@ -467,7 +467,7 @@ export const sidebarEnteries = [
       </svg>
     ),
     name: "Variants",
-    path: "/dashboard/Variants",
+    path: "/dashboard/variants",
   },
   {
     category: "Settings",
