@@ -103,7 +103,7 @@ body {
 @supports (cx: 1) {
   [data-theme="dark"] .sun-and-moon > .moon > circle {
     transform: translate(0);
-    cx: 17;
+    // cx: 17;
   }
 }
 @media (prefers-reduced-motion: no-preference) {
@@ -163,5 +163,96 @@ body {
 @media (hover: none) {
   .theme-toggle {
     --size: 48px;
+  }
+}
+.container__main__content__details__main__wraper {
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+.container__main__content__details__main__wraper__heading {
+  padding-bottom: 2em;
+  font-size: 14px;
+}
+.container__main__content__details__main__wraper__main__box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.container__main__content__details__main__wraper__box__title {
+  font-size: 18px;
+  font-weight: 700;
+}
+.container__main__content__details__main__wraper__box__value {
+  font-size: 18px;
+}
+.container__main__content__details__main__wraper__box {
+  width: 30%;
+  padding: 3em;
+  margin-right: 2em;
+}
+
+.container__main__content__details__last__order__wraper {
+  width: 100%;
+  margin: 2em 0em;
+}
+.container__main__content__details__last__order__header {
+  font-size: 22px;
+  font-weight: 700;
+}
+.container__main__content__details__last__order__id__wraper {
+  display: flex;
+  margin: 12px 0px;
+}
+.container__main__content__details__last__order__id {
+  font-size: 16px;
+  font-weight: 700;
+}
+.container__main__content__details__last__order__id__title {
+  background-color: #ee8a5f;
+  padding: 3px 30px;
+  margin-left: 6px;
+  border-radius: 20px;
+  color: white;
+}
+.container__main__content__details__last__orders__img__wraper {
+  width: 100%;
+  display: flex;
+  margin: 12px 0px;
+}
+.container__main__content__details__last__orders__img__btn__price__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.container__main__content__listing__table__content__list__entry__img__heading__container {
+  margin: 0px 12px;
+}
+.container__main__content__listing__table__content__list__entry__img__header {
+  font-size: 14px;
+}
+.container__main__content__details__last__orders__price__btn__price {
+  width: 100%;
+  margin: 1em 0em;
+  justify-content: end;
+  border-bottom: 1px solid black;
+}
+.container__main__content__details__last__orders__price {
+  font-size: 16px;
+  margin: 12px 0px;
+}
+// .container__main__content__details__last__orders__btn {
+//   display: flex;
+// }
+
+@media (max-width: 1200px) {
+  .container__main__content__details__main__wraper__box {
+    width: 50%;
+    margin: 0;
+  }
+}
+@media (max-width: 550px) {
+  .container__main__content__details__main__wraper__box {
+    width: 100%;
   }
 }

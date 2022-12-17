@@ -50,8 +50,8 @@ export default function CustomerAdd() {
             backgroundColor: "black",
             color: "white",
             fontSize: "14",
-            padding: "7px",
-            width: "50%",
+            padding: "4px 12px",
+            width: "fit-content",
             borderRadius: "30px",
             margin: "12px 0px",
           }}
@@ -111,8 +111,8 @@ export default function CustomerAdd() {
             backgroundColor: "black",
             color: "white",
             fontSize: "14",
-            padding: "7px",
-            width: "50%",
+            padding: "4px 12px",
+            width: "fit-content",
             borderRadius: "30px",
             margin: "12px 0px",
           }}
