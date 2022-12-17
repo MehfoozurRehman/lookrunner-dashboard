@@ -3,7 +3,7 @@ import { Input, Textarea } from "components";
 import { Link } from "router";
 import { useBackLocation } from "global";
 
-export default function variants() {
+export default function Variants() {
   const backLocation = useBackLocation();
   return (
     <div className="container__main__content__details">

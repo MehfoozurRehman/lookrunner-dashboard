@@ -3,7 +3,7 @@ import { Input, Select } from "components";
 import { Link } from "router";
 import { useBackLocation } from "global";
 
-export default function Variantsedit() {
+export default function VariantEdit() {
   const backLocation = useBackLocation();
   return (
     <div className="container__main__content__details">

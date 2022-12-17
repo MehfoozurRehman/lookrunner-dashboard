@@ -8,7 +8,7 @@ import { Link } from "router";
 import { Search } from "react-feather";
 import { useLocation } from "react-router";
 
-export default function variants() {
+export default function Variants() {
   const location = useLocation();
   return (
     <div className="container__main__content__listing">
