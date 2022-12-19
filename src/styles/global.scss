@@ -234,17 +234,34 @@ body {
 .container__main__content__details__last__orders__price__btn__price {
   width: 100%;
   margin: 1em 0em;
-  justify-content: end;
+
   border-bottom: 1px solid black;
 }
 .container__main__content__details__last__orders__price {
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 600;
   margin: 12px 0px;
+  text-align: end;
 }
-// .container__main__content__details__last__orders__btn {
-//   display: flex;
-// }
-
+.container__main__content__details__last__orders__btn {
+  text-align: end;
+  padding: 1em 0em;
+}
+.container__main__content__details__buttons__button {
+  margin: 6px;
+}
+.container__main__content__listing__header__right__button__order {
+  background-color: var(--backgroundColor);
+  color: black;
+  padding: 0.6em 2em;
+  border-radius: 50px;
+  text-decoration: none;
+  margin: 4px;
+}
+.container__main__content__listing__header__right__button__order:hover {
+  background-color: var(--primary);
+  color: var(--backgroundColor);
+}
 @media (max-width: 1200px) {
   .container__main__content__details__main__wraper__box {
     width: 50%;
@@ -254,5 +271,9 @@ body {
 @media (max-width: 550px) {
   .container__main__content__details__main__wraper__box {
     width: 100%;
+  }
+  .container__main__content__details__buttons__button {
+    display: flex;
+    flex-direction: column;
   }
 }

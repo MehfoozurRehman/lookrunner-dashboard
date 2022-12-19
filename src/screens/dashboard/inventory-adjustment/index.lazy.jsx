@@ -5,6 +5,7 @@ import { useLocation } from "react-router";
 import Avatar from "../../../components/Avatar";
 import { Link } from "react-router-dom";
 import { useBackLocation } from "../../../global";
+import Input from "../../../components/Input";
 
 export default function Inventoryadjustment() {
   const location = useLocation();
@@ -120,18 +121,7 @@ function TableEntry() {
       <TableEntryText>in Stock</TableEntryText>
       <TableEntryText>Lahore</TableEntryText>
       <TableEntryText>
-        <Select
-          label="number"
-          type="number"
-          placeholder="number"
-          id="number"
-          min="1"
-          max="5"
-          // options={[
-          //   { value: "12", label: "12" },
-          //   { value: "23", label: "12" },
-          // ]}
-        />
+        <Input type="number" placeholder="Enter your name" id="Name" />
       </TableEntryText>
       <TableEntryText>
         <Link

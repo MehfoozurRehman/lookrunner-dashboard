@@ -55,7 +55,6 @@ export default function CustomerDetails() {
             31 july 2022 at 12:54pm
           </div>
         </div>
-        {/* <div className="container__main__content__details__last__orders__img__btn__price__container"> */}
         <div className="container__main__content__details__last__orders__img__wraper">
           <div className="container__main__content__details__last__orders__img">
             <Avatar className="container__main__content__listing__table__content__list__entry__img" />
@@ -88,8 +87,6 @@ export default function CustomerDetails() {
             </Link>
           </div>
         </div>
-        {/* </div> */}
-
         <div
           className="container__main__content__details__heading"
           style={{
@@ -133,9 +130,6 @@ export default function CustomerDetails() {
           Tempore, quo fuga quae earum hic illum saepe unde? Natus ducimus,
           voluptate totam laudantium, quam ullam veniam officiis placeat vitae
         </DetailsEntry>
-        {/* <DetailsEntry label="Delivery Instructions" secure={true}>
-          23904567
-        </DetailsEntry> */}
         <div
           className="container__main__content__details__heading"
           style={{
@@ -150,7 +144,7 @@ export default function CustomerDetails() {
         >
           Billing address
         </div>
-
+        ``
         <DetailsEntry label="Address">street #3 h-232</DetailsEntry>
         <DetailsEntry label="City">Lahore</DetailsEntry>
         <DetailsEntry label="State">Punjab</DetailsEntry>

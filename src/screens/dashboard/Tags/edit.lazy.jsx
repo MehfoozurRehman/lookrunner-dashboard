@@ -25,16 +25,16 @@ export default function TagsEdit() {
 
       <div className="container__main__content__details__buttons">
         <Link
-          to={backLocation}
+          to={backLocation + "/edit"}
           className="container__main__content__details__buttons__button container__main__content__details__buttons__primary"
         >
           Save
         </Link>
         <Link
-          to={backLocation}
-          className="container__main__content__details__buttons__button container__main__content__details__buttons__secondary"
+          to={backLocation + "/edit"}
+          className="container__main__content__details__buttons__button container__main__content__details__buttons__primary"
         >
-          Discard
+          discard
         </Link>
       </div>
     </div>
