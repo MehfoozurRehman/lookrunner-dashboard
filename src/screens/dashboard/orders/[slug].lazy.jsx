@@ -3,17 +3,24 @@ import { OrderDetailsCard, OrderProductsCard } from "components";
 import CardTransaction from "../../../components/CardTransaction";
 import ContactInfoCard from "../../../components/ContactInfoCard";
 import CustomerCard from "../../../components/CustomerCard";
+import ScrollContainer from "react-indiana-drag-scroll";
 import SendMessageCard from "../../../components/SendMessageCard";
 import TimelineCard from "../../../components/TimelineCard";
+import clsx from "clsx";
 
 export default function OrderDetails() {
   return (
     <div className="order__details">
       <div className="order__details__steps">
         <div className="order__details__steps__heading">Order Details</div>
-        <div className="order__details__steps__content">
+        <ScrollContainer className="order__details__steps__content">
+          <Step active={true} />
+          <Step active={true} />
+          <Step active={true} />
           <Step />
-        </div>
+          <Step />
+          <Step />
+        </ScrollContainer>
         <button className="order__details__steps__button">
           Move to delivered
         </button>
@@ -50,10 +57,21 @@ export default function OrderDetails() {
   );
 }
 
-function Step({}) {
+function Step({ active }) {
   return (
     <div className="order__details__steps__content__step">
-      <div className="order__details__steps__content__step__icon"></div>
+      <div
+        className={clsx(
+          "order__details__steps__content__step__icon",
+          active && "order__details__steps__content__step__icon__active"
+        )}
+      />
+      <div
+        className={clsx(
+          "order__details__steps__content__step__line",
+          active && "order__details__steps__content__step__line__active"
+        )}
+      />
       <div className="order__details__steps__content__step__label">Ordered</div>
       <div className="order__details__steps__content__step__details">
         <span>Date</span>
