@@ -1,9 +1,7 @@
-import { TableEntryText } from "components";
 import { Search } from "react-feather";
-import { useLocation } from "react-router";
+import { TableEntryText } from "components";
 
 export default function Reports() {
-  const location = useLocation();
   return (
     <div className="container__main__content__listing">
       <div className="container__main__content__listing__header">

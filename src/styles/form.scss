@@ -139,7 +139,15 @@
   position: absolute;
   bottom: -20px;
 }
-
+@media (max-width: 900px) {
+  .container__main__content__details__main__row {
+    flex-direction: column;
+  }
+  .container__main__content__details__main__row__entry {
+    width: 100%;
+    margin-right: 0em;
+  }
+}
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,

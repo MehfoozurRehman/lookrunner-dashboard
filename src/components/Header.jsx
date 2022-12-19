@@ -88,7 +88,7 @@ export default function Header({ setSidebarOpen }) {
               className="container__main__header__right__panel__main__img"
             />
             <div className="container__main__header__right__panel__main__label">
-              {user?.name.length > 20
+              {user?.name?.length > 20
                 ? user?.name.substring(0, 20) + "..."
                 : user?.name}
             </div>

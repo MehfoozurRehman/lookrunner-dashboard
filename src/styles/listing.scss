@@ -48,6 +48,7 @@
   border-radius: 50px;
   flex: 1;
   outline: none;
+  min-width: 0px;
 }
 .container__main__content__listing__header__left__search__field::placeholder {
   color: #9698ab;

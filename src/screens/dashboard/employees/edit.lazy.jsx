@@ -140,7 +140,7 @@ export default function EmployeeEdit() {
           to={backLocation}
           className="container__main__content__details__buttons__button container__main__content__details__buttons__primary"
         >
-          Add
+          Save
         </Link>
         <Link
           to={backLocation}

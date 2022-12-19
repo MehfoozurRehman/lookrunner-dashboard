@@ -108,7 +108,6 @@ export default function EmployeeAdd() {
               label="Status"
               placeholder="Select Status"
               id="Status"
-              error="Status"
               options={[
                 { value: "Active", label: "Active" },
                 { value: "Deactive", label: "Deactive" },
