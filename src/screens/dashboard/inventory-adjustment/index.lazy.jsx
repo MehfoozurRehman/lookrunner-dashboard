@@ -1,14 +1,9 @@
-import { TableEntryText } from "components";
+import { Avatar, TableEntryText } from "components";
+
 import { Search } from "react-feather";
 import Select from "react-select";
-import { useLocation } from "react-router";
-import Avatar from "../../../components/Avatar";
-import { Link } from "react-router-dom";
-import { useBackLocation } from "../../../global";
-import Input from "../../../components/Input";
 
 export default function Inventoryadjustment() {
-  const location = useLocation();
   return (
     <div className="container__main__content__listing">
       <div className="container__main__content__listing__header">
@@ -48,8 +43,11 @@ export default function Inventoryadjustment() {
       </div>
       <div className="container__main__content__listing__table">
         <div className="container__main__content__listing__table__header">
-          <div className="container__main__content__listing__table__header__entry">
-            Product image
+          <div
+            className="container__main__content__listing__table__header__entry"
+            style={{ width: "200px" }}
+          >
+            Product
           </div>
           <div className="container__main__content__listing__table__header__entry">
             SKU
@@ -88,18 +86,19 @@ export default function Inventoryadjustment() {
 function TableEntry() {
   return (
     <div className="container__main__content__listing__table__content__list">
-      <TableEntryText>
+      <TableEntryText style={{ width: "200px" }}>
         <Avatar className="container__main__content__listing__table__content__list__entry__img" />
         <div
           style={{
             padding: "0px 18px",
+            textAlign: "left",
           }}
           className="container__main__content__listing__table__content__list__entry__img__wraper"
         >
           <div
             style={{
-              fontWeight: "bold",
-              fontSize: "16px",
+              fontWeight: "700",
+              fontSize: "12px",
             }}
             className="container__main__content__listing__table__content__list__entry__img__heading"
           >
@@ -108,7 +107,7 @@ function TableEntry() {
           <div
             style={{
               paddingTop: "4px",
-              fontSize: "16px",
+              fontSize: "12px",
             }}
             className="container__main__content__listing__table__content__list__entry__img__heading"
           >
@@ -116,20 +115,14 @@ function TableEntry() {
           </div>
         </div>
       </TableEntryText>
-
       <TableEntryText>Crosby Green Crochet Sweater - Small</TableEntryText>
       <TableEntryText>in Stock</TableEntryText>
       <TableEntryText>Lahore</TableEntryText>
       <TableEntryText>
-        <Input type="number" placeholder="Enter your name" id="Name" />
-      </TableEntryText>
-      <TableEntryText>
-        <Link
-          to={useBackLocation}
-          className="container__main__content__details__buttons__button container__main__content__details__buttons__primary"
-        >
+        <input type="number" placeholder="0" />
+        <button className="container__main__content__listing__table__content__list__entry__special__button">
           Save
-        </Link>
+        </button>
       </TableEntryText>
     </div>
   );

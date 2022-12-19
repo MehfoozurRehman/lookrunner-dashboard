@@ -107,8 +107,6 @@ export default function EmployeeEdit() {
             <Select
               label="Status"
               placeholder="Select Status"
-              id="Status"
-              error="Status"
               options={[
                 { value: "Active", label: "Active" },
                 { value: "Deactive", label: "Deactive" },
@@ -123,6 +121,7 @@ export default function EmployeeEdit() {
               label="Password"
               placeholder="Enter your password"
               id="Password"
+              autoComplete="new-password"
             />
           </div>
           <div className="container__main__content__details__main__row__entry">

@@ -1,7 +1,7 @@
+import { Avatar } from "components";
 import { DetailsEntry } from "components";
 import { Link } from "router";
 import { useBackLocation } from "global";
-import Avatar from "../../../components/Avatar";
 
 export default function CustomerDetails() {
   const backLocation = useBackLocation();

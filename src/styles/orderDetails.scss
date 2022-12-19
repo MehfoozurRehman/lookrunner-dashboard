@@ -13,7 +13,7 @@
 .order__details__steps__heading {
   font-size: 18px;
   color: var(--primary);
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 1em;
 }
 .order__details__steps__button {
@@ -81,7 +81,7 @@
 }
 .order__details__steps__content__step__details span {
   color: var(--primary);
-  font-weight: bold;
+  font-weight: 700;
 }
 .order__details__steps__content__step__details:hover {
   display: flex;
@@ -135,7 +135,7 @@
 .order__details__main__details__card__header__title {
   font-size: 18px;
   color: var(--primary);
-  font-weight: bold;
+  font-weight: 700;
 }
 .order__details__main__details__card__header__button {
   background-color: var(--secondary);
@@ -195,14 +195,14 @@
 .order__details__main__products__card__header__title {
   font-size: 18px;
   color: var(--primary);
-  font-weight: bold;
+  font-weight: 700;
 }
 .order__details__main__details__card__header__details {
   display: flex;
   align-items: center;
 }
 .order__details__main__details__card__header__details span {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   margin-left: 0.5em;
 }
@@ -264,7 +264,7 @@
 .order__details__main__customer__card__header {
   font-size: 18px;
   color: var(--primary);
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 1em;
   display: flex;
   flex-direction: column;

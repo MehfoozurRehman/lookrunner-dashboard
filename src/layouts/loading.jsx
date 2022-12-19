@@ -10,7 +10,7 @@ export default function Loading({ dashboard }) {
           : { justifyContent: "center", alignItems: "center", height: "100vh" }
       }
     >
-      <SyncLoader color="#36d7b7" size={10} />
+      <SyncLoader color="#2a5e59" size={10} />
       <div style={{ marginTop: 20 }}>Loading</div>
     </div>
   );

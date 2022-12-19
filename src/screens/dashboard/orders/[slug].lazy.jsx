@@ -1,11 +1,11 @@
 import { OrderDetailsCard, OrderProductsCard } from "components";
 
-import CardTransaction from "../../../components/CardTransaction";
-import ContactInfoCard from "../../../components/ContactInfoCard";
-import CustomerCard from "../../../components/CustomerCard";
+import CardTransaction from "components/CardTransaction";
+import ContactInfoCard from "components/ContactInfoCard";
+import CustomerCard from "components/CustomerCard";
 import ScrollContainer from "react-indiana-drag-scroll";
-import SendMessageCard from "../../../components/SendMessageCard";
-import TimelineCard from "../../../components/TimelineCard";
+import SendMessageCard from "components/SendMessageCard";
+import TimelineCard from "components/TimelineCard";
 import clsx from "clsx";
 
 export default function OrderDetails() {

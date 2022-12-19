@@ -37,6 +37,7 @@ export default function Sidebar({ setSidebarOpen }) {
                     onClick={() => {
                       if (window.innerWidth < 820) {
                         setSidebarOpen(false);
+                        window.scrollTo({ top: 0, behavior: "smooth" });
                       }
                     }}
                     end
@@ -64,6 +65,7 @@ export default function Sidebar({ setSidebarOpen }) {
                         onClick={() => {
                           if (window.innerWidth < 820) {
                             setSidebarOpen(false);
+                            window.scrollTo({ top: 0, behavior: "smooth" });
                           }
                         }}
                         className="container__sidebar__entry__content__entry"

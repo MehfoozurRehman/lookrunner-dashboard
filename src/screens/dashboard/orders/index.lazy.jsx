@@ -1,20 +1,26 @@
 import {
+  Avatar,
   TableEntryDeleteButton,
-  TableEntryDescription,
-  TableEntryEditButton,
-  TableEntryStatus,
+  TableEntryImage,
   TableEntryText,
   TableEntryViewButton,
 } from "components";
 
-import { Link } from "router";
 import { Search } from "react-feather";
-import Select from "react-select";
+import clsx from "clsx";
 import { useLocation } from "react-router";
-import Avatar from "../../../components/Avatar";
-import TableEntryImage from "../../../components/TableEntryImage";
+import { useState } from "react";
 
 export default function orders() {
+  const [selectedTab, setSelectedTab] = useState("All");
+  const tabsList = [
+    "All",
+    "Customer Billed for Products",
+    "Return Requested",
+    "Trial In Process",
+    "Delivery Made",
+    "Booking Made",
+  ];
   const location = useLocation();
   return (
     <div className="container__main__content__listing">
@@ -32,42 +38,19 @@ export default function orders() {
           </form>
         </div>
         <div className="container__main__content__listing__header__right">
-          <Link
-            to={location.pathname.toLowerCase() + "/all"}
-            className="container__main__content__listing__header__right__button__order"
-          >
-            All
-          </Link>
-          <Link
-            to={location.pathname.toLowerCase() + "/"}
-            className="container__main__content__listing__header__right__button__order"
-          >
-            Customer Billed for Products
-          </Link>
-          <Link
-            to={location.pathname.toLowerCase() + "/all"}
-            className="container__main__content__listing__header__right__button__order"
-          >
-            Return Requested
-          </Link>
-          <Link
-            to={location.pathname.toLowerCase() + "/all"}
-            className="container__main__content__listing__header__right__button__order"
-          >
-            Trial In Process
-          </Link>
-          <Link
-            to={location.pathname.toLowerCase() + "/all"}
-            className="container__main__content__listing__header__right__button__order"
-          >
-            Delivery Made
-          </Link>
-          <Link
-            to={location.pathname.toLowerCase() + "/all"}
-            className="container__main__content__listing__header__right__button__order"
-          >
-            Booking Made
-          </Link>
+          {tabsList.map((tab) => (
+            <button
+              key={tab}
+              className={clsx(
+                "container__main__content__listing__header__right__button__order",
+                selectedTab === tab &&
+                  "container__main__content__listing__header__right__button__order__active"
+              )}
+              onClick={() => setSelectedTab(tab)}
+            >
+              {tab}
+            </button>
+          ))}
         </div>
       </div>
       <div className="container__main__content__listing__table">
@@ -112,7 +95,7 @@ function TableEntry() {
   return (
     <div className="container__main__content__listing__table__content__list">
       <div className="container__main__content__listing__table__content__list__entry">
-        <TableEntryEditButton />
+        <TableEntryViewButton />
         <TableEntryDeleteButton />
       </div>
       <TableEntryImage

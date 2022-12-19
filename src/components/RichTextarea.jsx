@@ -17,7 +17,7 @@ export default function RichTextarea({ label, id, error, type, ...props }) {
             toolbar: [
               "heading",
               "|",
-              "bold",
+              "700",
               "italic",
               "link",
               "bulletedList",
