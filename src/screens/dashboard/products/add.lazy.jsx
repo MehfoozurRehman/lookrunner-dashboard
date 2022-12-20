@@ -8,7 +8,6 @@ export default function ProductAdd() {
   return (
     <div className="container__main__content__details">
       <div className="container__main__content__details__main container__main__content__details__main__special">
-        {" "}
         <Input
           type="text"
           label="Title"
@@ -98,7 +97,7 @@ export default function ProductAdd() {
               ]}
             />
           </div>
-        </div>{" "}
+        </div>
         <div
           className="container__main__content__details__heading"
           style={{
@@ -130,7 +129,7 @@ export default function ProductAdd() {
           <div className="container__main__content__details__main__row__entry">
             <Input type="text" label="Product Status" id="Product Status" />
           </div>
-        </div>{" "}
+        </div>
         <Link
           to={backLocation}
           className="container__main__content__details__buttons__button__product container__main__content__details__buttons__primary"
@@ -183,13 +182,13 @@ export default function ProductAdd() {
           <div className="container__main__content__details__main__row__entry">
             <Input type="text" label="Taxable" id="Taxable" placeholder="$00" />
           </div>
-        </div>{" "}
+        </div>
         <Input
           type="text"
           label="Take Rate (Percentage)"
           placeholder="abc"
           id="Take Rate (Percentage)"
-        />{" "}
+        />
         <div
           className="container__main__content__details__heading"
           style={{
@@ -211,13 +210,13 @@ export default function ProductAdd() {
           to={backLocation}
           className="container__main__content__details__buttons__button container__main__content__details__buttons__primary"
         >
-          Save
+          Add New Product
         </Link>
         <Link
           to={backLocation}
           className="container__main__content__details__buttons__button container__main__content__details__buttons__secondary"
         >
-          Discard
+          Duplicate Product
         </Link>
       </div>
     </div>
