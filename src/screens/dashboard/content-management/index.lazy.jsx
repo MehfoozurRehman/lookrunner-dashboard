@@ -1,9 +1,7 @@
 import { Input, Select, Textarea } from "components";
-
 import { Link } from "router";
 import { useBackLocation } from "global";
 import { useState } from "react";
-import { Plus } from "react-feather";
 
 export default function ContentManagement() {
   const [image, setImage] = useState(null);
