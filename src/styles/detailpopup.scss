@@ -1,0 +1,109 @@
+.customer__detail__popup {
+  height: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+.customer__detail__popup__overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 999;
+  background-color: rgba(31, 31, 31, 0.9);
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+}
+.customer__detail__popup__overlay__card {
+  height: fit-content;
+  max-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 2em);
+  max-width: 400px;
+  padding: 2em;
+  background-color: white;
+  border-radius: 8px;
+  position: relative;
+}
+.customer__detail__popup__overlay__card__close {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -1em;
+  right: -1em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  margin: 0px;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  background-color: var(--primary);
+}
+.customer__detail__popup__overlay__card__close svg {
+  color: white;
+}
+.customer__detail__popup__overlay__card__heading {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: var(--primary);
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+.customer__detail__popup__overlay__card__detail {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2em 0em;
+}
+.customer__detail__popup__overlay__card__detail input {
+  width: 100%;
+  height: 43px;
+  border-radius: 0px;
+  border: 1px solid #e0e0e0;
+  outline: 1px solid transparent;
+  padding: 0em 1.5em;
+  border-radius: 10px;
+}
+.customer__detail__popup__overlay__card__detail input:hover {
+  border: 1px solid var(--primary);
+  transition: 300ms ease-in-out;
+}
+.customer__detail__popup__overlay__card__detail input:focus {
+  transition: 300ms ease-in-out;
+  outline: 1px solid var(--primary);
+}
+.customer__detail__popup__overlay__card__detail input:first-child {
+  margin-bottom: 1.5em;
+}
+.customer__detail__popup__overlay__card__submit {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.customer__detail__popup__overlay__card__submit button {
+  background-color: var(--primary);
+  color: white;
+  height: 40px;
+  padding: 0em 2em;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+}
+@media (max-width: 400px) {
+  .customer__detail__popup__overlay {
+    padding: 1em;
+  }
+}
