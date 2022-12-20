@@ -272,6 +272,26 @@
 .order__details__main__customer__card__header__tabs {
   display: flex;
 }
+.order__details__main__customer__card__header__tabs__tab__active {
+  width: fit-content;
+  background-color: var(--primary);
+  color: white;
+  height: 40px;
+  border-radius: 10px;
+  padding: 0em 2em;
+  border: none;
+  cursor: pointer;
+
+  margin-right: 1em;
+}
+.order__details__main__customer__card__header__tabs__tab {
+  width: fit-content;
+  height: 40px;
+  border-radius: 10px;
+  padding: 0em 2em;
+  border: none;
+  cursor: pointer;
+}
 .order__details__main__customer__card__header__special {
   flex-direction: row;
   align-items: center;
@@ -283,16 +303,73 @@
   text-decoration: underline;
   margin-bottom: -0.5em;
 }
+.order__details__main__customer__card__content__timeline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin: 1.5em 0em;
+}
+.order__details__main__customer__card__content__timeline::after {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background-color: var(--primary);
+  border-radius: 40px;
+}
+.order__details__main__customer__card__content__timeline__heading {
+  margin-left: 2em;
+  font-size: 14px;
+  font-weight: 600;
+}
+.order__details__main__customer__card__content__timeline__upper__wraper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.order__details__main__customer__card__content__timeline__heading__container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.order__details__main__customer__card__content__timeline__heading__container::after {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background-color: var(--primary);
+  border-radius: 40px;
+}
+.order__details__main__customer__card__content__timeline__upper__heading {
+  margin-left: 2em;
+  margin-left: 2em;
+  font-size: 14px;
+  font-weight: 600;
+}
+.order__details__main__customer__card__content__timeline__upper__sub__heading {
+  margin-left: 2em;
+  margin-left: 2em;
+  font-size: 14px;
+  margin-top: 7px;
+}
 .order__details__main__customer__card__content {
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+.order__details__main__customer__card__content__row__card__transaction {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  display: flex;
+  justify-content: space-between;
 }
 .order__details__main__customer__card__content__row {
   border-top: 1px solid #1c1c1c;
   padding-top: 1em;
   padding-bottom: 1em;
   display: flex;
+  justify-content: space-between;
 }
 .order__details__main__customer__card__content__row__left {
   flex: 1;
