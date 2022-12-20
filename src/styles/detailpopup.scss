@@ -86,6 +86,17 @@
 .customer__detail__popup__overlay__card__detail input:first-child {
   margin-bottom: 1.5em;
 }
+.container__main__content__listing__header__right__button__btn {
+  background-color: var(--primary);
+  padding: 0.6em 2em;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  color: white;
+  text-decoration: none;
+}
+.container__main__content__listing__header__right__button__btn:hover {
+  background-color: var(--primaryDark);
+}
 .customer__detail__popup__overlay__card__submit {
   width: 100%;
   display: flex;
@@ -101,6 +112,46 @@
   font-size: 1em;
   font-weight: 600;
   cursor: pointer;
+}
+.customer__detail__popup__overlay__card__submit button:hover {
+  background-color: var(--primaryDark);
+}
+.customer__detail__popup__overlay__card__submit__discount {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.customer__detail__popup__overlay__card__submit__discount button {
+  background-color: transparent;
+  color: var(--primary);
+  height: 40px;
+  padding: 0em 2em;
+  border: 1px solid var(--primary);
+  border-radius: 10px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+}
+.customer__detail__popup__overlay__card__submit__discount button:hover {
+  background-color: var(--primaryDark);
+  color: white;
+}
+.customer__detail__popup__overlay__card__detail__entry {
+  width: 100%;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  background-color: #e0e0e0;
+  margin-bottom: 0.5em;
+  padding: 0em 1.5em;
+  border-radius: 10px;
+  color: black;
+}
+.customer__detail__popup__overlay__card__detail__entry:hover {
+  background-color: var(--primary);
+  color: white;
 }
 @media (max-width: 400px) {
   .customer__detail__popup__overlay {
