@@ -10,7 +10,8 @@ jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: Borales/actions-yarn@v4.2.0
+      - name: GitHub Action for Yarn
+          uses: Borales/actions-yarn@v4.2.0
       - uses: actions/checkout@v2
       - run: yarn --frozen-lockfile && yarn build
       - uses: FirebaseExtended/action-hosting-deploy@v0
