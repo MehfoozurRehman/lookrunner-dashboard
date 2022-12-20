@@ -58,6 +58,14 @@
   width: 100%;
   text-align: center;
 }
+.container__main__content__details__buttons__button__product {
+  padding: 0.8em 3em;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  width: fit-content;
+  text-align: center;
+}
 .container__main__content__details__buttons__primary {
   margin-bottom: 1em;
   background-color: var(--primary);
@@ -69,6 +77,12 @@
   background-color: var(--secondary);
 }
 .container__main__content__details__buttons__secondary:hover {
+  background-color: var(--secondaryDark);
+}
+.container__main__content__details__buttons__secondary__product {
+  background-color: var(--secondary);
+}
+.container__main__content__details__buttons__secondary__product:hover {
   background-color: var(--secondaryDark);
 }
 @media (max-width: 1000px) {
