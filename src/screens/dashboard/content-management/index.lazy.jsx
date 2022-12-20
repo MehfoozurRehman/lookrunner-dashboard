@@ -19,7 +19,7 @@ export default function ContentManagement() {
         </div>
         <div className="container__main__content__details__main__row__uploader">
           <div className="container__main__content__details__main__input__label">
-            dashboar img
+            Upload Banner
           </div>
           <div className="container__main__content__details__main__row__img__uploader">
             <input
