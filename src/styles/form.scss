@@ -184,6 +184,7 @@
   flex-wrap: wrap;
   border-radius: 10px;
 }
+
 @media (max-width: 900px) {
   .container__main__content__details__main__row {
     flex-direction: column;
@@ -206,4 +207,10 @@ select:-webkit-autofill:focus {
   -webkit-text-fill-color: black;
   -webkit-box-shadow: 0 0 0px 1000px transparent inset;
   transition: background-color 5000s ease-in-out 0s;
+}
+.container__main__content__details__main__row__wraper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }

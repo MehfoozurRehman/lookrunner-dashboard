@@ -2,7 +2,6 @@ import { Input, Select, Textarea } from "components";
 
 import { Link } from "router";
 import { useBackLocation } from "global";
-
 export default function CategorieAdd() {
   const backLocation = useBackLocation();
   return (
@@ -14,7 +13,6 @@ export default function CategorieAdd() {
           placeholder="Enter your name"
           id="Name"
         />
-
         <Textarea
           label="Description"
           placeholder="Enter your Description"

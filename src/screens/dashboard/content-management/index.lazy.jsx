@@ -160,6 +160,43 @@ export default function ContentManagement() {
             { value: "Deactive", label: "Deactive" },
           ]}
         />
+        <div className="container__main__content__details__main__row__wraper">
+          <div
+            style={{
+              backgroundColor: "black",
+              color: "white",
+              fontSize: "14",
+              padding: "4px 12px",
+              width: "fit-content",
+              borderRadius: "30px",
+              margin: "12px 0px",
+            }}
+            className="container__main__content__details__main__row__left"
+          >
+            Add Testimoinial
+          </div>
+          <div
+            style={{
+              backgroundColor: "var(--primary)",
+              color: "white",
+              fontSize: "16",
+              padding: "4px 12px",
+              width: "fit-content",
+              borderRadius: "20px",
+              margin: "12px 0px",
+            }}
+            className="container__main__content__details__main__row__right"
+          >
+            Add
+          </div>
+        </div>
+        <Input type="text" label="Heading" placeholder="abc" id="Heading" />
+        <Textarea
+          label="Description"
+          placeholder="Enter your Description"
+          id="Description"
+          error="Enter your Description"
+        />
       </div>
       <div className="container__main__content__details__buttons">
         <Link
@@ -177,4 +214,6 @@ export default function ContentManagement() {
       </div>
     </div>
   );
+}
+{
 }
