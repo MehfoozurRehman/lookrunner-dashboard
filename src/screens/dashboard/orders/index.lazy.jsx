@@ -8,7 +8,6 @@ import {
 
 import { Search } from "react-feather";
 import clsx from "clsx";
-import { useLocation } from "react-router";
 import { useState } from "react";
 
 export default function orders() {
@@ -21,7 +20,6 @@ export default function orders() {
     "Delivery Made",
     "Booking Made",
   ];
-  const location = useLocation();
   return (
     <div className="container__main__content__listing">
       <div className="container__main__content__listing__header">
