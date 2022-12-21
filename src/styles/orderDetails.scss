@@ -353,6 +353,16 @@
   font-size: 14px;
   margin-top: 7px;
 }
+.btn__time__line {
+  width: fit-content;
+  background-color: black;
+  color: white;
+  border: none;
+  margin: 0.4em 2em;
+  padding: 0.5em 1em;
+  border-radius: 20px;
+  cursor: pointer;
+}
 .order__details__main__customer__card__content {
   display: flex;
   flex-direction: column;

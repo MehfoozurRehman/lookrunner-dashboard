@@ -35,6 +35,12 @@ export default function TimelineCard({}) {
             Booking confirmation message was sent to Rashid Muayyed
             (+923219652222)
           </div>
+          <div className="btn__time__line">Resend sms</div>
+          <div className="order__details__main__customer__card__content__timeline__upper__sub__heading">
+            Booking confirmation email was sent to Rashid Muayyed
+            (info@lookrunner.com)
+          </div>
+          <div className="btn__time__line">Resend Email</div>
         </div>
         <div className="order__details__main__customer__card__content__timeline__time">
           5:06pm
