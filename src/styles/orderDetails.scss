@@ -99,6 +99,9 @@
 .order__details__steps__button:hover {
   background-color: var(--primaryDark);
 }
+.order__details__steps__button:disabled {
+  background-color: #242526;
+}
 .order__details__main {
   display: flex;
   flex-direction: column;
