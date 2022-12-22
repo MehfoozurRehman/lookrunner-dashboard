@@ -44,24 +44,7 @@ export default function EmployeeAdd() {
             />
           </div>
         </div>
-        <div className="container__main__content__details__main__row">
-          <div className="container__main__content__details__main__row__entry">
-            <Input
-              type="text"
-              label="Email"
-              placeholder="Enter your first mmail"
-              id="Email"
-            />
-          </div>
-          <div className="container__main__content__details__main__row__entry">
-            <Input
-              type="text"
-              label="Phone"
-              placeholder="Enter your phone"
-              id="Phone"
-            />
-          </div>
-        </div>
+
         <div className="container__main__content__details__main__row">
           <div className="container__main__content__details__main__row__entry">
             <Input
@@ -87,6 +70,24 @@ export default function EmployeeAdd() {
                 { value: "7", label: "7" },
                 { value: "8", label: "8" },
               ]}
+            />
+          </div>
+        </div>
+        <div className="container__main__content__details__main__row">
+          <div className="container__main__content__details__main__row__entry">
+            <Input
+              type="text"
+              label="Referred By"
+              placeholder="Enter referred by"
+              id="Referred By"
+            />
+          </div>
+          <div className="container__main__content__details__main__row__entry">
+            <Input
+              type="text"
+              label="Address"
+              placeholder="Enter your address"
+              id="Address"
             />
           </div>
         </div>
