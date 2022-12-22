@@ -29,14 +29,6 @@ export default function Stock() {
             </button>
           </form>
         </div>
-        <div className="container__main__content__listing__header__right">
-          <Link
-            to={location.pathname.toLowerCase() + "/add"}
-            className="container__main__content__listing__header__right__button"
-          >
-            Add
-          </Link>
-        </div>
       </div>
       <div className="container__main__content__listing__table">
         <div className="container__main__content__listing__table__header">
