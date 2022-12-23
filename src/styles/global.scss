@@ -154,7 +154,7 @@ body {
 .theme-toggle > svg {
   inline-size: 100%;
   block-size: 100%;
-  strokelinecap: round;
+  stroke-linecap: round;
 }
 [data-theme="dark"] .theme-toggle {
   --icon-fill: hsl(210 10% 70%);

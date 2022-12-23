@@ -20,7 +20,7 @@
     "react-feather": "^2.0.10",
     "react-helmet": "^6.1.0",
     "react-indiana-drag-scroll": "^2.2.0",
-    "react-router-dom": "6.6.0",
+    "react-router-dom": "6.6.1",
     "react-select": "^5.7.0",
     "react-spinners": "^0.13.7",
     "recharts": "^2.2.0"
