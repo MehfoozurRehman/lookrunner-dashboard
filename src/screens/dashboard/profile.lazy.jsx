@@ -1,5 +1,6 @@
-import { Input, Select } from "components";
+import { Avatar, Input } from "components";
 
+import { Edit2 } from "react-feather";
 import { Link } from "router";
 import { useBackLocation } from "global";
 
@@ -8,6 +9,23 @@ export default function Profile() {
   return (
     <div className="container__main__content__details">
       <div className="container__main__content__details__main container__main__content__details__main__special">
+        <div className="container__main__content__details__main__row__profile__row">
+          <div className="container__main__content__details__main__row__profile__row__image">
+            <Avatar className="container__main__content__details__main__row__profile__row__image__img" />
+            <div className="container__main__content__details__main__row__profile__row__image__button">
+              <input type="file" />
+              <Edit2 size={20} color="currentColor" />
+            </div>
+          </div>
+          <div className="container__main__content__details__main__row__profile__row__content">
+            <div className="container__main__content__details__main__row__profile__row__content__name">
+              John doe
+            </div>
+            <div className="container__main__content__details__main__row__profile__row__content__email">
+              johndoe@gmail.com
+            </div>
+          </div>
+        </div>
         <div className="container__main__content__details__main__row">
           <div className="container__main__content__details__main__row__entry">
             <Input
