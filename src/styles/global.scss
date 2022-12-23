@@ -348,6 +348,34 @@ body {
   font-size: 14px;
   font-weight: bold;
 }
+.container__main__content__details__main__input__field__wrapper__image {
+  width: 150px;
+  height: 150px;
+  background-color: #f5f6fa;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.container__main__content__details__main__input__field__wrapper__image__input {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.container__main__content__details__main__input__field__wrapper__image__content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.container__main__content__details__main__input__field__wrapper__image__content__img {
+  width: 100%;
+  height: 100%;
+}
 @media (max-width: 1200px) {
   .container__main__content__details__main__wraper__box {
     width: 50%;
