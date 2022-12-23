@@ -44,7 +44,7 @@ export default function ZipcodeAdd() {
           to={backLocation}
           className="container__main__content__details__buttons__button container__main__content__details__buttons__primary"
         >
-          Save
+          Add
         </Link>
         <Link
           to={backLocation}
