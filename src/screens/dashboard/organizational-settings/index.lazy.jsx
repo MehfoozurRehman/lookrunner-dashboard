@@ -13,7 +13,6 @@ export default function OrganizationalSetting() {
               type="text"
               label="Minimum number of items for trial"
               placeholder="Enter Minimum number of items for trial"
-              id="Minimum number of items for trial"
             />
           </div>
 
@@ -22,7 +21,6 @@ export default function OrganizationalSetting() {
               type="text"
               label="Maximum number of items for trial"
               placeholder="Enter Maximum number of items for trial"
-              id="Maximum number of items for trial"
             />
           </div>
         </div>
@@ -40,7 +38,6 @@ export default function OrganizationalSetting() {
               type="text"
               label="Hours for Returns"
               placeholder="Enter hours for returns"
-              id="Hours for Returns"
             />
           </div>
         </div>
@@ -58,19 +55,13 @@ export default function OrganizationalSetting() {
         >
           LR Contact Details
         </div>
-        <Input
-          type="text"
-          label="Address"
-          placeholder="Enter Address "
-          id="Address"
-        />
+        <Input type="text" label="Address" placeholder="Enter Address " />
         <div className="container__main__content__details__main__row">
           <div className="container__main__content__details__main__row__entry">
             <Input
               type="text"
               label="Mobile Number"
               placeholder="Enter Mobile Number"
-              id="Mobile number"
             />
           </div>
 
@@ -80,12 +71,7 @@ export default function OrganizationalSetting() {
         </div>
         <div className="container__main__content__details__main__row">
           <div className="container__main__content__details__main__row__entry">
-            <Input
-              type="text"
-              label="Facebook"
-              placeholder="Enter Facebook"
-              id="Facebook"
-            />
+            <Input type="text" label="Facebook" placeholder="Enter Facebook" />
           </div>
 
           <div className="container__main__content__details__main__row__entry">
@@ -93,7 +79,6 @@ export default function OrganizationalSetting() {
               type="text"
               label="Instagram"
               placeholder="Enter Instagram"
-              id="Instagram"
             />
           </div>
         </div>

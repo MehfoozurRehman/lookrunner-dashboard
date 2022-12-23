@@ -10,19 +10,13 @@ export default function supplierEdit() {
       <div className="container__main__content__details__main container__main__content__details__main__special">
         <div className="container__main__content__details__main__row">
           <div className="container__main__content__details__main__row__entry">
-            <Input
-              type="text"
-              label="Company"
-              placeholder="Enter Company"
-              id="Company"
-            />
+            <Input type="text" label="Company" placeholder="Enter Company" />
           </div>
           <div className="container__main__content__details__main__row__entry">
             <Input
               type="text"
               label="Brand Name"
               placeholder="Enter Brand Name"
-              id="Brand Name"
             />
           </div>
         </div>
@@ -32,7 +26,6 @@ export default function supplierEdit() {
               type="text"
               label="Vat Number"
               placeholder="Enter Vat Number"
-              id="Vat Number"
             />
           </div>
           <div className="container__main__content__details__main__row__entry">
@@ -40,24 +33,17 @@ export default function supplierEdit() {
               type="text"
               label="Email address"
               placeholder="Enter email address"
-              id="Email address"
             />
           </div>
         </div>
         <div className="container__main__content__details__main__row">
           <div className="container__main__content__details__main__row__entry">
-            <Input
-              type="text"
-              label="Phone No."
-              placeholder="Enter Phone"
-              id="Phone No."
-            />
+            <Input type="text" label="Phone No." placeholder="Enter Phone" />
           </div>
           <div className="container__main__content__details__main__row__entry">
             <Select
               label="State"
               placeholder="Select State"
-              id="State"
               error="Select State"
               options={[
                 { value: "punjab", label: "punjab" },
@@ -72,7 +58,6 @@ export default function supplierEdit() {
             <Select
               label="City"
               placeholder="Select City"
-              id="City"
               error="Select City"
               options={[
                 { value: "Lahore", label: "Lahore" },
@@ -86,21 +71,14 @@ export default function supplierEdit() {
               type="text"
               label="Postal code"
               placeholder="Enter Postal code"
-              id="Postal code"
             />
           </div>
         </div>
-        <Input
-          type="text"
-          label="Address"
-          placeholder="Enter Address"
-          id="Address"
-        />
+        <Input type="text" label="Address" placeholder="Enter Address" />
 
         <Textarea
           label="Description"
           placeholder="Enter Description..."
-          id="naDescriptionme"
           error="Enter Description"
         />
       </div>

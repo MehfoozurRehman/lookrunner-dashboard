@@ -8,19 +8,17 @@ export default function CategorieEdit() {
   return (
     <div className="container__main__content__details">
       <div className="container__main__content__details__main container__main__content__details__main__special">
-        <Input type="text" label="Name" placeholder="Enter name" id="Name" />
+        <Input type="text" label="Name" placeholder="Enter name" />
 
         <Textarea
           label="Description"
           placeholder="Enter Description"
-          id="Description"
           error="Enter Description"
         />
         <Select
           label="Parent Category"
           isMulti
           placeholder="Enter Parent Category"
-          id="name"
           error="Select Parent Category"
           options={[
             { value: "1", label: "1" },

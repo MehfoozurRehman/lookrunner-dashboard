@@ -10,13 +10,12 @@ export default function CityEdit() {
       <div className="container__main__content__details__main container__main__content__details__main__special">
         <div className="container__main__content__details__main__row">
           <div className="container__main__content__details__main__row__entry">
-            <Input type="text" label="Name" placeholder="Name" id="Name" />
+            <Input type="text" label="Name" placeholder="Name" />
           </div>
           <div className="container__main__content__details__main__row__entry">
             <Select
               label="Status"
               placeholder="Active"
-              id="Status"
               error="Select "
               options={[
                 { value: "Active", label: "Active" },
@@ -30,7 +29,6 @@ export default function CityEdit() {
             <Select
               label="State"
               placeholder="State"
-              id="State"
               error="Select State"
               options={[
                 { value: "punjab", label: "punjab" },

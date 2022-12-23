@@ -26,37 +26,21 @@ export default function EmployeeAdd() {
         </div>
         <div className="container__main__content__details__main__row">
           <div className="container__main__content__details__main__row__entry">
-            <Input
-              type="text"
-              label="Phone"
-              placeholder="Enter phone"
-              id="Phone"
-            />
+            <Input type="text" label="Phone" placeholder="Enter phone" />
           </div>
           <div className="container__main__content__details__main__row__entry">
-            <Input
-              type="text"
-              label="Email"
-              placeholder="Enter email"
-              id="Email"
-            />
+            <Input type="text" label="Email" placeholder="Enter email" />
           </div>
         </div>
 
         <div className="container__main__content__details__main__row">
           <div className="container__main__content__details__main__row__entry">
-            <Input
-              type="text"
-              label="Username"
-              placeholder="Enter username"
-              id="Username"
-            />
+            <Input type="text" label="Username" placeholder="Enter username" />
           </div>
           <div className="container__main__content__details__main__row__entry">
             <Select
               label="Department"
               placeholder="Select Department"
-              id="Department"
               error="Department"
               options={[
                 { value: "1", label: "1" },
@@ -77,16 +61,10 @@ export default function EmployeeAdd() {
               type="text"
               label="Referred By"
               placeholder="Enter referred by"
-              id="Referred By"
             />
           </div>
           <div className="container__main__content__details__main__row__entry">
-            <Input
-              type="text"
-              label="Address"
-              placeholder="Enter address"
-              id="Address"
-            />
+            <Input type="text" label="Address" placeholder="Enter address" />
           </div>
         </div>
         <div className="container__main__content__details__main__row">
@@ -94,7 +72,6 @@ export default function EmployeeAdd() {
             <Select
               label="Role"
               placeholder="Select Role"
-              id="Role"
               error="Role"
               options={[
                 { value: "admin", label: "admin" },
@@ -119,7 +96,6 @@ export default function EmployeeAdd() {
               type="Password"
               label="Password"
               placeholder="Enter password"
-              id="Password"
               autoComplete="new-password"
             />
           </div>
@@ -128,7 +104,6 @@ export default function EmployeeAdd() {
               type="Password"
               label="Confirm Password"
               placeholder="Enter confirm password"
-              id="Confirm Password"
             />
           </div>
         </div>

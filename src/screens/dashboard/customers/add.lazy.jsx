@@ -26,20 +26,10 @@ export default function CustomerAdd() {
         </div>
         <div className="container__main__content__details__main__row">
           <div className="container__main__content__details__main__row__entry">
-            <Input
-              type="text"
-              label="Email"
-              placeholder="Enter Email"
-              id="Email"
-            />
+            <Input type="text" label="Email" placeholder="Enter Email" />
           </div>
           <div className="container__main__content__details__main__row__entry">
-            <Input
-              type="text"
-              label="Phone"
-              placeholder="Enter Phone"
-              id="Phone"
-            />
+            <Input type="text" label="Phone" placeholder="Enter Phone" />
           </div>
         </div>
         <div
@@ -56,22 +46,11 @@ export default function CustomerAdd() {
         >
           Delivery Address
         </div>
-        <Input
-          type="text"
-          label="Address 1"
-          placeholder="Enter Address 1"
-          id="Address 1"
-        />
-        <Input
-          type="text"
-          label="Address 2"
-          placeholder="Enter Address 2"
-          id="Address 2"
-        />
+        <Input type="text" label="Address 1" placeholder="Enter Address 1" />
+        <Input type="text" label="Address 2" placeholder="Enter Address 2" />
         <Select
           label="State"
           placeholder="Select State"
-          id="State"
           error="select State"
           options={[
             { value: "1", label: "1" },
@@ -82,7 +61,6 @@ export default function CustomerAdd() {
         <Select
           label="City"
           placeholder="Select City"
-          id="City"
           error="Select City"
           options={[
             { value: "1", label: "1" },
@@ -90,17 +68,11 @@ export default function CustomerAdd() {
             { value: "3", label: "3" },
           ]}
         />
-        <Input
-          type="text"
-          label="Zip Code"
-          placeholder="Enter Zip Code"
-          id="Zip Code"
-        />
+        <Input type="text" label="Zip Code" placeholder="Enter Zip Code" />
 
         <Textarea
           label="Delivery instruction"
           placeholder="Enter Delivery instruction"
-          id="Delivery instruction"
           error="Delivery instruction"
         />
         <div
@@ -116,22 +88,11 @@ export default function CustomerAdd() {
         >
           Billing Address
         </div>
-        <Input
-          type="text"
-          label="Address 1"
-          placeholder="Enter Address 1"
-          id="Address 1"
-        />
-        <Input
-          type="text"
-          label="Address 2"
-          placeholder="Enter Address 2"
-          id="Address 2"
-        />
+        <Input type="text" label="Address 1" placeholder="Enter Address 1" />
+        <Input type="text" label="Address 2" placeholder="Enter Address 2" />
         <Select
           label="State"
           placeholder="Select State"
-          id="State"
           error="select State"
           options={[
             { value: "1", label: "1" },
@@ -142,7 +103,6 @@ export default function CustomerAdd() {
         <Select
           label="City"
           placeholder="Select City"
-          id="City"
           error="Select City"
           options={[
             { value: "1", label: "1" },
@@ -150,12 +110,7 @@ export default function CustomerAdd() {
             { value: "3", label: "3" },
           ]}
         />
-        <Input
-          type="text"
-          label="Zip Code"
-          placeholder="Enter Zip Code"
-          id="Zip Code"
-        />
+        <Input type="text" label="Zip Code" placeholder="Enter Zip Code" />
       </div>
       <div className="container__main__content__details__buttons">
         <Link

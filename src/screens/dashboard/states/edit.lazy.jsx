@@ -8,11 +8,10 @@ export default function StateEdit() {
   return (
     <div className="container__main__content__details">
       <div className="container__main__content__details__main container__main__content__details__main__special">
-        <Input type="text" label="Name" placeholder="Enter name" id="Name" />
+        <Input type="text" label="Name" placeholder="Enter name" />
         <Select
           label="Status"
           placeholder=" select status"
-          id="Status"
           error="select status"
           options={[
             { value: "Active", label: "Active" },

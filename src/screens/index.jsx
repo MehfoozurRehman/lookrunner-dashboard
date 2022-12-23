@@ -25,13 +25,11 @@ export default function Index() {
         <LoginInput
           label="Email Address"
           placeholder="Enter email address"
-          id="email"
           type="email"
         />
         <LoginInput
           label="Password"
           placeholder="Enter password"
-          id="password"
           type="password"
         />
         <button type="submit" className="login__container__form__button">

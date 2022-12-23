@@ -8,16 +8,10 @@ export default function FaqAdd() {
   return (
     <div className="container__main__content__details">
       <div className="container__main__content__details__main container__main__content__details__main__special">
-        <Input
-          type="text"
-          label="Question"
-          placeholder="Enter Question"
-          id="Question"
-        />
+        <Input type="text" label="Question" placeholder="Enter Question" />
         <Textarea
           label="Description"
           placeholder="Enter Description"
-          id="Description"
           error="Enter Description"
         />
       </div>

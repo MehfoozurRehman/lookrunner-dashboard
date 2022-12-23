@@ -9,12 +9,11 @@ export default function RoleEdit() {
     <div className="container__main__content__details">
       <div className="container__main__content__details__main container__main__content__details__main__special">
         <div className="container__main__content__details__main__row">
-          <Input type="text" label="Name" placeholder="Enter name" id="name" />
+          <Input type="text" label="Name" placeholder="Enter name" />
         </div>
         <Select
           label="Select modules"
           placeholder="Select modules"
-          id="Select modules"
           error="Select modules"
           options={[
             { value: "User management", label: "User management" },

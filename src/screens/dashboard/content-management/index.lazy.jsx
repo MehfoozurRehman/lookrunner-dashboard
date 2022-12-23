@@ -98,16 +98,10 @@ export default function ContentManagement() {
             margin: "2em 0em",
           }}
         ></div>
-        <Input
-          type="text"
-          label="Heading 2"
-          placeholder="Enter Heading 2"
-          id="Heading 2"
-        />
+        <Input type="text" label="Heading 2" placeholder="Enter Heading 2" />
         <Textarea
           label="Description"
           placeholder="Enter Description"
-          id="Description"
           error="Enter Description"
         />
         <div
@@ -117,16 +111,10 @@ export default function ContentManagement() {
             margin: "2em 0em",
           }}
         ></div>
-        <Input
-          type="text"
-          label="Heading 3"
-          placeholder="Enter Heading 3"
-          id="Heading 3"
-        />
+        <Input type="text" label="Heading 3" placeholder="Enter Heading 3" />
         <Textarea
           label="Description"
           placeholder="Enter Description"
-          id="Description"
           error="Enter Description"
         />
         <div
@@ -139,7 +127,6 @@ export default function ContentManagement() {
         <Select
           label="Select Products"
           placeholder="select "
-          id="Select Products"
           error="select state"
           options={[
             { value: "Active", label: "Active" },
@@ -176,11 +163,10 @@ export default function ContentManagement() {
             Add
           </div>
         </div>
-        <Input type="text" label="Heading" placeholder="abc" id="Heading" />
+        <Input type="text" label="Heading" placeholder="abc" />
         <Textarea
           label="Description"
           placeholder="Enter Description"
-          id="Description"
           error="Enter Description"
         />
       </div>

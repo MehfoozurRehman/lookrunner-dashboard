@@ -8,13 +8,12 @@ export default function CityAdd() {
   return (
     <div className="container__main__content__details">
       <div className="container__main__content__details__main container__main__content__details__main__special">
-        <Input type="text" label="Name" placeholder="Enter name" id="Name" />
+        <Input type="text" label="Name" placeholder="Enter name" />
         <div className="container__main__content__details__main__row">
           <div className="container__main__content__details__main__row__entry">
             <Select
               label="State"
               placeholder=" select State"
-              id="State"
               error="select state"
               options={[
                 { value: "Active", label: "Active" },
@@ -26,7 +25,6 @@ export default function CityAdd() {
             <Select
               label="Status"
               placeholder=" select status"
-              id="Status"
               error="select Status"
               options={[
                 { value: "Active", label: "Active" },

@@ -10,21 +10,11 @@ export default function DiscountRuleAdd() {
       <div className="container__main__content__details__main container__main__content__details__main__special">
         <div className="container__main__content__details__main__row">
           <div className="container__main__content__details__main__row__entry">
-            <Input
-              type="text"
-              label="Name"
-              placeholder="Enter name"
-              id="Name"
-            />
+            <Input type="text" label="Name" placeholder="Enter name" />
           </div>
 
           <div className="container__main__content__details__main__row__entry">
-            <Input
-              type="text"
-              label="Code"
-              placeholder="Enter code"
-              id="Code"
-            />
+            <Input type="text" label="Code" placeholder="Enter code" />
           </div>
         </div>
 
@@ -34,7 +24,6 @@ export default function DiscountRuleAdd() {
               type="text"
               label="Start Date"
               placeholder="Enter start date"
-              id="Start Date"
             />
           </div>
           <div className="container__main__content__details__main__row__entry">
@@ -42,26 +31,15 @@ export default function DiscountRuleAdd() {
               type="text"
               label="Start Time"
               placeholder="Enter start time"
-              id="Start Time"
             />
           </div>
         </div>
         <div className="container__main__content__details__main__row">
           <div className="container__main__content__details__main__row__entry">
-            <Input
-              type="text"
-              label="End Date"
-              placeholder="Enter end date"
-              id="End Date"
-            />
+            <Input type="text" label="End Date" placeholder="Enter end date" />
           </div>
           <div className="container__main__content__details__main__row__entry">
-            <Input
-              type="text"
-              label="End Time"
-              placeholder="Enter end time"
-              id="End Time"
-            />
+            <Input type="text" label="End Time" placeholder="Enter end time" />
           </div>
         </div>
         <div className="container__main__content__details__main__row">
@@ -70,14 +48,12 @@ export default function DiscountRuleAdd() {
               type="text"
               label="Delivery percentage"
               placeholder="Enter delivery percentage"
-              id="Delivery percentage"
             />
           </div>
           <div className="container__main__content__details__main__row__entry">
             <Select
               label="Discount Type"
               placeholder=" select State"
-              id="State"
               error="Discount Type is required"
               options={[
                 { value: "Active", label: "Active" },

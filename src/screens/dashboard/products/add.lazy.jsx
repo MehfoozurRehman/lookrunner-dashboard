@@ -8,16 +8,10 @@ export default function ProductAdd() {
   return (
     <div className="container__main__content__details">
       <div className="container__main__content__details__main container__main__content__details__main__special">
-        <Input
-          type="text"
-          label="Title"
-          placeholder="Short sleeve t-shirt"
-          id="Title"
-        />
+        <Input type="text" label="Title" placeholder="Short sleeve t-shirt" />
         <Textarea
           label="Description"
           placeholder="Enter Description..."
-          id="naDescriptionme"
           error="Enter Description"
         />
         <div className="container__main__content__details__main__row">
@@ -25,7 +19,6 @@ export default function ProductAdd() {
             <Select
               label="Product Status"
               placeholder="Select State"
-              id="Product Status"
               error="Select State"
               options={[
                 { value: "Active", label: "Active" },
@@ -37,7 +30,6 @@ export default function ProductAdd() {
             <Select
               label="Product Category"
               placeholder="Select State"
-              id="Product Category"
               error="Select State"
               options={[
                 { value: "Active", label: "Active" },
@@ -51,7 +43,6 @@ export default function ProductAdd() {
             <Select
               label="Product Sub-Category"
               placeholder="Select State"
-              id="Product Sub-Category"
               error="Select State"
               options={[
                 { value: "Active", label: "Active" },
@@ -63,7 +54,6 @@ export default function ProductAdd() {
             <Select
               label="Supplier "
               placeholder="Select State"
-              id="Supplier "
               error="Select State"
               options={[
                 { value: "Active", label: "Active" },
@@ -77,7 +67,6 @@ export default function ProductAdd() {
             <Select
               label="Brand"
               placeholder="Select State"
-              id="Brand"
               error="Select State"
               options={[
                 { value: "Active", label: "Active" },
@@ -89,7 +78,6 @@ export default function ProductAdd() {
             <Select
               label="Tags"
               placeholder="Select State"
-              id="Tags"
               error="Select State"
               options={[
                 { value: "Active", label: "Active" },
@@ -114,20 +102,20 @@ export default function ProductAdd() {
         </div>
         <div className="container__main__content__details__main__row">
           <div className="container__main__content__details__main__row__entry">
-            <Input type="text" label="Product Status" id="Product Status" />
+            <Input type="text" label="Product Status" />
           </div>
 
           <div className="container__main__content__details__main__row__entry">
-            <Input type="text" label="Product Status" id="Product Status" />
+            <Input type="text" label="Product Status" />
           </div>
         </div>
         <div className="container__main__content__details__main__row">
           <div className="container__main__content__details__main__row__entry">
-            <Input type="text" label="Product Status" id="Product Status" />
+            <Input type="text" label="Product Status" />
           </div>
 
           <div className="container__main__content__details__main__row__entry">
-            <Input type="text" label="Product Status" id="Product Status" />
+            <Input type="text" label="Product Status" />
           </div>
         </div>
         <Link
@@ -152,43 +140,23 @@ export default function ProductAdd() {
         </div>
         <div className="container__main__content__details__main__row">
           <div className="container__main__content__details__main__row__entry">
-            <Input
-              type="text"
-              label="Cost of Unit"
-              id="Cost of Unit"
-              placeholder="$00"
-            />
+            <Input type="text" label="Cost of Unit" placeholder="$00" />
           </div>
 
           <div className="container__main__content__details__main__row__entry">
-            <Input
-              type="text"
-              label="Selling Price"
-              id="Selling Price"
-              placeholder="$00"
-            />
+            <Input type="text" label="Selling Price" placeholder="$00" />
           </div>
         </div>
         <div className="container__main__content__details__main__row">
           <div className="container__main__content__details__main__row__entry">
-            <Input
-              type="text"
-              label="Discounted Price"
-              id="Discounted Price"
-              placeholder="$00"
-            />
+            <Input type="text" label="Discounted Price" placeholder="$00" />
           </div>
 
           <div className="container__main__content__details__main__row__entry">
-            <Input type="text" label="Taxable" id="Taxable" placeholder="$00" />
+            <Input type="text" label="Taxable" placeholder="$00" />
           </div>
         </div>
-        <Input
-          type="text"
-          label="Take Rate (Percentage)"
-          placeholder="abc"
-          id="Take Rate (Percentage)"
-        />
+        <Input type="text" label="Take Rate (Percentage)" placeholder="abc" />
         <div
           className="container__main__content__details__heading"
           style={{
