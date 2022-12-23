@@ -111,6 +111,7 @@
 }
 .container__main__content__listing__header__right {
   margin-bottom: 1em;
+  flex-wrap: wrap;
 }
 .container__main__content__listing__header__right__button {
   background-color: var(--primary);

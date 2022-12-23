@@ -180,6 +180,19 @@ export default function ProductAdd() {
             label="Cost of unit"
             placeholder="Enter cost of unit"
           />
+          <div className="product__form__col__panel__btn">
+            <button
+              style={{
+                backgroundColor: "black",
+                padding: "7px 2em",
+                borderRadius: "20px",
+                color: "white",
+                cursor: "pointer",
+              }}
+            >
+              Done
+            </button>
+          </div>
         </div>
       </div>
     </div>

@@ -18,6 +18,12 @@ export default function ReturnSchedule() {
   return (
     <div className="container__main__content__details">
       <div className="container__main__content__details__main container__main__content__details__main__special">
+        <div
+          style={{ fontSize: "20px", fontWeight: "700", marginBottom: "1em" }}
+          className="container__main__content__details__heading"
+        >
+          Days
+        </div>
         {listOfDays.map((day) => {
           return (
             <CheckBox

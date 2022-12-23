@@ -27,6 +27,29 @@ export default function DiscountRuleAdd() {
           </div>
           <div className="container__main__content__details__main__row">
             <div className="container__main__content__details__main__row__entry">
+              <input
+                className="container__main__content__details__main__row__entry__radio"
+                type="radio"
+                name="delivery"
+              />
+              <label for="html">Delivery percentage</label>
+              <input
+                className="container__main__content__details__main__row__entry__radio"
+                type="radio"
+                name="delivery"
+              />
+              <label for="html">Free Delivery</label>
+            </div>
+            <div className="container__main__content__details__main__row__entry">
+              <Input
+                type="text"
+                label="Delivery Percentage"
+                placeholder="Enter percentage"
+              />
+            </div>
+          </div>
+          <div className="container__main__content__details__main__row">
+            <div className="container__main__content__details__main__row__entry">
               <Input
                 type="text"
                 label="Start Date"
@@ -70,6 +93,20 @@ export default function DiscountRuleAdd() {
               </div>
             </div>
           )}
+          <div className="discard__btn">
+            <button
+              style={{
+                marginTop: "1em",
+                padding: ".6em 1.5em",
+                border: "1px solid black",
+                fontSize: "14px",
+                borderRadius: "5px",
+                cursor: "pointer",
+              }}
+            >
+              Discard
+            </button>
+          </div>
         </div>
       ) : (
         <div className="container__main__content__details__main container__main__content__details__main__special">
@@ -88,6 +125,49 @@ export default function DiscountRuleAdd() {
             <div className="container__main__content__details__main__row__entry">
               <Input
                 type="text"
+                label="Product"
+                placeholder="No. of products"
+              />
+            </div>
+          </div>
+          <div className="container__main__content__details__main__row">
+            <div className="container__main__content__details__main__row__entry">
+              <CheckBox
+                label="Free Delivery"
+                labelColor="#555555"
+                checkedColor="#2A5E59"
+                unCheckedColor="#f5f6fa"
+                iconColor="#ffffff"
+              />
+              <CheckBox
+                label="Percentage Discount"
+                labelColor="#555555"
+                checkedColor="#2A5E59"
+                unCheckedColor="#f5f6fa"
+                iconColor="#ffffff"
+              />
+            </div>
+          </div>
+          <di v className="container__main__content__details__main__row">
+            <div className="container__main__content__details__main__row__entry">
+              <Input
+                type="text"
+                label="Percentage Discount"
+                placeholder="Enter percentage discount"
+              />
+            </div>
+            <div className="container__main__content__details__main__row__entry">
+              <Input
+                type="text"
+                label="Delivery Discount"
+                placeholder="Enter delivery discount"
+              />
+            </div>
+          </di>
+          <div className="container__main__content__details__main__row">
+            <div className="container__main__content__details__main__row__entry">
+              <Input
+                type="text"
                 label="Start Date"
                 placeholder="Enter start date"
               />
@@ -97,22 +177,6 @@ export default function DiscountRuleAdd() {
                 type="text"
                 label="Start Time"
                 placeholder="Enter start time"
-              />
-            </div>
-          </div>
-          <div className="container__main__content__details__main__row">
-            <div className="container__main__content__details__main__row__entry">
-              <Input
-                type="text"
-                label="End Date"
-                placeholder="Enter end date"
-              />
-            </div>
-            <div className="container__main__content__details__main__row__entry">
-              <Input
-                type="text"
-                label="End Time"
-                placeholder="Enter end time"
               />
             </div>
           </div>
@@ -145,6 +209,20 @@ export default function DiscountRuleAdd() {
               </div>
             </div>
           )}
+          <div className="discard__btn">
+            <button
+              style={{
+                marginTop: "1em",
+                padding: ".6em 1.5em",
+                border: "1px solid black",
+                fontSize: "14px",
+                borderRadius: "5px",
+                cursor: "pointer",
+              }}
+            >
+              Discard
+            </button>
+          </div>
         </div>
       )}
 
