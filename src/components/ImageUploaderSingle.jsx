@@ -22,6 +22,7 @@ export function ImageUploaderSingle({
           onChange={(e) => {
             setImage(e.target.files[0]);
           }}
+          accept="image/*"
           multiple={false}
           className="container__main__content__details__main__input__field__wrapper__image__input"
           {...props}

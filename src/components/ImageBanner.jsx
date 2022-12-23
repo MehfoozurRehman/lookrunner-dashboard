@@ -25,23 +25,23 @@ export function ImageBanner({ setImage, image }) {
               <path
                 d="M37.625 28.125V35.625C37.625 36.6196 37.2475 37.5734 36.5755 38.2766C35.9035 38.9799 34.992 39.375 34.0417 39.375H8.95833C8.00797 39.375 7.09654 38.9799 6.42453 38.2766C5.75253 37.5734 5.375 36.6196 5.375 35.625V28.125"
                 stroke="black"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
               <path
                 d="M30.4596 15L21.5013 5.625L12.543 15"
                 stroke="black"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
               <path
                 d="M21.5 5.625V28.125"
                 stroke="black"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </div>
