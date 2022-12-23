@@ -1,8 +1,9 @@
-import { Input } from "components";
+import { Input, Select } from "components";
+
 import { Link } from "router";
 import { useBackLocation } from "global";
 
-export default function WarehousesEdit() {
+export default function Profile() {
   const backLocation = useBackLocation();
   return (
     <div className="container__main__content__details">
@@ -11,35 +12,44 @@ export default function WarehousesEdit() {
           <div className="container__main__content__details__main__row__entry">
             <Input
               type="text"
-              label="Company Name"
-              placeholder="Enter company"
+              label="First Name"
+              placeholder="Enter first name"
             />
           </div>
-          <div className="container__main__content__details__main__row__entry">
-            <Input type="text" label="Phone" placeholder="Enter phone" />
-          </div>
-        </div>
-        <div className="container__main__content__details__main__row">
           <div className="container__main__content__details__main__row__entry">
             <Input
               type="text"
-              label="Email Address"
-              placeholder="Enter email"
+              label="Last Name"
+              placeholder="Enter last name"
+            />
+          </div>
+        </div>
+        <Input type="text" label="First Name" placeholder="Enter first name" />
+        <div className="container__main__content__details__main__row">
+          <div className="container__main__content__details__main__row__entry">
+            <Input
+              secure
+              type="password"
+              label="Password"
+              placeholder="Enter password"
             />
           </div>
           <div className="container__main__content__details__main__row__entry">
-            <Input type="text" label="Latitude" placeholder="Enter Latitude" />
+            <Input
+              secure
+              type="password"
+              label="Confirm Password"
+              placeholder="Enter confirm password"
+            />
           </div>
         </div>
-        <Input type="text" label="Longitude" placeholder="Enter Longitude" />
-        <Input type="text" label="Address" placeholder="Enter address" />
       </div>
       <div className="container__main__content__details__buttons">
         <Link
           to={backLocation}
           className="container__main__content__details__buttons__button container__main__content__details__buttons__primary"
         >
-          Save
+          Add
         </Link>
         <Link
           to={backLocation}

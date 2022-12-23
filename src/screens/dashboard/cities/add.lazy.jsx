@@ -8,12 +8,7 @@ export default function CityAdd() {
   return (
     <div className="container__main__content__details">
       <div className="container__main__content__details__main container__main__content__details__main__special">
-        <Input
-          type="text"
-          label="Name"
-          placeholder="Enter your name"
-          id="Name"
-        />
+        <Input type="text" label="Name" placeholder="Enter name" id="Name" />
         <div className="container__main__content__details__main__row">
           <div className="container__main__content__details__main__row__entry">
             <Select

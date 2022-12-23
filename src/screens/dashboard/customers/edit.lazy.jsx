@@ -13,16 +13,14 @@ export default function CustomerAdd() {
             <Input
               type="text"
               label="First Name"
-              placeholder="Enter your first name"
-              id="First Name"
+              placeholder="Enter first name"
             />
           </div>
           <div className="container__main__content__details__main__row__entry">
             <Input
               type="text"
               label="Last Name"
-              placeholder="Enter your last name"
-              id="Last Name"
+              placeholder="Enter last name"
             />
           </div>
         </div>
@@ -31,7 +29,7 @@ export default function CustomerAdd() {
             <Input
               type="text"
               label="Email"
-              placeholder="Enter your Email"
+              placeholder="Enter Email"
               id="Email"
             />
           </div>
@@ -39,7 +37,7 @@ export default function CustomerAdd() {
             <Input
               type="text"
               label="Phone"
-              placeholder="Enter your Phone"
+              placeholder="Enter Phone"
               id="Phone"
             />
           </div>
@@ -61,13 +59,13 @@ export default function CustomerAdd() {
         <Input
           type="text"
           label="Address 1"
-          placeholder="Enter your Address 1"
+          placeholder="Enter Address 1"
           id="Address 1"
         />
         <Input
           type="text"
           label="Address 2"
-          placeholder="Enter your Address 2"
+          placeholder="Enter Address 2"
           id="Address 2"
         />
         <Select
@@ -95,7 +93,7 @@ export default function CustomerAdd() {
         <Input
           type="text"
           label="Zip Code"
-          placeholder="Enter your Zip Code"
+          placeholder="Enter Zip Code"
           id="Zip Code"
         />
 
@@ -122,13 +120,13 @@ export default function CustomerAdd() {
         <Input
           type="text"
           label="Address 1"
-          placeholder="Enter your Address 1"
+          placeholder="Enter Address 1"
           id="Address 1"
         />
         <Input
           type="text"
           label="Address 2"
-          placeholder="Enter your Address 2"
+          placeholder="Enter Address 2"
           id="Address 2"
         />
         <Select
@@ -156,7 +154,7 @@ export default function CustomerAdd() {
         <Input
           type="text"
           label="Zip Code"
-          placeholder="Enter your Zip Code"
+          placeholder="Enter Zip Code"
           id="Zip Code"
         />
       </div>

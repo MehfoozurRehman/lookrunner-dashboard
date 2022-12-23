@@ -32,7 +32,6 @@ export default function OrganizationalSetting() {
               type="text"
               label="Days for Returns"
               placeholder="Enter days for returns"
-              id="First Name"
             />
           </div>
 
@@ -62,7 +61,7 @@ export default function OrganizationalSetting() {
         <Input
           type="text"
           label="Address"
-          placeholder="Enter your Address "
+          placeholder="Enter Address "
           id="Address"
         />
         <div className="container__main__content__details__main__row">
@@ -76,12 +75,7 @@ export default function OrganizationalSetting() {
           </div>
 
           <div className="container__main__content__details__main__row__entry">
-            <Input
-              type="text"
-              label="Email"
-              placeholder="Enter email"
-              id="Last Name"
-            />
+            <Input type="text" label="Email" placeholder="Enter email" />
           </div>
         </div>
         <div className="container__main__content__details__main__row">
@@ -89,7 +83,7 @@ export default function OrganizationalSetting() {
             <Input
               type="text"
               label="Facebook"
-              placeholder="Enter your Facebook"
+              placeholder="Enter Facebook"
               id="Facebook"
             />
           </div>
@@ -98,7 +92,7 @@ export default function OrganizationalSetting() {
             <Input
               type="text"
               label="Instagram"
-              placeholder="Enter your Instagram"
+              placeholder="Enter Instagram"
               id="Instagram"
             />
           </div>

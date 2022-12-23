@@ -16,9 +16,9 @@ export default function ProductAdd() {
         />
         <Textarea
           label="Description"
-          placeholder="Enter your Description..."
+          placeholder="Enter Description..."
           id="naDescriptionme"
-          error="Enter your Description"
+          error="Enter Description"
         />
         <div className="container__main__content__details__main__row">
           <div className="container__main__content__details__main__row__entry">

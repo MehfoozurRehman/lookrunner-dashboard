@@ -34,6 +34,7 @@ export default function Employees() {
                 { value: "Department", label: "Department" },
                 { value: "Role", label: "Role" },
               ]}
+              placeholder="Department"
               theme={(theme) => ({
                 ...theme,
                 borderRadius: 0,
@@ -47,6 +48,7 @@ export default function Employees() {
               })}
             />
             <Select
+              placeholder="Role"
               options={[
                 { value: "Role", label: "Role" },
                 { value: "Department", label: "Department" },

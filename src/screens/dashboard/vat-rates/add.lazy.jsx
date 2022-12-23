@@ -8,24 +8,11 @@ export default function VatrateAdd() {
   return (
     <div className="container__main__content__details">
       <div className="container__main__content__details__main container__main__content__details__main__special">
-        <Input
-          type="text"
-          label="Name"
-          placeholder="Enter Company name"
-          id="Name"
-        />
-        <Input
-          type="text"
-          label="Name"
-          placeholder="Enter your name"
-          id="Name"
-        />
-
+        <Input type="text" label="Name" placeholder="Enter Company name" />
+        <Input type="text" label="Name" placeholder="Enter name" />
         <Select
           label="Name"
-          placeholder="Enter your name"
-          id="name"
-          error="sdfkjsdkjflskajdflkjsdf"
+          placeholder="Enter name"
           options={[
             { value: "1", label: "1" },
             { value: "2", label: "2" },
@@ -34,7 +21,6 @@ export default function VatrateAdd() {
           ]}
         />
       </div>
-
       <div className="container__main__content__details__buttons">
         <Link
           to={backLocation}

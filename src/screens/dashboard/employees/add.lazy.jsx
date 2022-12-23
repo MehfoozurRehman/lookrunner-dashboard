@@ -13,16 +13,14 @@ export default function EmployeeAdd() {
             <Input
               type="text"
               label="First Name"
-              placeholder="Enter your first name"
-              id="First Name"
+              placeholder="Enter first name"
             />
           </div>
           <div className="container__main__content__details__main__row__entry">
             <Input
               type="text"
               label="Last Name"
-              placeholder="Enter your last name"
-              id="Last Name"
+              placeholder="Enter last name"
             />
           </div>
         </div>
@@ -31,7 +29,7 @@ export default function EmployeeAdd() {
             <Input
               type="text"
               label="Phone"
-              placeholder="Enter your phone"
+              placeholder="Enter phone"
               id="Phone"
             />
           </div>
@@ -39,7 +37,7 @@ export default function EmployeeAdd() {
             <Input
               type="text"
               label="Email"
-              placeholder="Enter your email"
+              placeholder="Enter email"
               id="Email"
             />
           </div>
@@ -50,7 +48,7 @@ export default function EmployeeAdd() {
             <Input
               type="text"
               label="Username"
-              placeholder="Enter your username"
+              placeholder="Enter username"
               id="Username"
             />
           </div>
@@ -86,7 +84,7 @@ export default function EmployeeAdd() {
             <Input
               type="text"
               label="Address"
-              placeholder="Enter your address"
+              placeholder="Enter address"
               id="Address"
             />
           </div>
@@ -120,7 +118,7 @@ export default function EmployeeAdd() {
             <Input
               type="Password"
               label="Password"
-              placeholder="Enter your password"
+              placeholder="Enter password"
               id="Password"
               autoComplete="new-password"
             />
@@ -129,7 +127,7 @@ export default function EmployeeAdd() {
             <Input
               type="Password"
               label="Confirm Password"
-              placeholder="Enter your confirm password"
+              placeholder="Enter confirm password"
               id="Confirm Password"
             />
           </div>

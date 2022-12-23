@@ -1,4 +1,5 @@
 import { Input, Select, Textarea } from "components";
+
 import { Link } from "router";
 import { useBackLocation } from "global";
 import { useState } from "react";
@@ -10,12 +11,7 @@ export default function ContentManagement() {
     <div className="container__main__content__details">
       <div className="container__main__content__details__main container__main__content__details__main__special">
         <div className="container__main__content__details__main__row">
-          <Input
-            type="text"
-            label="Heading"
-            placeholder="Enter heading"
-            id="Heading"
-          />
+          <Input type="text" label="Heading" placeholder="Enter heading" />
         </div>
         <div className="container__main__content__details__main__row__uploader">
           <div className="container__main__content__details__main__input__label">
@@ -93,18 +89,8 @@ export default function ContentManagement() {
             margin: "2em 0em",
           }}
         ></div>
-        <Input
-          type="text"
-          label="Heading 1"
-          placeholder="Enter your Heading 1"
-          id="Heading 1"
-        />
-        <Textarea
-          label="Description"
-          placeholder="Enter your Description"
-          id="Description"
-          error="Enter your Description"
-        />
+        <Input type="text" label="Heading 1" placeholder="Enter Heading 1" />
+        <Textarea label="Description" placeholder="Enter Description" />
         <div
           style={{
             width: "100%",
@@ -115,14 +101,14 @@ export default function ContentManagement() {
         <Input
           type="text"
           label="Heading 2"
-          placeholder="Enter your Heading 2"
+          placeholder="Enter Heading 2"
           id="Heading 2"
         />
         <Textarea
           label="Description"
-          placeholder="Enter your Description"
+          placeholder="Enter Description"
           id="Description"
-          error="Enter your Description"
+          error="Enter Description"
         />
         <div
           style={{
@@ -134,14 +120,14 @@ export default function ContentManagement() {
         <Input
           type="text"
           label="Heading 3"
-          placeholder="Enter your Heading 3"
+          placeholder="Enter Heading 3"
           id="Heading 3"
         />
         <Textarea
           label="Description"
-          placeholder="Enter your Description"
+          placeholder="Enter Description"
           id="Description"
-          error="Enter your Description"
+          error="Enter Description"
         />
         <div
           style={{
@@ -193,9 +179,9 @@ export default function ContentManagement() {
         <Input type="text" label="Heading" placeholder="abc" id="Heading" />
         <Textarea
           label="Description"
-          placeholder="Enter your Description"
+          placeholder="Enter Description"
           id="Description"
-          error="Enter your Description"
+          error="Enter Description"
         />
       </div>
       <div className="container__main__content__details__buttons">

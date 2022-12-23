@@ -23,7 +23,7 @@ export default function RichTextarea({ label, id, error, type, ...props }) {
               "bulletedList",
               "numberedList",
             ],
-            placeholder: "Enter your name",
+            placeholder: "Enter name",
           }}
           onChange={(event, editor) => {
             const data = editor.getData();

@@ -12,17 +12,11 @@ export default function WarehousesAdd() {
             <Input
               type="text"
               label="Company Name"
-              placeholder="Enter your company"
-              id="Company Name"
+              placeholder="Enter company"
             />
           </div>
           <div className="container__main__content__details__main__row__entry">
-            <Input
-              type="text"
-              label="Phone"
-              placeholder="Enter your phone"
-              id="Phone"
-            />
+            <Input type="text" label="Phone" placeholder="Enter phone" />
           </div>
         </div>
         <div className="container__main__content__details__main__row">
@@ -30,31 +24,15 @@ export default function WarehousesAdd() {
             <Input
               type="text"
               label="Email Address"
-              placeholder="Enter your email"
-              id="Email Address"
+              placeholder="Enter email"
             />
           </div>
           <div className="container__main__content__details__main__row__entry">
-            <Input
-              type="text"
-              label="Latitude"
-              placeholder="Enter your Latitude"
-              id="Latitude"
-            />
+            <Input type="text" label="Latitude" placeholder="Enter Latitude" />
           </div>
         </div>
-        <Input
-          type="text"
-          label="Longitude"
-          placeholder="Enter your Longitude"
-          id="Longitude"
-        />
-        <Input
-          type="text"
-          label="Address"
-          placeholder="Enter your address"
-          id="Address"
-        />
+        <Input type="text" label="Longitude" placeholder="Enter Longitude" />
+        <Input type="text" label="Address" placeholder="Enter address" />
       </div>
       <div className="container__main__content__details__buttons">
         <Link

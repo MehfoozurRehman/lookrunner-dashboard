@@ -11,14 +11,14 @@ export default function FaqAdd() {
         <Input
           type="text"
           label="Question"
-          placeholder="Enter your Question"
+          placeholder="Enter Question"
           id="Question"
         />
         <Textarea
           label="Description"
-          placeholder="Enter your Description"
+          placeholder="Enter Description"
           id="Description"
-          error="Enter your Description"
+          error="Enter Description"
         />
       </div>
 

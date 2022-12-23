@@ -10,26 +10,19 @@ export default function ZipcodeEdit() {
       <div className="container__main__content__details__main container__main__content__details__main__special">
         <div className="container__main__content__details__main__row">
           <div className="container__main__content__details__main__row__entry">
-            <Input
-              type="text"
-              label="Name"
-              placeholder="Enter your name"
-              id="Name"
-            />
+            <Input type="text" label="Name" placeholder="Enter name" />
           </div>
           <div className="container__main__content__details__main__row__entry">
             <Input
               type="text"
               label="Delivery Charges"
               placeholder="Enter Delivery Charges"
-              id="Delivery Charges"
             />
           </div>
         </div>
         <Select
           label="Enter VAT"
           placeholder=" Enter VAT"
-          id="Enter VAT"
           error="sdfkjsdkjflskajdflkjsdf"
           options={[
             { value: "1", label: "1" },
@@ -40,7 +33,6 @@ export default function ZipcodeEdit() {
         <Select
           label="Status"
           placeholder="Status"
-          id="Status"
           error="sdfkjsdkjflskajdflkjsdf"
           options={[
             { value: "Active", label: "Active" },

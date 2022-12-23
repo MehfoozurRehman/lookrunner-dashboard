@@ -1,4 +1,5 @@
 import { Input, Select } from "components";
+
 import { Link } from "router";
 import { useBackLocation } from "global";
 
@@ -12,7 +13,7 @@ export default function DiscountRuleEdit() {
             <Input
               type="text"
               label="Name"
-              placeholder="Enter your name"
+              placeholder="Enter name"
               id="Name"
             />
           </div>
@@ -21,7 +22,7 @@ export default function DiscountRuleEdit() {
             <Input
               type="text"
               label="Code"
-              placeholder="Enter your code"
+              placeholder="Enter code"
               id="Code"
             />
           </div>
@@ -32,7 +33,7 @@ export default function DiscountRuleEdit() {
             <Input
               type="text"
               label="Start Date"
-              placeholder="Enter your start date"
+              placeholder="Enter start date"
               id="Start Date"
             />
           </div>
@@ -40,7 +41,7 @@ export default function DiscountRuleEdit() {
             <Input
               type="text"
               label="Start Time"
-              placeholder="Enter your start time"
+              placeholder="Enter start time"
               id="Start Time"
             />
           </div>
@@ -50,7 +51,7 @@ export default function DiscountRuleEdit() {
             <Input
               type="text"
               label="End Date"
-              placeholder="Enter your end date"
+              placeholder="Enter end date"
               id="End Date"
             />
           </div>
@@ -58,7 +59,7 @@ export default function DiscountRuleEdit() {
             <Input
               type="text"
               label="End Time"
-              placeholder="Enter your end time"
+              placeholder="Enter end time"
               id="End Time"
             />
           </div>
@@ -68,7 +69,7 @@ export default function DiscountRuleEdit() {
             <Input
               type="text"
               label="Delivery percentage"
-              placeholder="Enter your delivery percentage"
+              placeholder="Enter delivery percentage"
               id="Delivery percentage"
             />
           </div>

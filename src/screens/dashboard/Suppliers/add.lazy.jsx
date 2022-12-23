@@ -13,7 +13,7 @@ export default function SupplierAdd() {
             <Input
               type="text"
               label="Company"
-              placeholder="Enter your Company"
+              placeholder="Enter Company"
               id="Company"
             />
           </div>
@@ -39,7 +39,7 @@ export default function SupplierAdd() {
             <Input
               type="text"
               label="Email address"
-              placeholder="Enter your email address"
+              placeholder="Enter email address"
               id="Email address"
             />
           </div>
@@ -49,7 +49,7 @@ export default function SupplierAdd() {
             <Input
               type="text"
               label="Phone No."
-              placeholder="Enter your Phone"
+              placeholder="Enter Phone"
               id="Phone No."
             />
           </div>
@@ -85,7 +85,7 @@ export default function SupplierAdd() {
             <Input
               type="text"
               label="Postal code"
-              placeholder="Enter your Postal code"
+              placeholder="Enter Postal code"
               id="Postal code"
             />
           </div>
@@ -94,15 +94,15 @@ export default function SupplierAdd() {
         <Input
           type="text"
           label="Address"
-          placeholder="Enter your Address"
+          placeholder="Enter Address"
           id="Address"
         />
 
         <Textarea
           label="Description"
-          placeholder="Enter your Description"
+          placeholder="Enter Description"
           id="Description"
-          error="Enter your Description"
+          error="Enter Description"
         />
       </div>
       <div className="container__main__content__details__buttons">

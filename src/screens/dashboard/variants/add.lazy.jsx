@@ -8,21 +8,9 @@ export default function Variants() {
   return (
     <div className="container__main__content__details">
       <div className="container__main__content__details__main container__main__content__details__main__special">
-        <Input
-          type="text"
-          label="Name"
-          placeholder="Enter your name"
-          id="Name"
-        />
-
-        <Textarea
-          label="Description"
-          placeholder="Enter your Description"
-          id="Description"
-          error="Enter your Description"
-        />
+        <Input type="text" label="Name" placeholder="Enter name" />
+        <Textarea label="Description" placeholder="Enter Description" />
       </div>
-
       <div className="container__main__content__details__buttons">
         <Link
           to={backLocation}
