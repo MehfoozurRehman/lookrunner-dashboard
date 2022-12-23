@@ -144,10 +144,11 @@ export default function ContentManagement() {
               backgroundColor: "var(--primary)",
               color: "white",
               fontSize: "16",
-              padding: "4px 12px",
+              padding: "10px 20px",
               width: "fit-content",
               borderRadius: "20px",
               margin: "12px 0px",
+              cursor: "pointer",
             }}
             className="container__main__content__details__main__row__right"
           >
