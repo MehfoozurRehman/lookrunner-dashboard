@@ -132,6 +132,7 @@
   height: calc(100% - 40px - 2.5em);
   overflow: auto;
   padding: 0em 1.5em;
+  padding-right: calc(1.5em - 5px);
   position: relative;
 }
 .container__main__content__listing__table__header {

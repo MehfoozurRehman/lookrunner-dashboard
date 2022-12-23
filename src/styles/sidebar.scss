@@ -60,6 +60,24 @@
   color: white;
   padding: 0.1em 1em;
   border-radius: 50px;
+  cursor: pointer;
+  user-select: none;
+}
+.container__sidebar__entry__content {
+  display: flex;
+  flex-direction: column;
+  animation: container__sidebar__entry__content__animation 500ms both;
+  transform-origin: top;
+}
+@keyframes container__sidebar__entry__content__animation {
+  from {
+    opacity: 0;
+    transform: scaleY(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scaleY(1);
+  }
 }
 .container__sidebar__entry__content__entry {
   display: flex;

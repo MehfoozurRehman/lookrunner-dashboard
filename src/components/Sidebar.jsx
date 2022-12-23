@@ -1,5 +1,6 @@
 import { Link, NavLink } from "router";
 import { sidebarCategories, sidebarEnteries } from "global";
+import { useState } from "react";
 
 import { Fragment } from "react";
 import { X } from "react-feather";
@@ -49,37 +50,59 @@ export default function Sidebar({ setSidebarOpen }) {
                   </NavLink>
                 ))
             ) : (
-              <div className="container__sidebar__entry">
-                <div className="container__sidebar__entry__label">
-                  {category}
-                </div>
-                <div className="container__sidebar__entry__content">
-                  {sidebarEnteries
-                    .filter((entry) => entry.category === category)
-                    .map((entry) => (
-                      <NavLink
-                        key={entry.path}
-                        to={entry.path}
-                        onClick={() => {
-                          if (window.innerWidth < 820) {
-                            setSidebarOpen(false);
-                            window.scrollTo({ top: 0, behavior: "smooth" });
-                          }
-                        }}
-                        className="container__sidebar__entry__content__entry"
-                      >
-                        <div className="container__sidebar__entry__content__entry__icon">
-                          {entry.icon}
-                        </div>
-                        {entry.name}
-                      </NavLink>
-                    ))}
-                </div>
-              </div>
+              <SidebarEntry
+                category={category}
+                sidebarEnteries={sidebarEnteries}
+                setSidebarOpen={setSidebarOpen}
+              />
             )}
           </Fragment>
         ))}
       </div>
+    </div>
+  );
+}
+
+function SidebarEntry({ category, sidebarEnteries, setSidebarOpen }) {
+  const [collepse, setCollepse] = useState(true);
+  return (
+    <div className="container__sidebar__entry">
+      <div
+        className="container__sidebar__entry__label"
+        onClick={() => {
+          setCollepse(!collepse);
+        }}
+        style={!collepse ? { marginBottom: 0 } : null}
+      >
+        {category}
+      </div>
+      {collepse && (
+        <div className="container__sidebar__entry__content">
+          {sidebarEnteries
+            .filter((entry) => entry.category === category)
+            .map((entry) => (
+              <NavLink
+                key={entry.path}
+                to={entry.path}
+                onClick={() => {
+                  if (window.innerWidth < 820) {
+                    setSidebarOpen(false);
+                    window.scrollTo({
+                      top: 0,
+                      behavior: "smooth",
+                    });
+                  }
+                }}
+                className="container__sidebar__entry__content__entry"
+              >
+                <div className="container__sidebar__entry__content__entry__icon">
+                  {entry.icon}
+                </div>
+                {entry.name}
+              </NavLink>
+            ))}
+        </div>
+      )}
     </div>
   );
 }

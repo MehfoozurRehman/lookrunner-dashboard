@@ -61,18 +61,16 @@ const preserved = Object.keys(PRESERVED).reduce(
 );
 
 const eagerRoutes = Object.keys(EAGER_ROUTES)
-  .filter((route) => !route.includes(".lazy"))
-  .filter((route) => !route.includes(".protected"))
-  .map((route) => {
-    const module = ROUTES[route];
-    return {
-      path: pathExtractor(route),
-      component: EAGER_ROUTES[route].default,
-      loader: loaders(module),
-      action: actions(module),
-      preload: module,
-    };
-  });
+.map((route) => {
+  const module = ROUTES[route];
+  return {
+    path: pathExtractor(route),
+    component: EAGER_ROUTES[route].default,
+    loader: loaders(module),
+    action: actions(module),
+    preload: module,
+  };
+});
 
 export const lazyRoutes = Object.keys(LAZY_ROUTES).map((route) => {
   const module = LAZY_ROUTES[route];

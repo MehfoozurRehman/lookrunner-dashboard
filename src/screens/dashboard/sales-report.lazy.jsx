@@ -1,7 +1,7 @@
 import { Search } from "react-feather";
 import { TableEntryText } from "components";
 
-export default function Reports() {
+export default function SalesReport() {
   return (
     <div className="container__main__content__listing">
       <div className="container__main__content__listing__header">
