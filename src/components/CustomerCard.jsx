@@ -1,7 +1,7 @@
-import { useState } from "react";
 import CustomerDetail from "./CustomerDetail";
+import { useState } from "react";
 
-export default function CustomerCard({}) {
+export default function CustomerCard() {
   const [show, setShow] = useState(false);
   return (
     <>

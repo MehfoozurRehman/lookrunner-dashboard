@@ -1,4 +1,4 @@
-export default function SendMessageCard({}) {
+export default function SendMessageCard() {
   return (
     <div className="order__details__main__customer__card">
       <div className="order__details__main__customer__card__header">

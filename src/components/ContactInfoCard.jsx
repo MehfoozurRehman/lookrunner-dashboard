@@ -1,4 +1,4 @@
-export default function ContactInfoCard({}) {
+export default function ContactInfoCard() {
   return (
     <div className="order__details__main__customer__card">
       <div className="order__details__main__customer__card__header">

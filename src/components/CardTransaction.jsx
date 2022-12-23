@@ -1,4 +1,4 @@
-export default function CardTransaction({}) {
+export default function CardTransaction() {
   return (
     <div className="order__details__main__customer__card">
       <div className="order__details__main__customer__card__header order__details__main__customer__card__header__special">
