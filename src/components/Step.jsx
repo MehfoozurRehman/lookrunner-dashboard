@@ -1,6 +1,6 @@
 import clsx from "clsx";
 
-export default function Step({ active, label }) {
+export default function Step({ active, nextActive, label }) {
   return (
     <div className="order__details__steps__content__step">
       <div
@@ -12,7 +12,7 @@ export default function Step({ active, label }) {
       <div
         className={clsx(
           "order__details__steps__content__step__line",
-          active && "order__details__steps__content__step__line__active"
+          nextActive && "order__details__steps__content__step__line__active"
         )}
       />
       <div className="order__details__steps__content__step__label">{label}</div>
