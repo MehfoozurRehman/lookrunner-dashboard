@@ -12,146 +12,82 @@ export default function OrderDetailsCard({ label, buttonLabel }) {
       <div className="order__details__main__details__card__content">
         <div className="order__details__main__details__card__content__row">
           <div className="order__details__main__details__card__content__row__label">
-            Booking ID
+            Total No.Of Pieces
           </div>
           <div className="order__details__main__details__card__content__row__value">
-            123456789
+            23
           </div>
         </div>
         <div className="order__details__main__details__card__content__row">
           <div className="order__details__main__details__card__content__row__label">
-            Booking ID
+            Product Total Amount
           </div>
           <div className="order__details__main__details__card__content__row__value">
-            123456789
+            3343
           </div>
         </div>
         <div className="order__details__main__details__card__content__row">
           <div className="order__details__main__details__card__content__row__label">
-            Booking ID
+            Delivery Charges
           </div>
           <div className="order__details__main__details__card__content__row__value">
-            123456789
+            45454
           </div>
         </div>
         <div className="order__details__main__details__card__content__row">
           <div className="order__details__main__details__card__content__row__label">
-            Booking ID
+            Delivery Discount
           </div>
           <div className="order__details__main__details__card__content__row__value">
-            123456789
+            343434
           </div>
         </div>
         <div className="order__details__main__details__card__content__row">
           <div className="order__details__main__details__card__content__row__label">
-            Booking ID
+            Coupon Used
           </div>
           <div className="order__details__main__details__card__content__row__value">
-            123456789
+            abcx
           </div>
         </div>
         <div className="order__details__main__details__card__content__row">
           <div className="order__details__main__details__card__content__row__label">
-            Booking ID
+            VAT
           </div>
           <div className="order__details__main__details__card__content__row__value">
-            123456789
+            2233
           </div>
         </div>
         <div className="order__details__main__details__card__content__row">
           <div className="order__details__main__details__card__content__row__label">
-            Booking ID
+            Net Due Amount
           </div>
           <div className="order__details__main__details__card__content__row__value">
-            123456789
+            1212
           </div>
         </div>
         <div className="order__details__main__details__card__content__row">
           <div className="order__details__main__details__card__content__row__label">
-            Booking ID
+            Amount Paid
           </div>
           <div className="order__details__main__details__card__content__row__value">
-            123456789
+            343434
           </div>
         </div>
         <div className="order__details__main__details__card__content__row">
           <div className="order__details__main__details__card__content__row__label">
-            Booking ID
+            Payment Status
           </div>
           <div className="order__details__main__details__card__content__row__value">
-            123456789
+            Padding
           </div>
         </div>
         <div className="order__details__main__details__card__content__row">
           <div className="order__details__main__details__card__content__row__label">
-            Booking ID
+            Payment Date
           </div>
           <div className="order__details__main__details__card__content__row__value">
-            123456789
-          </div>
-        </div>
-        <div className="order__details__main__details__card__content__row">
-          <div className="order__details__main__details__card__content__row__label">
-            Booking ID
-          </div>
-          <div className="order__details__main__details__card__content__row__value">
-            123456789
-          </div>
-        </div>
-        <div className="order__details__main__details__card__content__row">
-          <div className="order__details__main__details__card__content__row__label">
-            Booking ID
-          </div>
-          <div className="order__details__main__details__card__content__row__value">
-            123456789
-          </div>
-        </div>
-        <div className="order__details__main__details__card__content__row">
-          <div className="order__details__main__details__card__content__row__label">
-            Booking ID
-          </div>
-          <div className="order__details__main__details__card__content__row__value">
-            123456789
-          </div>
-        </div>
-        <div className="order__details__main__details__card__content__row">
-          <div className="order__details__main__details__card__content__row__label">
-            Booking ID
-          </div>
-          <div className="order__details__main__details__card__content__row__value">
-            123456789
-          </div>
-        </div>
-        <div className="order__details__main__details__card__content__row">
-          <div className="order__details__main__details__card__content__row__label">
-            Booking ID
-          </div>
-          <div className="order__details__main__details__card__content__row__value">
-            123456789
-          </div>
-        </div>
-        <div className="order__details__main__details__card__content__row">
-          <div className="order__details__main__details__card__content__row__label">
-            Booking ID
-          </div>
-          <div className="order__details__main__details__card__content__row__value">
-            123456789
-          </div>
-        </div>
-        <div className="order__details__main__details__card__content__row">
-          <div className="order__details__main__details__card__content__row__label">
-            Booking ID
-          </div>
-          <div className="order__details__main__details__card__content__row__value">
-            123456789
-          </div>
-        </div>
-        <div className="order__details__main__details__card__content__row">
-          <div className="order__details__main__details__card__content__row__label">
-            Booking ID
-          </div>
-          <div className="order__details__main__details__card__content__row__value">
-            123456789
+            12/03/22
           </div>
         </div>
       </div>
