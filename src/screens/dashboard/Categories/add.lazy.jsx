@@ -2,8 +2,11 @@ import { Input, Select, Textarea } from "components";
 
 import { Link } from "router";
 import { useBackLocation } from "global";
+import { useState } from "react";
+import { ImageUploaderSingle } from "../../../components/ImageUploaderSingle";
 
 export default function CategorieAdd() {
+  const [image, setImage] = useState(null);
   const backLocation = useBackLocation();
   return (
     <div className="container__main__content__details">
@@ -26,6 +29,7 @@ export default function CategorieAdd() {
             { value: "9", label: "9" },
           ]}
         />
+        <ImageUploaderSingle label="Image" image={image} setImage={setImage} />
       </div>
 
       <div className="container__main__content__details__buttons">

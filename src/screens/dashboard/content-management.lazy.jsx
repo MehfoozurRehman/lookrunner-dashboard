@@ -1,7 +1,7 @@
 import { Input, Select, Textarea } from "components";
 
 import { ImageBanner } from "../../components/ImageBanner";
-import { ImageUploaderMultiple } from "../../components/ImageUploaderMultiple";
+// import { ImageUploaderMultiple } from "../../components/ImageUploaderMultiple";
 import { ImageUploaderSingle } from "../../components/ImageUploaderSingle";
 import { Link } from "router";
 import { useBackLocation } from "global";
@@ -10,7 +10,7 @@ import { useState } from "react";
 export default function ContentManagement() {
   const [banner, setBanner] = useState(null);
   const [image, setImage] = useState(null);
-  const [images, setImages] = useState([]);
+  // const [images, setImages] = useState([]);
   const backLocation = useBackLocation();
   return (
     <div className="container__main__content__details">
