@@ -74,7 +74,7 @@ export default function supplierEdit() {
         </div>
         <Input type="text" label="Address" placeholder="Enter Address" />
 
-        <Textarea label="Description" placeholder="Enter Description..." />
+        <Textarea label="Description" placeholder="Enter Description" />
       </div>
       <div className="container__main__content__details__buttons">
         <Link

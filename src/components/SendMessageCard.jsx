@@ -7,7 +7,7 @@ export default function SendMessageCard() {
       <div className="order__details__main__customer__card__content">
         <textarea
           className="order__details__main__customer__card__content__textarea"
-          placeholder="Please type your message...."
+          placeholder="Please type your message here"
         />
         <button className="order__details__main__customer__card__content__button">
           Send
