@@ -14,7 +14,6 @@ export default function RoleEdit() {
         <Select
           label="Select modules"
           placeholder="Select modules"
-          error="Select modules"
           options={[
             { value: "User management", label: "User management" },
             { value: "Order management", label: "Order management" },

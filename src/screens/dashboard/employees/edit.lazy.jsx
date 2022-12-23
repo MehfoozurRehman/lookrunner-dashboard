@@ -41,7 +41,6 @@ export default function EmployeeAdd() {
             <Select
               label="Department"
               placeholder="Select Department"
-              error="Department"
               options={[
                 { value: "1", label: "1" },
                 { value: "2", label: "2" },
@@ -72,7 +71,6 @@ export default function EmployeeAdd() {
             <Select
               label="Role"
               placeholder="Select Role"
-              error="Role"
               options={[
                 { value: "admin", label: "admin" },
                 { value: "employ", label: "employ" },

@@ -12,7 +12,6 @@ export default function StateEdit() {
         <Select
           label="Status"
           placeholder=" select status"
-          error="select status"
           options={[
             { value: "Active", label: "Active" },
             { value: "Deactive", label: "Deactive" },

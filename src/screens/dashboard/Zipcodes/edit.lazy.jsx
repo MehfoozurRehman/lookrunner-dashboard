@@ -23,7 +23,6 @@ export default function ZipcodeEdit() {
         <Select
           label="Enter VAT"
           placeholder=" Enter VAT"
-          error="sdfkjsdkjflskajdflkjsdf"
           options={[
             { value: "1", label: "1" },
             { value: "2", label: "2" },
@@ -33,7 +32,6 @@ export default function ZipcodeEdit() {
         <Select
           label="Status"
           placeholder="Status"
-          error="sdfkjsdkjflskajdflkjsdf"
           options={[
             { value: "Active", label: "Active" },
             { value: "Deactive", label: "Deactive" },

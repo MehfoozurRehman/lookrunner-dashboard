@@ -99,11 +99,7 @@ export default function ContentManagement() {
           }}
         ></div>
         <Input type="text" label="Heading 2" placeholder="Enter Heading 2" />
-        <Textarea
-          label="Description"
-          placeholder="Enter Description"
-          error="Enter Description"
-        />
+        <Textarea label="Description" placeholder="Enter Description" />
         <div
           style={{
             width: "100%",
@@ -112,11 +108,7 @@ export default function ContentManagement() {
           }}
         ></div>
         <Input type="text" label="Heading 3" placeholder="Enter Heading 3" />
-        <Textarea
-          label="Description"
-          placeholder="Enter Description"
-          error="Enter Description"
-        />
+        <Textarea label="Description" placeholder="Enter Description" />
         <div
           style={{
             width: "100%",
@@ -127,7 +119,6 @@ export default function ContentManagement() {
         <Select
           label="Select Products"
           placeholder="select "
-          error="select state"
           options={[
             { value: "Active", label: "Active" },
             { value: "Deactive", label: "Deactive" },
@@ -164,11 +155,7 @@ export default function ContentManagement() {
           </div>
         </div>
         <Input type="text" label="Heading" placeholder="abc" />
-        <Textarea
-          label="Description"
-          placeholder="Enter Description"
-          error="Enter Description"
-        />
+        <Textarea label="Description" placeholder="Enter Description" />
       </div>
       <div className="container__main__content__details__buttons">
         <Link

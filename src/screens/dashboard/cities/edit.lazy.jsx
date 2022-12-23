@@ -16,7 +16,6 @@ export default function CityEdit() {
             <Select
               label="Status"
               placeholder="Active"
-              error="Select "
               options={[
                 { value: "Active", label: "Active" },
                 { value: "Offline", label: "offline" },
@@ -29,7 +28,6 @@ export default function CityEdit() {
             <Select
               label="State"
               placeholder="State"
-              error="Select State"
               options={[
                 { value: "punjab", label: "punjab" },
                 { value: "khaber", label: "khaber" },

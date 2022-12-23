@@ -9,17 +9,12 @@ export default function ProductAdd() {
     <div className="container__main__content__details">
       <div className="container__main__content__details__main container__main__content__details__main__special">
         <Input type="text" label="Title" placeholder="Short sleeve t-shirt" />
-        <Textarea
-          label="Description"
-          placeholder="Enter Description..."
-          error="Enter Description"
-        />
+        <Textarea label="Description" placeholder="Enter Description..." />
         <div className="container__main__content__details__main__row">
           <div className="container__main__content__details__main__row__entry">
             <Select
               label="Product Status"
               placeholder="Select State"
-              error="Select State"
               options={[
                 { value: "Active", label: "Active" },
                 { value: "Deactive", label: "Deactive" },
@@ -30,7 +25,6 @@ export default function ProductAdd() {
             <Select
               label="Product Category"
               placeholder="Select State"
-              error="Select State"
               options={[
                 { value: "Active", label: "Active" },
                 { value: "Deactive", label: "Deactive" },
@@ -43,7 +37,6 @@ export default function ProductAdd() {
             <Select
               label="Product Sub-Category"
               placeholder="Select State"
-              error="Select State"
               options={[
                 { value: "Active", label: "Active" },
                 { value: "Deactive", label: "Deactive" },
@@ -54,7 +47,6 @@ export default function ProductAdd() {
             <Select
               label="Supplier "
               placeholder="Select State"
-              error="Select State"
               options={[
                 { value: "Active", label: "Active" },
                 { value: "Deactive", label: "Deactive" },
@@ -67,7 +59,6 @@ export default function ProductAdd() {
             <Select
               label="Brand"
               placeholder="Select State"
-              error="Select State"
               options={[
                 { value: "Active", label: "Active" },
                 { value: "Deactive", label: "Deactive" },
@@ -78,7 +69,6 @@ export default function ProductAdd() {
             <Select
               label="Tags"
               placeholder="Select State"
-              error="Select State"
               options={[
                 { value: "Active", label: "Active" },
                 { value: "Deactive", label: "Deactive" },

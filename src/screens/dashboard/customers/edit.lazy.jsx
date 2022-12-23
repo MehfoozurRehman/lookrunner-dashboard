@@ -51,7 +51,6 @@ export default function CustomerAdd() {
         <Select
           label="State"
           placeholder="Select State"
-          error="select State"
           options={[
             { value: "1", label: "1" },
             { value: "2", label: "2" },
@@ -61,7 +60,6 @@ export default function CustomerAdd() {
         <Select
           label="City"
           placeholder="Select City"
-          error="Select City"
           options={[
             { value: "1", label: "1" },
             { value: "2", label: "2" },
@@ -73,7 +71,6 @@ export default function CustomerAdd() {
         <Textarea
           label="Delivery instruction"
           placeholder="Enter Delivery instruction"
-          error="Delivery instruction"
         />
         <div
           className="container__main__content__details__heading"
@@ -94,7 +91,6 @@ export default function CustomerAdd() {
         <Select
           label="State"
           placeholder="Select State"
-          error="select State"
           options={[
             { value: "1", label: "1" },
             { value: "2", label: "2" },
@@ -104,7 +100,6 @@ export default function CustomerAdd() {
         <Select
           label="City"
           placeholder="Select City"
-          error="Select City"
           options={[
             { value: "1", label: "1" },
             { value: "2", label: "2" },

@@ -9,16 +9,11 @@ export default function CategorieAdd() {
     <div className="container__main__content__details">
       <div className="container__main__content__details__main container__main__content__details__main__special">
         <Input type="text" label="Name" placeholder="Enter name" />
-        <Textarea
-          label="Description"
-          placeholder="Enter Description"
-          error="Enter Description"
-        />
+        <Textarea label="Description" placeholder="Enter Description" />
         <Select
           label="Parent Category"
           isMulti
           placeholder="Enter Parent Category"
-          error="Select Parent Category"
           options={[
             { value: "1", label: "1" },
             { value: "2", label: "2" },

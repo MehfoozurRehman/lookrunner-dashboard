@@ -44,7 +44,6 @@ export default function supplierEdit() {
             <Select
               label="State"
               placeholder="Select State"
-              error="Select State"
               options={[
                 { value: "punjab", label: "punjab" },
                 { value: "khaber", label: "khaber" },
@@ -58,7 +57,6 @@ export default function supplierEdit() {
             <Select
               label="City"
               placeholder="Select City"
-              error="Select City"
               options={[
                 { value: "Lahore", label: "Lahore" },
                 { value: "Ali pur", label: "Ali pur" },
@@ -76,11 +74,7 @@ export default function supplierEdit() {
         </div>
         <Input type="text" label="Address" placeholder="Enter Address" />
 
-        <Textarea
-          label="Description"
-          placeholder="Enter Description..."
-          error="Enter Description"
-        />
+        <Textarea label="Description" placeholder="Enter Description..." />
       </div>
       <div className="container__main__content__details__buttons">
         <Link

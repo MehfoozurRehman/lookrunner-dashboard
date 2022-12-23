@@ -12,7 +12,6 @@ export default function StateAdd() {
         <Select
           label="Status"
           placeholder=" select status"
-          error="select state"
           options={[
             { value: "Active", label: "Active" },
             { value: "Deactive", label: "Deactive" },

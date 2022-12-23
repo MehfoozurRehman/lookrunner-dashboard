@@ -14,7 +14,6 @@ export default function CityAdd() {
             <Select
               label="State"
               placeholder=" select State"
-              error="select state"
               options={[
                 { value: "Active", label: "Active" },
                 { value: "Deactive", label: "Deactive" },
@@ -25,7 +24,6 @@ export default function CityAdd() {
             <Select
               label="Status"
               placeholder=" select status"
-              error="select Status"
               options={[
                 { value: "Active", label: "Active" },
                 { value: "Deactive", label: "Deactive" },

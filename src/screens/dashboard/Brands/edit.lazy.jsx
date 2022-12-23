@@ -10,11 +10,7 @@ export default function BrandAdd() {
       <div className="container__main__content__details__main container__main__content__details__main__special">
         <Input type="text" label="Name" placeholder="Enter name" />
 
-        <Textarea
-          label="Description"
-          placeholder="Enter Description"
-          error="Enter Description"
-        />
+        <Textarea label="Description" placeholder="Enter Description" />
       </div>
       <div className="container__main__content__details__buttons">
         <Link

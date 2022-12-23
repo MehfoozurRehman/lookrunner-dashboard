@@ -54,7 +54,6 @@ export default function DiscountRuleAdd() {
             <Select
               label="Discount Type"
               placeholder=" select State"
-              error="Discount Type is required"
               options={[
                 { value: "Active", label: "Active" },
                 { value: "Deactive", label: "Deactive" },

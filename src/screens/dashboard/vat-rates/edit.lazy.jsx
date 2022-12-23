@@ -14,7 +14,6 @@ export default function VatrateEdit() {
           label="Select Type"
           isMulti
           placeholder="Select Type"
-          error="Select Parent Category"
           options={[
             { value: "1", label: "1" },
             { value: "2", label: "2" },
