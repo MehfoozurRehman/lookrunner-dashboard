@@ -23,9 +23,7 @@ export default function Input({ label, id, error, type, secure, ...props }) {
         {secure && (
           <button
             className="container__main__content__details__main__input__button"
-            onClick={() => {
-              setIsSecure(!isSecure);
-            }}
+            onClick={() => setIsSecure(!isSecure)}
           >
             {isSecure ? (
               <EyeOff size={20} color="currentColor" />

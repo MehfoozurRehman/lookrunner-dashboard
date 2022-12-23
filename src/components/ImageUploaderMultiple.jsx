@@ -25,9 +25,7 @@ export function ImageUploaderMultiple({
           >
             <button
               className="container__main__content__details__main__input__field__wrapper__image__delete"
-              onClick={() => {
-                setImages(images.filter((_img, i) => i !== index));
-              }}
+              onClick={() => setImages(images.filter((_img, i) => i !== index))}
             >
               <X size={20} color="currentColor" />
             </button>

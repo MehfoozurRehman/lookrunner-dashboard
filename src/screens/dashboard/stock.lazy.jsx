@@ -1,19 +1,8 @@
-import {
-  TableEntryDeleteButton,
-  TableEntryDescription,
-  TableEntryEditButton,
-  TableEntryStatus,
-  TableEntryText,
-  TableEntryViewButton,
-} from "components";
+import { TableEntryText } from "components";
 
-import { Link } from "router";
 import { Search } from "react-feather";
-import Select from "react-select";
-import { useLocation } from "react-router";
 
 export default function Stock() {
-  const location = useLocation();
   return (
     <div className="container__main__content__listing">
       <div className="container__main__content__listing__header">

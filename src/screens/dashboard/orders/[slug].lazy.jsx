@@ -61,9 +61,7 @@ function OrderStatus() {
       <button
         className="order__details__steps__button"
         disabled={activeStep === 5}
-        onClick={() => {
-          setActiveStep(activeStep + 1);
-        }}
+        onClick={() => setActiveStep(activeStep + 1)}
       >
         {activeStep === 0
           ? "Move to delivered"

@@ -64,16 +64,10 @@ export default function Profile() {
       </div>
       <div className="container__main__content__details__buttons">
         <Link
-          to={backLocation}
+          to={"/dashboard"}
           className="container__main__content__details__buttons__button container__main__content__details__buttons__primary"
         >
-          Add
-        </Link>
-        <Link
-          to={backLocation}
-          className="container__main__content__details__buttons__button container__main__content__details__buttons__secondary"
-        >
-          Discard
+          Save
         </Link>
       </div>
     </div>

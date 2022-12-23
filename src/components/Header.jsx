@@ -23,9 +23,7 @@ export default function Header({ setSidebarOpen }) {
     <div className="container__main__header">
       <div className="container__main__header__left">
         <button
-          onClick={() => {
-            setSidebarOpen(true);
-          }}
+          onClick={() => setSidebarOpen(true)}
           className="container__main__header__left__button container__main__header__left__button__menu"
         >
           <Menu size={20} color="currentColor" />
@@ -47,9 +45,7 @@ export default function Header({ setSidebarOpen }) {
             <Fragment key={entry.path}>
               {entry.path === location.pathname.toLowerCase() ? null : (
                 <button
-                  onClick={() => {
-                    navigate(entry.path ? entry.path : -1);
-                  }}
+                  onClick={() => navigate(entry.path ? entry.path : -1)}
                   className="container__main__header__left__button"
                 >
                   <ArrowLeft size={20} color="currentColor" />
@@ -60,6 +56,20 @@ export default function Header({ setSidebarOpen }) {
               </div>
             </Fragment>
           ))}
+        {location.pathname.toLowerCase() !== "/dashboard/profile" ? null : (
+          <>
+            <button
+              onClick={() => navigate(-1)}
+              className="container__main__header__left__button"
+            >
+              <ArrowLeft size={20} color="currentColor" />
+            </button>
+            <div className="container__main__header__left__icon">
+              <User size={20} color="currentColor" />
+            </div>
+          </>
+        )}
+
         <div className="container__main__header__left__heading">
           {location.pathname.toLowerCase() === "/dashboard"
             ? location.pathname
@@ -78,9 +88,7 @@ export default function Header({ setSidebarOpen }) {
         <div className="container__main__header__right__panel">
           <button
             className="container__main__header__right__panel__main"
-            onClick={() => {
-              setProfilePanelOpen(!profilePanelOpen);
-            }}
+            onClick={() => setProfilePanelOpen(!profilePanelOpen)}
           >
             <Avatar
               src={user?.profilePic}
@@ -105,15 +113,14 @@ export default function Header({ setSidebarOpen }) {
                   to="/dashboard/profile"
                   replace={true}
                   className="container__main__header__right__panel__content__entry"
+                  onClick={() => setProfilePanelOpen(false)}
                 >
                   <User size={20} color="currentColor" />
                   Profile
                 </Link>
                 <Link
                   to="/"
-                  onClick={() => {
-                    setUser(null);
-                  }}
+                  onClick={() => setUser(null)}
                   replace={true}
                   className="container__main__header__right__panel__content__entry"
                 >

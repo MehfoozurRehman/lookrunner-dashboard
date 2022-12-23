@@ -29,10 +29,8 @@ export default function DiscountRules() {
           </div>
           <div className="container__main__content__listing__header__right">
             <button
-              onClick={() => {
-                setShow(!show);
-              }}
-              className="container__main__content__listing__header__right__button__btn"
+              onClick={() => setShow(!show)}
+              className="container__main__content__listing__header__right__button"
             >
               Create Discount
             </button>
@@ -96,7 +94,6 @@ function TableEntry() {
   return (
     <div className="container__main__content__listing__table__content__list">
       <div className="container__main__content__listing__table__content__list__entry">
-        {/* <TableEntryViewButton /> */}
         <TableEntryEditButton />
         <TableEntryDeleteButton />
       </div>

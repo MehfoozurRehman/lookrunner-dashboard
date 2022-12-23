@@ -18,9 +18,7 @@ export default function Sidebar({ setSidebarOpen }) {
         </Link>
         <button
           className="container__sidebar__button"
-          onClick={() => {
-            setSidebarOpen(false);
-          }}
+          onClick={() => setSidebarOpen(false)}
         >
           <X size={20} color="currentColor" />
         </button>

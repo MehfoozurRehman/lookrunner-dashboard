@@ -6,12 +6,10 @@ export default function CustomerDetail({ setShow }) {
       <div className="customer__detail__popup__overlay">
         <div className="customer__detail__popup__overlay__card">
           <button
-            onClick={() => {
-              setShow(false);
-            }}
+            onClick={() => setShow(false)}
             className="customer__detail__popup__overlay__card__close"
           >
-            <X />
+            <X size={20} color="currentColor" />
           </button>
           <div className="customer__detail__popup__overlay__card__heading">
             Contact information
@@ -32,13 +30,7 @@ export default function CustomerDetail({ setShow }) {
             />
           </div>
           <div className="customer__detail__popup__overlay__card__submit">
-            <button
-              onClick={() => {
-                setShow(false);
-              }}
-            >
-              Submit
-            </button>
+            <button onClick={() => setShow(false)}>Submit</button>
           </div>
         </div>
       </div>

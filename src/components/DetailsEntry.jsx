@@ -20,9 +20,7 @@ export default function DetailsEntry({ secure, label, children }) {
         {secure && isSecure ? secureValue(children) : children}
         {secure && (
           <button
-            onClick={() => {
-              setIsSecure(!isSecure);
-            }}
+            onClick={() => setIsSecure(!isSecure)}
             className="container__main__content__details__main__entry__value__secure"
           >
             {isSecure ? (

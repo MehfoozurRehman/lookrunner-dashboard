@@ -48,9 +48,7 @@ export default function create() {
                   </div>
                 </div>
                 <button
-                  onClick={() => {
-                    setShow(!show);
-                  }}
+                  onClick={() => setShow(!show)}
                   className="order__details__main__customer__card__content__row__right"
                 >
                   <svg
@@ -89,9 +87,7 @@ export default function create() {
                   </div>
                 </div>
                 <button
-                  onClick={() => {
-                    setShow(!show);
-                  }}
+                  onClick={() => setShow(!show)}
                   className="order__details__main__customer__card__content__row__right"
                 >
                   <svg
@@ -129,9 +125,7 @@ export default function create() {
                   </div>
                 </div>
                 <button
-                  onClick={() => {
-                    setShow(!show);
-                  }}
+                  onClick={() => setShow(!show)}
                   className="order__details__main__customer__card__content__row__right"
                 >
                   <svg
