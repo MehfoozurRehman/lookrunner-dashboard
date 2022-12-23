@@ -25,7 +25,7 @@ export default function RichTextarea({ label, id, error, type, ...props }) {
             ],
             placeholder: "Enter name",
           }}
-          onChange={(event, editor) => {
+          onChange={(_event, editor) => {
             const data = editor.getData();
             console.log({ data });
           }}

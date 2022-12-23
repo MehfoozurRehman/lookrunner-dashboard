@@ -11,7 +11,6 @@ export default function ContentManagement() {
   const [banner, setBanner] = useState(null);
   const [image, setImage] = useState(null);
   const [images, setImages] = useState([]);
-  console.log(image);
   const backLocation = useBackLocation();
   return (
     <div className="container__main__content__details">
