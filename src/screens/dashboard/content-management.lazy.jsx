@@ -32,19 +32,13 @@ export default function ContentManagement() {
         >
           How Lookrunner works
         </div>
-        <div
-          style={{
-            width: "100%",
-            border: "1px solid black",
-            margin: "2em 0em",
-          }}
-        ></div>
+
         <Input type="text" label="Heading 1" placeholder="Enter Heading 1" />
         <Textarea label="Description" placeholder="Enter Description" />
         <div
           style={{
             width: "100%",
-            border: "1px solid black",
+            border: ".6px solid #696A69",
             margin: "2em 0em",
           }}
         ></div>
@@ -53,7 +47,7 @@ export default function ContentManagement() {
         <div
           style={{
             width: "100%",
-            border: "1px solid black",
+            border: "1px solid #696A69",
             margin: "2em 0em",
           }}
         ></div>
@@ -62,7 +56,7 @@ export default function ContentManagement() {
         <div
           style={{
             width: "100%",
-            border: "1px solid black",
+            border: ".6px solid #696A69",
             margin: "2em 0em",
           }}
         ></div>
@@ -108,11 +102,11 @@ export default function ContentManagement() {
         <Input type="text" label="Heading" placeholder="abc" />
         <Textarea label="Description" placeholder="Enter Description" />
         <ImageUploaderSingle label="Image" image={image} setImage={setImage} />
-        <ImageUploaderMultiple
+        {/* <ImageUploaderMultiple
           label="Image"
           images={images}
           setImages={setImages}
-        />
+        /> */}
       </div>
       <div className="container__main__content__details__buttons">
         <Link

@@ -91,12 +91,6 @@ export default function OrganizationalSetting() {
         >
           Save
         </Link>
-        <Link
-          to={backLocation}
-          className="container__main__content__details__buttons__button container__main__content__details__buttons__secondary"
-        >
-          Discard
-        </Link>
       </div>
     </div>
   );
