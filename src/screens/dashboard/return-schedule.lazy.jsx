@@ -5,21 +5,38 @@ import { useState } from "react";
 
 export default function ReturnSchedule() {
   const backLocation = useBackLocation();
-  const [isChecked, setIschecked] = useState(false);
+  const [selectedDays, setSelectedDays] = useState([]);
+  const listOfDays = [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
+  ];
   return (
     <div className="container__main__content__details">
       <div className="container__main__content__details__main container__main__content__details__main__special">
-        <CheckBox
-          value={isChecked}
-          label="label"
-          labelColor="#242424"
-          checkedColor="#242424"
-          unCheckedColor="#7fffd4"
-          iconColor="#ffffff"
-          onChange={() => {
-            isChecked ? setIschecked(false) : setIschecked(true);
-          }}
-        />
+        {listOfDays.map((day) => {
+          return (
+            <CheckBox
+              value={selectedDays.includes(day)}
+              label={day}
+              labelColor="#555555"
+              checkedColor="#2A5E59"
+              unCheckedColor="#D9D9D9"
+              iconColor="#ffffff"
+              onChange={() => {
+                if (selectedDays.includes(day)) {
+                  setSelectedDays(selectedDays.filter((d) => d !== day));
+                } else {
+                  setSelectedDays([...selectedDays, day]);
+                }
+              }}
+            />
+          );
+        })}
       </div>
       <div className="container__main__content__details__buttons">
         <Link
