@@ -91,7 +91,8 @@ export default function EmployeeAdd() {
         <div className="container__main__content__details__main__row">
           <div className="container__main__content__details__main__row__entry">
             <Input
-              type="Password"
+              type="password"
+              secure
               label="Password"
               placeholder="Enter password"
               autoComplete="new-password"
@@ -99,7 +100,8 @@ export default function EmployeeAdd() {
           </div>
           <div className="container__main__content__details__main__row__entry">
             <Input
-              type="Password"
+              type="password"
+              secure
               label="Confirm Password"
               placeholder="Enter confirm password"
             />
