@@ -8,7 +8,7 @@ import {
 
 import { Link } from "router";
 import { Search } from "react-feather";
-import { useLocation } from "react-router";
+import { useLocation } from "react-router-dom";
 
 export default function Customers() {
   const location = useLocation();

@@ -3,10 +3,11 @@ import {
   TableEntryEditButton,
   TableEntryText,
 } from "components";
-import { Search } from "react-feather";
-import { useLocation } from "react-router";
-import { useState } from "react";
+
 import DiscountPopup from "../../../components/DiscountPopup";
+import { Search } from "react-feather";
+import { useLocation } from "react-router-dom";
+import { useState } from "react";
 
 export default function DiscountRules() {
   const [show, setShow] = useState(false);

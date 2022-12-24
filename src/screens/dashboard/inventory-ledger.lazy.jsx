@@ -1,7 +1,7 @@
-import { TableEntryText } from "components";
 import { Search } from "react-feather";
 import Select from "react-select";
-import { useLocation } from "react-router";
+import { TableEntryText } from "components";
+import { useLocation } from "react-router-dom";
 
 export default function InventoryLedger() {
   const location = useLocation();
