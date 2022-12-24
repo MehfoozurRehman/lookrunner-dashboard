@@ -7,7 +7,7 @@
 }
 .dashboard__container__left__main {
   padding: 1.5em;
-  background-color: #f5f5f5;
+  background-color: #f5f6fa;
   border-radius: 10px;
 }
 .dashboard__container__left__main__header {
@@ -99,7 +99,7 @@
 .dashboard__container__right__content__entry__icon {
   width: 50px;
   height: 50px;
-  background-color: #f5f5f5;
+  background-color: #f5f6fa;
   border-radius: 10px;
   margin-right: 1em;
   display: flex;
@@ -116,7 +116,7 @@
   color: #8b8b8b;
 }
 .dashboard__container__right__content__entry:hover {
-  background-color: #f5f5f5;
+  background-color: #f5f6fa;
 }
 @media (max-width: 1440px) {
   .dashboard__container__left__entry__content__entry {
