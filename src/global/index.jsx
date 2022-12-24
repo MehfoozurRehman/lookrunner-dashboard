@@ -549,7 +549,7 @@ export const sidebarEnteries = [
       </svg>
     ),
     name: "Products report",
-    path: "/dashboard/products-report",
+    path: "/dashboard/product-report",
   },
   {
     category: "Reports",
