@@ -23,12 +23,12 @@
 .container__main__content__listing__header__left__search {
   display: flex;
   align-items: center;
-  background-color: #f5f6fa;
+  background-color: var(--backgroundColor);
   border-radius: 50px;
   width: 100%;
   height: 40px;
   max-width: 300px;
-  border: 1px solid #f5f6fa;
+  border: 1px solid var(--backgroundColor);
   outline: 1px solid transparent;
   margin-right: 1em;
   margin-bottom: 1em;
@@ -75,7 +75,7 @@
 .container__main__content__listing__header__left__search__button:focus {
   background-color: var(--primary);
   margin-right: 0em;
-  color: white;
+  color: var(--colorReverse);
 }
 .container__main__content__listing__header__left__filter {
   display: flex;
@@ -90,7 +90,7 @@
   padding: 0em 0.5em;
   min-width: 130px;
   margin-right: 1em;
-  background-color: #f5f6fa;
+  background-color: var(--backgroundColor);
   border: none;
   height: 40px;
 }
@@ -99,7 +99,7 @@
   min-width: 130px;
   padding: 0em 0.5em;
   margin-right: 1em;
-  background-color: #f5f6fa;
+  background-color: var(--backgroundColor);
 }
 .container__main__content__listing__header__left__filter .css-lkh0o5-menu {
   border-radius: 10px;
@@ -117,7 +117,7 @@
   background-color: var(--primary);
   padding: 0.8em 2em;
   border-radius: 50px;
-  color: white;
+  color: var(--colorReverse);
   text-decoration: none;
   border: none;
   cursor: pointer;
@@ -137,7 +137,7 @@
 }
 .container__main__content__listing__table__header {
   display: flex;
-  background-color: #f1f3fa;
+  background-color: var(--backgroundColor);
   width: fit-content;
   min-width: 100%;
   margin-bottom: 1em;
@@ -174,7 +174,7 @@
   border-radius: 50px;
 }
 .container__main__content__listing__table__content__list:hover {
-  background-color: #f5f6fa;
+  background-color: var(--backgroundColor);
 }
 .container__main__content__listing__table__content__list__entry {
   display: flex;
@@ -201,7 +201,7 @@
   margin-left: 1em;
   height: 30px;
   border-radius: 50px;
-  color: white;
+  color: var(--colorReverse);
   background-color: var(--primary);
   border: none;
   cursor: pointer;
@@ -210,7 +210,7 @@
   background-color: var(--primaryDark);
 }
 .container__main__content__listing__table__content__list__entry__special__panel {
-  background-color: white;
+  background-color: var(--backgroundDarkColor);
   position: absolute;
   display: flex;
   align-items: flex-start;
@@ -227,7 +227,7 @@
   margin-bottom: 0.5em;
   font-size: 12px;
   font-weight: bold;
-  color: black;
+  color: var(--color);
 }
 .container__main__content__listing__table__content__list__entry__special__panel__input {
   min-width: 100%;
@@ -259,7 +259,7 @@
   position: absolute;
   top: 0px;
   width: 300px;
-  background-color: white;
+  background-color: var(--backgroundDarkColor);
   padding: 1em;
   border-radius: 10px;
   display: none;
@@ -279,7 +279,7 @@
   height: 35px;
   width: 35px;
   border: none;
-  color: white;
+  color: var(--colorReverse);
   background-color: var(--secondary);
   margin-right: 0.5em;
   cursor: pointer;
@@ -297,10 +297,10 @@
   background-color: var(--primary);
 }
 .container__main__content__listing__table__content__list__entry__button:last-child {
-  background-color: black;
+  background-color: var(--color);
 }
 .container__main__content__listing__table__content__list__entry__button:last-child:hover {
-  background-color: black;
+  background-color: var(--color);
 }
 .container__main__content__listing__table__content__list__entry
   .css-b62m3t-container {
@@ -313,14 +313,14 @@
 }
 .container__main__content__listing__table__content__list__entry
   .css-1im77uy-control {
-  background-color: #f5f6fa;
+  background-color: var(--backgroundColor);
   border-radius: 10px;
   border: none;
   width: 100% !important;
 }
 .container__main__content__listing__table__content__list__entry
   .css-s9p5rr-control {
-  background-color: #f5f6fa;
+  background-color: var(--backgroundColor);
   border-radius: 10px;
   min-width: 100% !important;
 }

@@ -29,10 +29,10 @@
 .container__main__content__details__main__input__field__wrapper {
   display: flex;
   border-radius: 50px;
-  background-color: #f5f6fa;
+  background-color: var(--backgroundColor);
   height: 40px;
-  border: 1px solid #f5f6fa;
-  outline: 1px solid #f5f6fa;
+  border: 1px solid var(--backgroundColor);
+  outline: 1px solid var(--backgroundColor);
 }
 .container__main__content__details__main__input__field__wrapper
   .css-b62m3t-container {
@@ -150,7 +150,7 @@
 }
 
 .container__main__content__details__main__row__img__uploader {
-  background-color: #f5f6fa;
+  background-color: var(--backgroundColor);
   min-height: 200px;
   border-radius: 10px;
   display: flex;
@@ -172,7 +172,7 @@
 }
 
 .container__main__content__details__main__row__img__uploader__content svg {
-  color: black;
+  color: var(--color);
   width: 30px;
   height: 30px;
 }
@@ -206,7 +206,7 @@ select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
   border: none;
-  -webkit-text-fill-color: black;
+  -webkit-text-fill-color: var(--color);
   -webkit-box-shadow: 0 0 0px 1000px transparent inset;
   transition: background-color 5000s ease-in-out 0s;
 }

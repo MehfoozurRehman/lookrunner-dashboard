@@ -1,10 +1,11 @@
 import { Input, Select } from "components";
 
+import CheckBox from "components/CheckBox";
 import { Link } from "router";
-import { useState } from "react";
 import { useBackLocation } from "global";
 import { useLocation } from "react-router-dom";
-import CheckBox from "components/CheckBox";
+import { useState } from "react";
+
 export default function DiscountRuleAdd() {
   const backLocation = useBackLocation();
   const { state } = useLocation();
@@ -69,7 +70,7 @@ export default function DiscountRuleAdd() {
             label="Set end date and time"
             labelColor="#555555"
             checkedColor="#2A5E59"
-            unCheckedColor="#f5f6fa"
+            unCheckedColor="var(--backgroundColor)"
             iconColor="#ffffff"
             onChange={() => {
               setIsEnd(!isEnd);
@@ -136,14 +137,14 @@ export default function DiscountRuleAdd() {
                 label="Free Delivery"
                 labelColor="#555555"
                 checkedColor="#2A5E59"
-                unCheckedColor="#f5f6fa"
+                unCheckedColor="var(--backgroundColor)"
                 iconColor="#ffffff"
               />
               <CheckBox
                 label="Percentage Discount"
                 labelColor="#555555"
                 checkedColor="#2A5E59"
-                unCheckedColor="#f5f6fa"
+                unCheckedColor="var(--backgroundColor)"
                 iconColor="#ffffff"
               />
             </div>
@@ -185,7 +186,7 @@ export default function DiscountRuleAdd() {
             label="Set end date and time"
             labelColor="#555555"
             checkedColor="#2A5E59"
-            unCheckedColor="#f5f6fa"
+            unCheckedColor="var(--backgroundColor)"
             iconColor="#ffffff"
             onChange={() => {
               setIsEnd(!isEnd);

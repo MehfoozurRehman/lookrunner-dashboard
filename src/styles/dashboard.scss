@@ -7,7 +7,7 @@
 }
 .dashboard__container__left__main {
   padding: 1.5em;
-  background-color: #f5f6fa;
+  background-color: var(--backgroundColor);
   border-radius: 10px;
 }
 .dashboard__container__left__main__header {
@@ -62,8 +62,8 @@
   font-size: 12px;
 }
 .dashboard__container__left__entry__content__entry:hover {
-  background-color: var(--gray);
-  border-color: var(--gray);
+  background-color: var(--backgroundColor);
+  border-color: var(--backgroundColor);
 }
 .dashboard__container__right {
   flex: 1;
@@ -99,7 +99,7 @@
 .dashboard__container__right__content__entry__icon {
   width: 50px;
   height: 50px;
-  background-color: #f5f6fa;
+  background-color: var(--backgroundColor);
   border-radius: 10px;
   margin-right: 1em;
   display: flex;
@@ -109,14 +109,14 @@
 .dashboard__container__right__content__entry__content__heading {
   font-size: 12px;
   font-weight: 700;
-  color: black;
+  color: var(--color);
 }
 .dashboard__container__right__content__entry__content__info {
   font-size: 12px;
   color: #8b8b8b;
 }
 .dashboard__container__right__content__entry:hover {
-  background-color: #f5f6fa;
+  background-color: var(--backgroundColor);
 }
 @media (max-width: 1440px) {
   .dashboard__container__left__entry__content__entry {

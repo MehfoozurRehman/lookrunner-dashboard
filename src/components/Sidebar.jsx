@@ -1,10 +1,10 @@
 import { Link, NavLink } from "router";
 import { sidebarCategories, sidebarEnteries } from "global";
-import { useState } from "react";
 
 import { Fragment } from "react";
 import { X } from "react-feather";
 import { logo } from "assets";
+import { useState } from "react";
 
 export default function Sidebar({ setSidebarOpen }) {
   return (
@@ -43,9 +43,7 @@ export default function Sidebar({ setSidebarOpen }) {
                     to={entry.path}
                     className="container__sidebar__entry__content__entry"
                   >
-                    <div className="container__sidebar__entry__content__entry__icon">
-                      {entry.icon}
-                    </div>
+                    {entry.icon}
                     {entry.name}
                   </NavLink>
                 ))
@@ -95,9 +93,7 @@ function SidebarEntry({ category, sidebarEnteries, setSidebarOpen }) {
                 }}
                 className="container__sidebar__entry__content__entry"
               >
-                <div className="container__sidebar__entry__content__entry__icon">
-                  {entry.icon}
-                </div>
+                {entry.icon}
                 {entry.name}
               </NavLink>
             ))}

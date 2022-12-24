@@ -31,7 +31,7 @@ export default function ReturnSchedule() {
               label={day}
               labelColor="#555555"
               checkedColor="#2A5E59"
-              unCheckedColor="#f5f6fa"
+              unCheckedColor="var(--backgroundColor)"
               iconColor="#ffffff"
               onChange={() => {
                 if (selectedDays.includes(day)) {

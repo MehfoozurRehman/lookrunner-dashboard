@@ -27,7 +27,7 @@
   justify-content: center;
   margin-right: 1em;
   border: none;
-  background-color: var(--gray);
+  background-color: var(--backgroundColor);
   cursor: pointer;
 }
 .container__main__header__left__button svg {
@@ -37,7 +37,7 @@
 }
 .container__main__header__left__button:hover {
   background-color: var(--primary);
-  color: white;
+  color: var(--colorReverse);
 }
 .container__main__header__left__button__menu {
   display: none;
@@ -65,7 +65,7 @@
   border-radius: 10px;
   padding: 0.3em 1em;
   min-width: 150px;
-  background-color: var(--gray);
+  background-color: var(--backgroundColor);
   cursor: pointer;
   height: 43px;
 }
@@ -87,7 +87,7 @@
   top: 55px;
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: var(--backgroundColor);
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
   width: 100%;
   padding: 1em;
@@ -99,22 +99,26 @@
   align-items: center;
   font-size: 12px;
   text-decoration: none;
-  color: black;
+  color: var(--color);
 }
 .container__main__header__right__panel__content__entry svg {
   margin-right: 0.5em;
   width: 18px;
   height: 18px;
   stroke-width: 2.5px;
+  stroke: var(--color);
 }
 .container__main__header__right__panel__content__entry:hover {
   color: var(--primary);
+}
+.container__main__header__right__panel__content__entry:hover svg {
+  stroke: var(--primary);
 }
 .container__main__header__right__panel__content__entry:last-child {
   margin-bottom: 0em;
 }
 .container__main__header__right__button {
-  background-color: var(--gray);
+  background-color: var(--backgroundColor);
   width: 40px;
   height: 40px;
   border-radius: 50px;
