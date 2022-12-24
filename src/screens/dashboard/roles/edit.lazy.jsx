@@ -12,7 +12,7 @@ export default function RoleEdit() {
           <Input type="text" label="Name" placeholder="Enter name" />
         </div>
         <Select
-          label="Select modules"
+          label="Modules"
           placeholder="Select modules"
           options={[
             { value: "User management", label: "User management" },

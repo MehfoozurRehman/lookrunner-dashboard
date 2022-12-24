@@ -57,14 +57,20 @@ export default function CustomerCard() {
           <div className="order__details__main__customer__card__content__row">
             <div className="order__details__main__customer__card__content__row__left">
               <div className="order__details__main__customer__card__content__row__left__heading">
-                Contact information
+                DELIVERY ADDRESS
               </div>
-              <a
-                href="mailto:dayyanshahid13@gmail.com"
-                className="order__details__main__customer__card__content__row__left__email"
-              >
-                dayyanshahid13@gmail.com
-              </a>
+              <div className="order__details__main__customer__card__content__row__left__email">
+                Muhammad Dayyan
+              </div>
+              <div className="order__details__main__customer__card__content__row__left__email">
+                P-4-B, NEW GARDEN BLOCK,
+              </div>
+              <div className="order__details__main__customer__card__content__row__left__email">
+                FAISALABAD PAKISTAN
+              </div>
+              <div className="order__details__main__customer__card__content__row__left__email">
+                Faisalabad 38000 pakistan
+              </div>
               <div className="order__details__main__customer__card__content__row__left__number">
                 +923219652222
               </div>
@@ -100,16 +106,26 @@ export default function CustomerCard() {
           <div className="order__details__main__customer__card__content__row">
             <div className="order__details__main__customer__card__content__row__left">
               <div className="order__details__main__customer__card__content__row__left__heading">
-                Contact information
+                BILLING ADDRESS{" "}
               </div>
-              <a
+              <div className="order__details__main__customer__card__content__row__left__number">
+                Same as shipping address
+              </div>
+            </div>
+          </div>{" "}
+          <div className="order__details__main__customer__card__content__row">
+            <div className="order__details__main__customer__card__content__row__left">
+              <div className="order__details__main__customer__card__content__row__left__heading">
+                Delivery Instruction
+              </div>
+              <div
                 href="mailto:dayyanshahid13@gmail.com"
                 className="order__details__main__customer__card__content__row__left__email"
               >
-                dayyanshahid13@gmail.com
-              </a>
-              <div className="order__details__main__customer__card__content__row__left__number">
-                +923219652222
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Quibusdam reiciendis deserunt doloribus alias ipsam ut
+                exercitationem sint illum cupiditate, eius facere debitis sunt!
+                Minima aspernatur doloremque eaque labore a error!
               </div>
             </div>
             <button
@@ -143,19 +159,7 @@ export default function CustomerCard() {
           <div className="order__details__main__customer__card__content__row">
             <div className="order__details__main__customer__card__content__row__left">
               <div className="order__details__main__customer__card__content__row__left__heading">
-                Contact information
-              </div>
-              <div className="order__details__main__customer__card__content__row__left__number">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatem beatae quas at ipsum eos delectus cum praesentium ad
-                enim voluptate!
-              </div>
-            </div>
-          </div>
-          <div className="order__details__main__customer__card__content__row">
-            <div className="order__details__main__customer__card__content__row__left">
-              <div className="order__details__main__customer__card__content__row__left__heading">
-                Contact information
+                Charge
               </div>
               <input
                 type="text"
