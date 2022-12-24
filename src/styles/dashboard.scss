@@ -113,7 +113,7 @@
 }
 .dashboard__container__right__content__entry__content__info {
   font-size: 12px;
-  color: #8b8b8b;
+  color: var(--colorLight);
 }
 .dashboard__container__right__content__entry:hover {
   background-color: var(--backgroundColor);

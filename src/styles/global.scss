@@ -7,6 +7,7 @@ html {
   --colorLight: #333333;
   --colorReverse: #ffffff;
   --colorLightReverse: #e7e7e7;
+  --transparentColor: rgba(31, 31, 31, 0.9);
 }
 html[data-theme="dark"] {
   --backgroundColor: #333333;
@@ -17,6 +18,7 @@ html[data-theme="dark"] {
   --colorLight: #e7e7e7;
   --colorReverse: black;
   --colorLightReverse: #333333;
+  --transparentColor: rgba(26, 26, 26, 0.9);
 }
 
 :root {
@@ -323,7 +325,7 @@ body {
 }
 .container__main__content__listing__header__right__button__order__active {
   background-color: var(--primary);
-  color: var(--backgroundColor);
+  color: white;
 }
 .checkbox {
   position: relative;
@@ -364,7 +366,7 @@ body {
 .container__main__content__details__main__input__field__wrapper__image {
   width: 150px;
   height: 150px;
-  background-color: #f5f6fa;
+  background-color: var(--backgroundColor);
   border-radius: 10px;
   position: relative;
   display: flex;

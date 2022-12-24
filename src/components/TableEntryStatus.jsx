@@ -2,7 +2,10 @@ import Select from "react-select";
 
 export default function TableEntryStatus() {
   return (
-    <div className="container__main__content__listing__table__content__list__entry">
+    <div
+      className="container__main__content__listing__header__left__filter"
+      style={{ marginBottom: 0 }}
+    >
       <Select
         options={[
           {

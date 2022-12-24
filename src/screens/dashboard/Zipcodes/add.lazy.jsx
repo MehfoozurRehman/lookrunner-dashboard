@@ -38,7 +38,6 @@ export default function ZipcodeAdd() {
           ]}
         />
       </div>
-
       <div className="container__main__content__details__buttons">
         <Link
           to={backLocation}

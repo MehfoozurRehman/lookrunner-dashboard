@@ -21,7 +21,6 @@ export default function CustomersecondCard({ setCustomer }) {
               autoComplete="off"
               className="customer__detail__popup__overlay__card__deatil__email"
             />
-
             <input
               type="number"
               placeholder="Enter phone number"

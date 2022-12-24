@@ -1,13 +1,31 @@
+import clsx from "clsx";
+import { useState } from "react";
+
 export default function CardTransaction() {
+  const [activeTab, setActiveTab] = useState("booking");
   return (
     <div className="order__details__main__customer__card">
       <div className="order__details__main__customer__card__header order__details__main__customer__card__header__special">
         Card Transaction
         <div className="order__details__main__customer__card__header__tabs">
-          <button className="order__details__main__customer__card__header__tabs__tab order__details__main__customer__card__header__tabs__tab__active">
+          <button
+            onClick={() => setActiveTab("booking")}
+            className={clsx(
+              "order__details__main__customer__card__header__tabs__tab",
+              activeTab === "booking" &&
+                "order__details__main__customer__card__header__tabs__tab__active"
+            )}
+          >
             Booking Transaction
           </button>
-          <button className="order__details__main__customer__card__header__tabs__tab">
+          <button
+            onClick={() => setActiveTab("return")}
+            className={clsx(
+              "order__details__main__customer__card__header__tabs__tab",
+              activeTab === "return" &&
+                "order__details__main__customer__card__header__tabs__tab__active"
+            )}
+          >
             Return Transaction
           </button>
         </div>

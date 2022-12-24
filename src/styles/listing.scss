@@ -51,11 +51,11 @@
   min-width: 0px;
 }
 .container__main__content__listing__header__left__search__field::placeholder {
-  color: #9698ab;
+  color: var(--color);
 }
 .container__main__content__listing__header__left__search__button {
   background-color: transparent;
-  color: #9698ab;
+  color: var(--color);
   border: none;
   border-radius: 50px;
   height: 40px;
@@ -88,16 +88,40 @@
 .container__main__content__listing__header__left__filter .css-1im77uy-control {
   border-radius: 50px;
   padding: 0em 0.5em;
-  min-width: 130px;
+  min-width: 150px;
   margin-right: 1em;
   background-color: var(--backgroundColor);
-  border: none;
+  border-color: transparent !important;
   height: 40px;
+}
+.container__main__content__listing__header__left__filter__special
+  .css-1im77uy-control {
+  min-width: 100%;
+  margin-right: 0em;
+}
+.container__main__content__listing__header__left__filter__special
+  .css-s9p5rr-control {
+  min-width: 100%;
+  margin-right: 0em !important;
+}
+.container__main__content__listing__header__left__filter__special
+  .css-b62m3t-container {
+  width: 100%;
+  margin-right: 0em;
+}
+.container__main__content__listing__header__left__filter__special
+  .css-lkh0o5-menu {
+  width: 100% !important;
+}
+.container__main__content__listing__header__left__filter
+  .css-1u9des2-indicatorSeparator {
+  display: none;
 }
 .container__main__content__listing__header__left__filter .css-s9p5rr-control {
   border-radius: 50px;
-  min-width: 130px;
+  min-width: 150px;
   padding: 0em 0.5em;
+  height: 40px;
   margin-right: 1em;
   background-color: var(--backgroundColor);
 }
@@ -106,8 +130,15 @@
   width: 90%;
   z-index: 999 !important;
 }
+.container__main__content__listing__header__left__filter .css-lkh0o5-menu {
+  background-color: var(--backgroundColor);
+}
 .container__main__content__listing__header__left__filter .css-lkh0o5-menu div {
   border-radius: 5px !important;
+}
+.container__main__content__listing__header__left__filter
+  .css-1dimb5e-singleValue {
+  color: var(--color);
 }
 .container__main__content__listing__header__right {
   margin-bottom: 1em;
@@ -117,7 +148,7 @@
   background-color: var(--primary);
   padding: 0.8em 2em;
   border-radius: 50px;
-  color: var(--colorReverse);
+  color: white;
   text-decoration: none;
   border: none;
   cursor: pointer;
@@ -166,7 +197,7 @@
 .container__main__content__listing__table__content__list {
   display: flex;
   text-decoration: none;
-  color: #555555;
+  color: var(--color);
   width: fit-content;
   min-width: 100%;
   font-size: 12px;
@@ -193,7 +224,8 @@
   max-width: 50%;
   height: 30px;
   border-radius: 5px;
-  border: 1px solid black;
+  border: 1px solid var(--backgroundColor);
+  background-color: var(--backgroundColor);
   padding: 0em 0.5em;
 }
 .container__main__content__listing__table__content__list__entry__special__button {
@@ -234,7 +266,8 @@
   min-height: 30px;
   margin-bottom: 0.5em;
   border-radius: 5px;
-  border: 1px solid black;
+  border: 1px solid var(--backgroundColor);
+  background-color: var(--backgroundColor);
 }
 .container__main__content__listing__table__content__list__entry__special__panel
   select {
@@ -279,7 +312,6 @@
   height: 35px;
   width: 35px;
   border: none;
-  color: var(--colorReverse);
   background-color: var(--secondary);
   margin-right: 0.5em;
   cursor: pointer;
@@ -287,6 +319,11 @@
 .container__main__content__listing__table__content__list__entry__button svg {
   width: 15px;
   height: 15px;
+  stroke: white;
+}
+.container__main__content__listing__table__content__list__entry__button:last-child
+  svg {
+  stroke: var(--colorReverse);
 }
 .container__main__content__listing__table__content__list__entry__button:hover {
   background-color: var(--secondaryDark);

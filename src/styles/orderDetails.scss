@@ -20,7 +20,7 @@
   margin: 0em auto;
   width: fit-content;
   background-color: var(--primary);
-  color: var(--colorReverse);
+  color: white;
   height: 40px;
   border-radius: 10px;
   padding: 0em 2em;
@@ -61,7 +61,7 @@
 .order__details__steps__content__step__icon {
   width: 30px;
   height: 30px;
-  background-color: #ececec;
+  background-color: var(--backgroundColor);
   border-radius: 50px;
 }
 .order__details__steps__content__step__icon__active {
@@ -100,7 +100,8 @@
   background-color: var(--primaryDark);
 }
 .order__details__steps__button:disabled {
-  background-color: #242526;
+  background-color: var(--colorLight);
+  color: var(--colorReverse);
 }
 .order__details__main {
   display: flex;
@@ -237,7 +238,7 @@
 }
 
 .order__details__main__products__card__content__row__right span {
-  background-color: #ececec;
+  background-color: var(--backgroundColor);
   height: 25px;
   padding: 0em 1em;
   display: flex;
@@ -276,23 +277,18 @@
   display: flex;
 }
 .order__details__main__customer__card__header__tabs__tab__active {
-  width: fit-content;
-  background-color: var(--primary);
-  color: var(--colorReverse);
-  height: 40px;
-  border-radius: 10px;
-  padding: 0em 2em;
-  border: none;
-  cursor: pointer;
-
-  margin-right: 1em;
+  background-color: var(--primary) !important;
+  color: white;
 }
 .order__details__main__customer__card__header__tabs__tab {
   width: fit-content;
   height: 40px;
-  border-radius: 10px;
+  border-radius: 50px;
   padding: 0em 2em;
   border: none;
+  white-space: nowrap;
+  margin-right: 1em;
+  background-color: var(--backgroundDarkColor);
   cursor: pointer;
 }
 .order__details__main__customer__card__header__special {
@@ -302,7 +298,7 @@
 }
 .order__details__main__customer__card__header span {
   font-size: 12px;
-  color: #242526;
+  color: var(--color);
   text-decoration: underline;
   margin-bottom: -0.5em;
 }
@@ -372,13 +368,16 @@
   width: 100%;
 }
 .order__details__main__customer__card__content__row__card__transaction {
-  padding-top: 1em;
   padding-bottom: 1em;
   display: flex;
   justify-content: space-between;
 }
+.order__details__main__customer__card__content__row__card__transaction
+  div:first-child {
+  font-weight: bold;
+}
 .order__details__main__customer__card__content__row {
-  border-top: 1px solid #1c1c1c;
+  border-top: 1px solid var(--colorLight);
   padding-top: 1em;
   padding-bottom: 1em;
   display: flex;
@@ -388,12 +387,12 @@
   flex: 1;
 }
 .order__details__main__customer__card__content__row__left__heading {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 600;
-  color: #1c1c1c;
+  color: var(--color);
 }
 .order__details__main__customer__card__content__row__left__email {
-  color: #1c1c1c;
+  color: var(--color);
 }
 .order__details__main__customer__card__content__row__left__number {
   margin-top: 0.5em;
@@ -404,16 +403,21 @@
   border-radius: 50px;
   padding: 0em 1.5em;
   border: none;
+  background-color: var(--backgroundDarkColor);
   margin-top: 0.7em;
 }
 .order__details__main__customer__card__content__row__left__button {
   margin-top: 1em;
   margin-left: auto;
   background-color: var(--primary);
-  color: var(--colorReverse);
+  color: white;
   padding: 0.8em 2em;
   border-radius: 15px;
   border: none;
+  cursor: pointer;
+}
+.order__details__main__customer__card__content__row__left__button:hover {
+  background-color: var(--primaryDark);
 }
 .order__details__main__customer__card__content__row__right {
   background-color: transparent;
@@ -427,6 +431,7 @@
   border-radius: 50px;
   padding: 0em 1.5em;
   border: none;
+  background-color: var(--backgroundDarkColor);
   margin-bottom: 1em;
 }
 .order__details__main__customer__card__content__textarea {
@@ -436,15 +441,18 @@
   border: none;
   resize: none;
   margin-bottom: 1em;
+  background-color: var(--backgroundDarkColor);
 }
 .order__details__main__customer__card__content__button {
   height: 35px;
-  background-color: #1c1c1c;
+  background-color: var(--color);
   color: var(--colorReverse);
   width: fit-content;
   margin: 0em auto;
   padding: 0em 2em;
   border-radius: 50px;
+  cursor: pointer;
+  border: none;
 }
 @media (max-width: 1366px) {
   .order__details__main__row {

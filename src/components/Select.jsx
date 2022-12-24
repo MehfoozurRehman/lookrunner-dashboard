@@ -10,8 +10,8 @@ export default function Select({ label, id, error, ...props }) {
         {label}
       </label>
       <div
-        className="container__main__content__details__main__input__field__wrapper"
-        style={{ height: "fit-content" }}
+        className="container__main__content__listing__header__left__filter container__main__content__listing__header__left__filter__special"
+        style={{ height: "fit-content", marginBottom: 0 }}
       >
         <ReactSelect
           {...props}

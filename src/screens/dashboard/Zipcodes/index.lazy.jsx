@@ -41,6 +41,9 @@ export default function Zipcodes() {
             Action
           </div>
           <div className="container__main__content__listing__table__header__entry">
+            Status
+          </div>
+          <div className="container__main__content__listing__table__header__entry">
             Name
           </div>
           <div className="container__main__content__listing__table__header__entry">
@@ -49,11 +52,34 @@ export default function Zipcodes() {
           <div className="container__main__content__listing__table__header__entry">
             VAT
           </div>
-          <div className="container__main__content__listing__table__header__entry">
-            Status
-          </div>
         </div>
         <div className="container__main__content__listing__table__content">
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
           <TableEntry />
           <TableEntry />
         </div>
@@ -70,10 +96,10 @@ function TableEntry() {
         <TableEntryEditButton />
         <TableEntryDeleteButton />
       </div>
+      <TableEntryStatus />
       <TableEntryText>john devved</TableEntryText>
       <TableEntryText>9384</TableEntryText>
       <TableEntryText>77777</TableEntryText>
-      <TableEntryStatus />
     </div>
   );
 }

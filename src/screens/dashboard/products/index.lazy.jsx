@@ -164,8 +164,6 @@ function TableEntry() {
         <Avatar className="container__main__content__listing__table__content__list__entry__img" />
         <Avatar className="container__main__content__listing__table__content__list__entry__img" />
         <Avatar className="container__main__content__listing__table__content__list__entry__img" />
-        <Avatar className="container__main__content__listing__table__content__list__entry__img" />
-        <Avatar className="container__main__content__listing__table__content__list__entry__img" />
       </TableEntryImage>
     </div>
   );

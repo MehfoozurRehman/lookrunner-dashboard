@@ -83,6 +83,34 @@ export default function orders() {
         </div>
         <div className="container__main__content__listing__table__content">
           <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
+          <TableEntry />
         </div>
       </div>
     </div>
@@ -103,14 +131,10 @@ function TableEntry() {
         <Avatar className="container__main__content__listing__table__content__list__entry__img" />
         <Avatar className="container__main__content__listing__table__content__list__entry__img" />
         <Avatar className="container__main__content__listing__table__content__list__entry__img" />
-        <Avatar className="container__main__content__listing__table__content__list__entry__img" />
-        <Avatar className="container__main__content__listing__table__content__list__entry__img" />
-        <Avatar className="container__main__content__listing__table__content__list__entry__img" />
       </TableEntryImage>
       <TableEntryText>123456789</TableEntryText>
       <TableEntryText>11/12/22</TableEntryText>
       <TableEntryText>qasim</TableEntryText>
-
       <TableEntryText>+123234560</TableEntryText>
       <TableEntryText>6</TableEntryText>
       <TableEntryText>Delivery Made</TableEntryText>
