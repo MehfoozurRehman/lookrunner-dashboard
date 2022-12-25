@@ -38,14 +38,7 @@ export default function ProductAdd() {
             label="Discount price"
             placeholder="Enter discount price"
           />
-          <Select
-            label="Taxable"
-            placeholder="Select State"
-            options={[
-              { value: "Yes", label: "Yes" },
-              { value: "No", label: "No" },
-            ]}
-          />
+
           <Input
             type="number"
             label="Tax rate (%)"
@@ -110,8 +103,43 @@ export default function ProductAdd() {
         </div>
         <div className="product__form__col__panel">
           <Select
-            label="Taxable"
-            placeholder="Select State"
+            label="Product Status"
+            placeholder="Active"
+            options={[
+              { value: "Active", label: "Active" },
+              { value: "Deactive", label: "Deactive" },
+            ]}
+          />
+          <Select
+            label="Product Category"
+            options={[
+              { value: "Yes", label: "Yes" },
+              { value: "No", label: "No" },
+            ]}
+          />
+          <Select
+            label="Product Sub-Category"
+            options={[
+              { value: "Yes", label: "Yes" },
+              { value: "No", label: "No" },
+            ]}
+          />
+          <Select
+            label="Supplier "
+            options={[
+              { value: "Yes", label: "Yes" },
+              { value: "No", label: "No" },
+            ]}
+          />
+          <Select
+            label="Brand"
+            options={[
+              { value: "Yes", label: "Yes" },
+              { value: "No", label: "No" },
+            ]}
+          />
+          <Select
+            label="Tags"
             options={[
               { value: "Yes", label: "Yes" },
               { value: "No", label: "No" },
@@ -119,47 +147,6 @@ export default function ProductAdd() {
           />
           <Select
             label="Taxable"
-            placeholder="Select State"
-            options={[
-              { value: "Yes", label: "Yes" },
-              { value: "No", label: "No" },
-            ]}
-          />
-          <Select
-            label="Taxable"
-            placeholder="Select State"
-            options={[
-              { value: "Yes", label: "Yes" },
-              { value: "No", label: "No" },
-            ]}
-          />
-          <Select
-            label="Taxable"
-            placeholder="Select State"
-            options={[
-              { value: "Yes", label: "Yes" },
-              { value: "No", label: "No" },
-            ]}
-          />
-          <Select
-            label="Taxable"
-            placeholder="Select State"
-            options={[
-              { value: "Yes", label: "Yes" },
-              { value: "No", label: "No" },
-            ]}
-          />
-          <Select
-            label="Taxable"
-            placeholder="Select State"
-            options={[
-              { value: "Yes", label: "Yes" },
-              { value: "No", label: "No" },
-            ]}
-          />
-          <Select
-            label="Taxable"
-            placeholder="Select State"
             options={[
               { value: "Yes", label: "Yes" },
               { value: "No", label: "No" },

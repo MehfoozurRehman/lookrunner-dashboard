@@ -38,14 +38,7 @@ export default function ProductEdit() {
             label="Discount price"
             placeholder="Enter discount price"
           />
-          <Select
-            label="Taxable"
-            placeholder="Select State"
-            options={[
-              { value: "Yes", label: "Yes" },
-              { value: "No", label: "No" },
-            ]}
-          />
+
           <Input
             type="number"
             label="Tax rate (%)"
@@ -81,11 +74,30 @@ export default function ProductEdit() {
             <div className="product__form__col__panel__row__entry">SKU</div>
           </div>
           <VariantEntry />
-          <VariantEntry />
-          <VariantEntry />
-          <VariantEntry />
-          <VariantEntry />
-          <VariantEntry />
+          <div className="product__form__col__panel__row">
+            <div className="product__form__col__panel__row__entry">M</div>
+            <div className="product__form__col__panel__row__entry">
+              <Input type="text" placeholder="Enter SKU" />
+            </div>
+            <div className="product__form__col__panel__row__entry">
+              <Input type="text" placeholder="Enter SKU" />
+            </div>
+            <div className="product__form__col__panel__row__entry">
+              <Input type="text" placeholder="Enter SKU" />
+            </div>
+          </div>{" "}
+          <div className="product__form__col__panel__row">
+            <div className="product__form__col__panel__row__entry">L</div>
+            <div className="product__form__col__panel__row__entry">
+              <Input type="text" placeholder="Enter SKU" />
+            </div>
+            <div className="product__form__col__panel__row__entry">
+              <Input type="text" placeholder="Enter SKU" />
+            </div>
+            <div className="product__form__col__panel__row__entry">
+              <Input type="text" placeholder="Enter SKU" />
+            </div>
+          </div>
         </div>
       </div>
       <div className="product__form__col">
@@ -110,8 +122,43 @@ export default function ProductEdit() {
         </div>
         <div className="product__form__col__panel">
           <Select
-            label="Taxable"
-            placeholder="Select State"
+            label="Product Status"
+            placeholder="Active"
+            options={[
+              { value: "Active", label: "Active" },
+              { value: "Deactive", label: "Deactive" },
+            ]}
+          />
+          <Select
+            label="Product Category"
+            options={[
+              { value: "Yes", label: "Yes" },
+              { value: "No", label: "No" },
+            ]}
+          />
+          <Select
+            label="Product Sub-Category"
+            options={[
+              { value: "Yes", label: "Yes" },
+              { value: "No", label: "No" },
+            ]}
+          />
+          <Select
+            label="Supplier "
+            options={[
+              { value: "Yes", label: "Yes" },
+              { value: "No", label: "No" },
+            ]}
+          />
+          <Select
+            label="Brand"
+            options={[
+              { value: "Yes", label: "Yes" },
+              { value: "No", label: "No" },
+            ]}
+          />
+          <Select
+            label="Tags"
             options={[
               { value: "Yes", label: "Yes" },
               { value: "No", label: "No" },
@@ -119,47 +166,6 @@ export default function ProductEdit() {
           />
           <Select
             label="Taxable"
-            placeholder="Select State"
-            options={[
-              { value: "Yes", label: "Yes" },
-              { value: "No", label: "No" },
-            ]}
-          />
-          <Select
-            label="Taxable"
-            placeholder="Select State"
-            options={[
-              { value: "Yes", label: "Yes" },
-              { value: "No", label: "No" },
-            ]}
-          />
-          <Select
-            label="Taxable"
-            placeholder="Select State"
-            options={[
-              { value: "Yes", label: "Yes" },
-              { value: "No", label: "No" },
-            ]}
-          />
-          <Select
-            label="Taxable"
-            placeholder="Select State"
-            options={[
-              { value: "Yes", label: "Yes" },
-              { value: "No", label: "No" },
-            ]}
-          />
-          <Select
-            label="Taxable"
-            placeholder="Select State"
-            options={[
-              { value: "Yes", label: "Yes" },
-              { value: "No", label: "No" },
-            ]}
-          />
-          <Select
-            label="Taxable"
-            placeholder="Select State"
             options={[
               { value: "Yes", label: "Yes" },
               { value: "No", label: "No" },
@@ -180,6 +186,19 @@ export default function ProductEdit() {
             label="Cost of unit"
             placeholder="Enter cost of unit"
           />
+          <div className="product__form__col__panel__btn">
+            <button
+              style={{
+                backgroundColor: "black",
+                padding: "7px 2em",
+                borderRadius: "20px",
+                color: "white",
+                cursor: "pointer",
+              }}
+            >
+              Done
+            </button>
+          </div>
         </div>
       </div>
     </div>
