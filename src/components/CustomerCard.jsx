@@ -1,4 +1,7 @@
 import CustomerDetail from "./CustomerDetail";
+import DeliveryAdress from "./Deliveryadress";
+import BillingAdress from "./Billingadress";
+import DeliveryInstruction from "./DeliveryInstruction";
 import { useState } from "react";
 
 export default function CustomerCard() {
