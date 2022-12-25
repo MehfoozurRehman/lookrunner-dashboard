@@ -443,6 +443,25 @@
   margin-bottom: 1em;
   background-color: var(--backgroundDarkColor);
 }
+.order__details__main__customer__card__info__all {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+
+  padding: 0em 1em;
+  margin-bottom: 1.5em;
+}
+.order__details__main__customer__card__info {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  justify-content: center;
+}
+.order__details__main__customer__card__info svg {
+  margin-right: 1em;
+}
 .order__details__main__customer__card__content__button {
   height: 35px;
   background-color: var(--color);
