@@ -6,6 +6,7 @@ import CustomerCard from "components/CustomerCard";
 import SendMessageCard from "components/SendMessageCard";
 import TimelineCard from "components/TimelineCard";
 import { OrderStatus } from "components/OrderStatus";
+import OrderreturnDetails from "./../../../components/OrderreturnDetails";
 
 export default function OrderDetails() {
   return (
@@ -17,7 +18,7 @@ export default function OrderDetails() {
             label="Booking Details"
             buttonLabel="Cancel Booking"
           />
-          <OrderDetailsCard
+          <OrderreturnDetails
             label="Return Details"
             buttonLabel="Send Reminder"
           />
