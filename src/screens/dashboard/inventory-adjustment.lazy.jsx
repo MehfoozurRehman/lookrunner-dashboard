@@ -39,6 +39,7 @@ export default function Inventoryadjustment() {
                   primary: "#2a5e59",
                 },
               })}
+              placeholder="Warehouse"
             />
           </div>
         </div>

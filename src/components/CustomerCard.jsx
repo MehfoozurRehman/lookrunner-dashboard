@@ -107,13 +107,13 @@ export default function CustomerCard() {
           <div className="order__details__main__customer__card__content__row">
             <div className="order__details__main__customer__card__content__row__left">
               <div className="order__details__main__customer__card__content__row__left__heading">
-                BILLING ADDRESS{" "}
+                BILLING ADDRESS
               </div>
               <div className="order__details__main__customer__card__content__row__left__number">
                 Same as shipping address
               </div>
             </div>
-          </div>{" "}
+          </div>
           <div className="order__details__main__customer__card__content__row">
             <div className="order__details__main__customer__card__content__row__left">
               <div className="order__details__main__customer__card__content__row__left__heading">

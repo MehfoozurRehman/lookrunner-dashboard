@@ -80,7 +80,7 @@ export default function EmployeeAdd() {
           <div className="container__main__content__details__main__row__entry">
             <Select
               label="Status"
-              placeholder="Select Status"
+              placeholder="Active"
               options={[
                 { value: "Active", label: "Active" },
                 { value: "Deactive", label: "Deactive" },

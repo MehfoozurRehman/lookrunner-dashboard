@@ -85,7 +85,7 @@ export default function ProductEdit() {
             <div className="product__form__col__panel__row__entry">
               <Input type="text" placeholder="Enter SKU" />
             </div>
-          </div>{" "}
+          </div>
           <div className="product__form__col__panel__row">
             <div className="product__form__col__panel__row__entry">L</div>
             <div className="product__form__col__panel__row__entry">

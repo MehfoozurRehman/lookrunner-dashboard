@@ -38,6 +38,7 @@ export default function InventoryLedger() {
                   primary: "#2a5e59",
                 },
               })}
+              placeholder="Warehouse"
             />
           </div>
         </div>

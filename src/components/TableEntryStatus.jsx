@@ -7,6 +7,7 @@ export default function TableEntryStatus() {
       style={{ marginBottom: 0 }}
     >
       <Select
+        placeholder="Active"
         options={[
           {
             value: "Active",
