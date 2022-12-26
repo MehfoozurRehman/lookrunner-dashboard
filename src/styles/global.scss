@@ -1,24 +1,22 @@
 html {
   --backgroundColor: #f5f6fa;
   --backgroundDarkColor: #ffffff;
-  --white: #ffffff;
-  --darkWhite: #9698ab;
   --color: black;
   --colorLight: #727272;
   --colorReverse: #ffffff;
   --colorLightReverse: #e7e7e7;
   --transparentColor: rgba(31, 31, 31, 0.9);
+  --boxShadow: rgba(0, 0, 0, 0.1);
 }
 html[data-theme="dark"] {
-  --backgroundColor: #333333;
+  --backgroundColor: #161616;
   --backgroundDarkColor: #242424;
-  --white: #242424;
-  --darkWhite: #ffffff;
-  --color: #ffffff;
-  --colorLight: #e7e7e7;
+  --color: #f1f1f1;
+  --colorLight: #afafaf;
   --colorReverse: black;
   --colorLightReverse: #333333;
   --transparentColor: rgba(26, 26, 26, 0.9);
+  --boxShadow: rgba(0, 0, 0, 0.459);
 }
 
 :root {
@@ -35,6 +33,7 @@ html[data-theme="dark"] {
   font-family: "Poppins", sans-serif;
   font-size: 12px;
   color: var(--color);
+  transition: 10ms cubic-bezier();
 }
 *::-webkit-scrollbar {
   width: 5px;
@@ -407,7 +406,7 @@ body {
   justify-content: center;
   border: none;
   background-color: var(--backgroundDarkColor);
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 30px var(--boxShadow);
   cursor: pointer;
 }
 .container__main__content__details__main__input__field__wrapper__image__delete:hover {

@@ -138,3 +138,40 @@
   flex-direction: column;
   margin-left: 1em;
 }
+.order__create__panel__actions {
+  display: flex;
+  max-width: 400px;
+  margin-left: auto;
+  width: 100%;
+}
+@media (max-width: 1300px) {
+  .order__create {
+    flex-direction: column;
+  }
+  .order__create__col:last-child {
+    margin-left: 0em;
+    max-width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .order__create__panel__table {
+    margin-top: 1em;
+  }
+  .order__create__panel__table__header {
+    display: none;
+  }
+  .order__create__panel__table__entry {
+    flex-direction: column;
+  }
+  .order__create__panel__table__entry__entry {
+    width: 100%;
+    margin-right: 0em;
+    margin-bottom: 1em;
+  }
+  .order__create__panel__table__entry button {
+    margin-right: auto;
+  }
+  .order__create__panel__table__entry__entry__input {
+    width: 100%;
+  }
+}
