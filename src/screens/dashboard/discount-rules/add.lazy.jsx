@@ -68,7 +68,7 @@ export default function DiscountRuleAdd() {
           <CheckBox
             value={isEnd}
             label="Set end date and time"
-            labelColor="#555555"
+            labelColor="var(--colorLight)"
             checkedColor="#2A5E59"
             unCheckedColor="var(--backgroundColor)"
             iconColor="#ffffff"
@@ -135,14 +135,14 @@ export default function DiscountRuleAdd() {
             <div className="container__main__content__details__main__row__entry">
               <CheckBox
                 label="Free Delivery"
-                labelColor="#555555"
+                labelColor="var(--colorLight)"
                 checkedColor="#2A5E59"
                 unCheckedColor="var(--backgroundColor)"
                 iconColor="#ffffff"
               />
               <CheckBox
                 label="Percentage Discount"
-                labelColor="#555555"
+                labelColor="var(--colorLight)"
                 checkedColor="#2A5E59"
                 unCheckedColor="var(--backgroundColor)"
                 iconColor="#ffffff"
@@ -184,7 +184,7 @@ export default function DiscountRuleAdd() {
           <CheckBox
             value={isEnd}
             label="Set end date and time"
-            labelColor="#555555"
+            labelColor="var(--colorLight)"
             checkedColor="#2A5E59"
             unCheckedColor="var(--backgroundColor)"
             iconColor="#ffffff"

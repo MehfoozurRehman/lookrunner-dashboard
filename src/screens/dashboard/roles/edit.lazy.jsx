@@ -26,7 +26,7 @@ export default function RoleEdit() {
           to={backLocation}
           className="container__main__content__details__buttons__button container__main__content__details__buttons__primary"
         >
-          Edit
+          Save
         </Link>
         <Link
           to={backLocation}

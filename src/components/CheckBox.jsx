@@ -34,7 +34,7 @@ export default function CheckBox({
               height="15"
               viewBox="0 0 24 24"
               fill="none"
-              stroke="currentColor"
+              stroke="white"
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"

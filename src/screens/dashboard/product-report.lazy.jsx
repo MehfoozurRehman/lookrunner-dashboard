@@ -21,7 +21,7 @@ export default function ProductsReport() {
       <div className="container__main__content__listing__table">
         <div className="container__main__content__listing__table__header">
           <div className="container__main__content__listing__table__header__entry">
-            Total Items
+            Product Code
           </div>
           <div className="container__main__content__listing__table__header__entry">
             Total Quantity

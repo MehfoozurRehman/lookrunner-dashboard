@@ -46,8 +46,8 @@
   background-color: var(--primaryDark);
   color: white;
 }
-.container__sidebar__content .active svg {
-  fill: white;
+.container__sidebar__content .active * {
+  fill: white !important;
 }
 .container__sidebar__entry {
   background-color: var(--backgroundColor);

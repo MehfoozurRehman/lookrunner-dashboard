@@ -29,7 +29,7 @@ export default function ReturnSchedule() {
             <CheckBox
               value={selectedDays.includes(day)}
               label={day}
-              labelColor="#555555"
+              labelColor="var(--colorLight)"
               checkedColor="#2A5E59"
               unCheckedColor="var(--backgroundColor)"
               iconColor="#ffffff"

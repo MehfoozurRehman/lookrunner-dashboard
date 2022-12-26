@@ -22,18 +22,14 @@ export default function Index() {
         }}
       >
         <img src={logo} alt="logo" className="login__container__form__logo" />
-        <LoginInput
-          label="Email Address"
-          placeholder="Enter email address"
-          type="email"
-        />
+        <LoginInput label="Email" placeholder="Enter email" type="email" />
         <LoginInput
           label="Password"
           placeholder="Enter password"
           type="password"
         />
         <button type="submit" className="login__container__form__button">
-          Login
+          Sign in
         </button>
       </form>
     </div>

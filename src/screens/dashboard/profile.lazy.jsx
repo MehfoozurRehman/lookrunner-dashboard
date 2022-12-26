@@ -2,10 +2,8 @@ import { Avatar, Input } from "components";
 
 import { Edit2 } from "react-feather";
 import { Link } from "router";
-import { useBackLocation } from "global";
 
 export default function Profile() {
-  const backLocation = useBackLocation();
   return (
     <div className="container__main__content__details">
       <div className="container__main__content__details__main container__main__content__details__main__special">
@@ -42,7 +40,7 @@ export default function Profile() {
             />
           </div>
         </div>
-        <Input type="text" label="First Name" placeholder="Enter first name" />
+        <Input type="email" label="Email" placeholder="Enter email" />
         <div className="container__main__content__details__main__row">
           <div className="container__main__content__details__main__row__entry">
             <Input

@@ -21,40 +21,31 @@ export default function StockReport() {
       <div className="container__main__content__listing__table">
         <div className="container__main__content__listing__table__header">
           <div className="container__main__content__listing__table__header__entry">
-            Total Items
+            Date
           </div>
           <div className="container__main__content__listing__table__header__entry">
-            Total Quantity
+            Ref no
           </div>
           <div className="container__main__content__listing__table__header__entry">
-            Stock Value by price
+            Customer
           </div>
           <div className="container__main__content__listing__table__header__entry">
-            Stock Value by Cost
+            Product Qty
           </div>
           <div className="container__main__content__listing__table__header__entry">
-            Profit Estimation
+            Total
           </div>
           <div className="container__main__content__listing__table__header__entry">
-            Product Code
+            Paid
           </div>
           <div className="container__main__content__listing__table__header__entry">
-            Name
+            Balance
           </div>
           <div className="container__main__content__listing__table__header__entry">
-            Sold
+            Order status
           </div>
           <div className="container__main__content__listing__table__header__entry">
-            Profit / Loss
-          </div>
-          <div className="container__main__content__listing__table__header__entry">
-            Stock Qty
-          </div>
-          <div className="container__main__content__listing__table__header__entry">
-            Stock Amount
-          </div>
-          <div className="container__main__content__listing__table__header__entry">
-            Total View
+            Payment status
           </div>
         </div>
         <div className="container__main__content__listing__table__content">
@@ -122,15 +113,6 @@ function TableEntry() {
       </TableEntryText>
       <TableEntryText className="container__main__content__listing__table__content__list__entry">
         66
-      </TableEntryText>
-      <TableEntryText className="container__main__content__listing__table__content__list__entry">
-        88
-      </TableEntryText>
-      <TableEntryText className="container__main__content__listing__table__content__list__entry">
-        88
-      </TableEntryText>
-      <TableEntryText className="container__main__content__listing__table__content__list__entry">
-        1212
       </TableEntryText>
     </div>
   );

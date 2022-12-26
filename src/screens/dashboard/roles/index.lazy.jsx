@@ -39,7 +39,7 @@ export default function Roles() {
         <div className="container__main__content__listing__table">
           <div className="container__main__content__listing__table__header">
             <div className="container__main__content__listing__table__header__entry">
-              Action
+              Actions
             </div>
             <div className="container__main__content__listing__table__header__entry">
               Status
@@ -48,7 +48,7 @@ export default function Roles() {
               Name
             </div>
             <div className="container__main__content__listing__table__header__entry">
-              Models
+              Modules
             </div>
           </div>
           <div className="container__main__content__listing__table__content">

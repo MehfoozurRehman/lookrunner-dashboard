@@ -21,40 +21,19 @@ export default function UserLog() {
       <div className="container__main__content__listing__table">
         <div className="container__main__content__listing__table__header">
           <div className="container__main__content__listing__table__header__entry">
-            Total Items
+            ID
           </div>
           <div className="container__main__content__listing__table__header__entry">
-            Total Quantity
+            Date
           </div>
           <div className="container__main__content__listing__table__header__entry">
-            Stock Value by price
+            Time
           </div>
           <div className="container__main__content__listing__table__header__entry">
-            Stock Value by Cost
+            Change in system
           </div>
           <div className="container__main__content__listing__table__header__entry">
-            Profit Estimation
-          </div>
-          <div className="container__main__content__listing__table__header__entry">
-            Product Code
-          </div>
-          <div className="container__main__content__listing__table__header__entry">
-            Name
-          </div>
-          <div className="container__main__content__listing__table__header__entry">
-            Sold
-          </div>
-          <div className="container__main__content__listing__table__header__entry">
-            Profit / Loss
-          </div>
-          <div className="container__main__content__listing__table__header__entry">
-            Stock Qty
-          </div>
-          <div className="container__main__content__listing__table__header__entry">
-            Stock Amount
-          </div>
-          <div className="container__main__content__listing__table__header__entry">
-            Total View
+            Change by username
           </div>
         </div>
         <div className="container__main__content__listing__table__content">
@@ -107,27 +86,6 @@ function TableEntry() {
       </TableEntryText>
       <TableEntryText className="container__main__content__listing__table__content__list__entry">
         344
-      </TableEntryText>
-      <TableEntryText className="container__main__content__listing__table__content__list__entry">
-        1212
-      </TableEntryText>
-      <TableEntryText className="container__main__content__listing__table__content__list__entry">
-        121
-      </TableEntryText>
-      <TableEntryText className="container__main__content__listing__table__content__list__entry">
-        Irsiii
-      </TableEntryText>
-      <TableEntryText className="container__main__content__listing__table__content__list__entry">
-        66
-      </TableEntryText>
-      <TableEntryText className="container__main__content__listing__table__content__list__entry">
-        66
-      </TableEntryText>
-      <TableEntryText className="container__main__content__listing__table__content__list__entry">
-        88
-      </TableEntryText>
-      <TableEntryText className="container__main__content__listing__table__content__list__entry">
-        88
       </TableEntryText>
       <TableEntryText className="container__main__content__listing__table__content__list__entry">
         1212

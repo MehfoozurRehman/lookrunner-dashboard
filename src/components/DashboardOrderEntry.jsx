@@ -1,6 +1,11 @@
+import { Link } from "../router";
+
 export default function DashboardOrderEntry() {
   return (
-    <a href="#" className="dashboard__container__right__content__entry">
+    <Link
+      to="/dashboard/orders/detail"
+      className="dashboard__container__right__content__entry"
+    >
       <div className="dashboard__container__right__content__entry__icon">
         <svg
           width="22"
@@ -29,6 +34,6 @@ export default function DashboardOrderEntry() {
           Chicago, TX
         </div>
       </div>
-    </a>
+    </Link>
   );
 }

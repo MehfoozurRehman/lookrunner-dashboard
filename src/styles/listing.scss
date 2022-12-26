@@ -51,11 +51,11 @@
   min-width: 0px;
 }
 .container__main__content__listing__header__left__search__field::placeholder {
-  color: var(--color);
+  color: var(--colorLight);
 }
 .container__main__content__listing__header__left__search__button {
   background-color: transparent;
-  color: var(--color);
+
   border: none;
   border-radius: 50px;
   height: 40px;
@@ -71,11 +71,15 @@
 .container__main__content__listing__header__left__search__button svg {
   width: 18px;
   height: 18px;
+  stroke: var(--colorLight);
 }
 .container__main__content__listing__header__left__search__button:focus {
   background-color: var(--primary);
   margin-right: 0em;
-  color: var(--colorReverse);
+  color: white;
+}
+.container__main__content__listing__header__left__search__button:focus svg {
+  stroke: white;
 }
 .container__main__content__listing__header__left__filter {
   display: flex;

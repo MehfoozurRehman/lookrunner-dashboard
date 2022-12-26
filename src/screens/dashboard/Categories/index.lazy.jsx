@@ -4,7 +4,6 @@ import {
   TableEntryEditButton,
   TableEntryImage,
   TableEntryText,
-  TableEntryViewButton,
 } from "components";
 
 import { Link } from "react-router-dom";
@@ -40,7 +39,7 @@ export default function Categories() {
       <div className="container__main__content__listing__table">
         <div className="container__main__content__listing__table__header">
           <div className="container__main__content__listing__table__header__entry">
-            Action
+            Actions
           </div>
           <div className="container__main__content__listing__table__header__entry">
             Name
@@ -90,7 +89,6 @@ function TableEntry() {
   return (
     <div className="container__main__content__listing__table__content__list">
       <div className="container__main__content__listing__table__content__list__entry">
-        {/* <TableEntryViewButton /> */}
         <TableEntryEditButton />
         <TableEntryDeleteButton />
       </div>

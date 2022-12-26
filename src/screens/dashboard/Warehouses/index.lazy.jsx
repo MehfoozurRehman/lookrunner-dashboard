@@ -38,7 +38,7 @@ export default function Warehouses() {
       <div className="container__main__content__listing__table">
         <div className="container__main__content__listing__table__header">
           <div className="container__main__content__listing__table__header__entry">
-            Action
+            Actions
           </div>
           <div className="container__main__content__listing__table__header__entry">
             Name

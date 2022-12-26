@@ -1,7 +1,6 @@
 import { Input, Select, Textarea } from "components";
 
 import { ImageBanner } from "../../components/ImageBanner";
-// import { ImageUploaderMultiple } from "../../components/ImageUploaderMultiple";
 import { ImageUploaderSingle } from "../../components/ImageUploaderSingle";
 import { Link } from "router";
 import { useBackLocation } from "global";
@@ -10,7 +9,6 @@ import { useState } from "react";
 export default function ContentManagement() {
   const [banner, setBanner] = useState(null);
   const [image, setImage] = useState(null);
-  // const [images, setImages] = useState([]);
   const backLocation = useBackLocation();
   return (
     <div className="container__main__content__details">
@@ -32,37 +30,37 @@ export default function ContentManagement() {
         >
           How Lookrunner works
         </div>
-
         <Input type="text" label="Heading 1" placeholder="Enter Heading 1" />
         <Textarea label="Description" placeholder="Enter Description" />
         <div
           style={{
             width: "100%",
-            border: ".6px solid #696A69",
+            border: "1px solid var(--backgroundColor)",
             margin: "2em 0em",
           }}
-        ></div>
+        />
         <Input type="text" label="Heading 2" placeholder="Enter Heading 2" />
         <Textarea label="Description" placeholder="Enter Description" />
         <div
           style={{
             width: "100%",
-            border: "1px solid #696A69",
+            border: "1px solid var(--backgroundColor)",
             margin: "2em 0em",
           }}
-        ></div>
+        />
         <Input type="text" label="Heading 3" placeholder="Enter Heading 3" />
         <Textarea label="Description" placeholder="Enter Description" />
         <div
           style={{
             width: "100%",
-            border: ".6px solid #696A69",
+            border: "1px solid var(--backgroundColor)",
             margin: "2em 0em",
           }}
-        ></div>
+        />
         <Select
           label="Select Products"
           placeholder="select "
+          isMulti
           options={[
             { value: "Active", label: "Active" },
             { value: "Deactive", label: "Deactive" },
