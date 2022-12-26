@@ -31,7 +31,7 @@ export default function CustomerDetails() {
             </div>
             <div className="container__main__content__details__main__wraper__box">
               <div className="container__main__content__details__main__wraper__box__title">
-                Avg Order Value
+                Average Order Value
               </div>
               <div className="container__main__content__details__main__wraper__box__value">
                 $4,843.40
@@ -104,7 +104,7 @@ export default function CustomerDetails() {
         <DetailsEntry label="First Name">asasasa</DetailsEntry>
         <DetailsEntry label="Last Name">AAsmm</DetailsEntry>
         <DetailsEntry label="Mobile No.">+33-03948567</DetailsEntry>
-        <DetailsEntry label="Email Address">asmm333@gmail.com</DetailsEntry>
+        <DetailsEntry label="Email ">asmm333@gmail.com</DetailsEntry>
         <div
           className="container__main__content__details__heading"
           style={{

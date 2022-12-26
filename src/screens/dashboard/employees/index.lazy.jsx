@@ -46,7 +46,7 @@ export default function Employees() {
                   primary: "#2a5e59",
                 },
               })}
-            />{" "}
+            />
             <Select
               placeholder="Role"
               options={[
