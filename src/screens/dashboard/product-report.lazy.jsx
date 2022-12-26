@@ -24,28 +24,16 @@ export default function ProductsReport() {
             Product Code
           </div>
           <div className="container__main__content__listing__table__header__entry">
-            Total Quantity
-          </div>
-          <div className="container__main__content__listing__table__header__entry">
-            Stock Value by price
-          </div>
-          <div className="container__main__content__listing__table__header__entry">
-            Stock Value by Cost
-          </div>
-          <div className="container__main__content__listing__table__header__entry">
-            Profit Estimation
-          </div>
-          <div className="container__main__content__listing__table__header__entry">
-            Product Code
-          </div>
-          <div className="container__main__content__listing__table__header__entry">
             Name
+          </div>
+          <div className="container__main__content__listing__table__header__entry">
+            Purchased
           </div>
           <div className="container__main__content__listing__table__header__entry">
             Sold
           </div>
           <div className="container__main__content__listing__table__header__entry">
-            Profit / Loss
+            Profit or Loss
           </div>
           <div className="container__main__content__listing__table__header__entry">
             Stock Qty
@@ -54,7 +42,7 @@ export default function ProductsReport() {
             Stock Amount
           </div>
           <div className="container__main__content__listing__table__header__entry">
-            Total View
+            Total Views
           </div>
         </div>
         <div className="container__main__content__listing__table__content">
@@ -119,18 +107,6 @@ function TableEntry() {
       </TableEntryText>
       <TableEntryText className="container__main__content__listing__table__content__list__entry">
         66
-      </TableEntryText>
-      <TableEntryText className="container__main__content__listing__table__content__list__entry">
-        66
-      </TableEntryText>
-      <TableEntryText className="container__main__content__listing__table__content__list__entry">
-        88
-      </TableEntryText>
-      <TableEntryText className="container__main__content__listing__table__content__list__entry">
-        88
-      </TableEntryText>
-      <TableEntryText className="container__main__content__listing__table__content__list__entry">
-        1212
       </TableEntryText>
     </div>
   );

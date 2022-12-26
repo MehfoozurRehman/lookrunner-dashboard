@@ -21,31 +21,19 @@ export default function StockReport() {
       <div className="container__main__content__listing__table">
         <div className="container__main__content__listing__table__header">
           <div className="container__main__content__listing__table__header__entry">
-            Date
+            Total Items
           </div>
           <div className="container__main__content__listing__table__header__entry">
-            Ref no
+            Total Quantity
           </div>
           <div className="container__main__content__listing__table__header__entry">
-            Customer
+            Stock Value by Price
           </div>
           <div className="container__main__content__listing__table__header__entry">
-            Product Qty
+            Stock Value by Cost
           </div>
           <div className="container__main__content__listing__table__header__entry">
-            Total
-          </div>
-          <div className="container__main__content__listing__table__header__entry">
-            Paid
-          </div>
-          <div className="container__main__content__listing__table__header__entry">
-            Balance
-          </div>
-          <div className="container__main__content__listing__table__header__entry">
-            Order status
-          </div>
-          <div className="container__main__content__listing__table__header__entry">
-            Payment status
+            Profit Estimation
           </div>
         </div>
         <div className="container__main__content__listing__table__content">
@@ -101,18 +89,6 @@ function TableEntry() {
       </TableEntryText>
       <TableEntryText className="container__main__content__listing__table__content__list__entry">
         1212
-      </TableEntryText>
-      <TableEntryText className="container__main__content__listing__table__content__list__entry">
-        121
-      </TableEntryText>
-      <TableEntryText className="container__main__content__listing__table__content__list__entry">
-        Irsiii
-      </TableEntryText>
-      <TableEntryText className="container__main__content__listing__table__content__list__entry">
-        66
-      </TableEntryText>
-      <TableEntryText className="container__main__content__listing__table__content__list__entry">
-        66
       </TableEntryText>
     </div>
   );
