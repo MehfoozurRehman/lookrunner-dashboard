@@ -1,4 +1,4 @@
-import { ChevronRight, X } from "react-feather";
+import { ChevronRight } from "react-feather";
 import { Link } from "react-router-dom";
 import { useBackLocation } from "../global";
 

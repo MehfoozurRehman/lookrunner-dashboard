@@ -2,6 +2,7 @@ import { Search, X } from "react-feather";
 
 import CheckBox from "../../../components/CheckBox";
 import { Link } from "../../../router";
+import ProductBrowsePopup from "../../../components/ProductBrowsePopup";
 import { product } from "../../../assets";
 import { useBackLocation } from "../../../global";
 import { useState } from "react";
@@ -9,8 +10,14 @@ import { useState } from "react";
 export default function create() {
   const backLocation = useBackLocation();
   const [paymentDueLater, setPaymentDueLater] = useState(false);
+  const [showProductBrowsePopup, setShowProductBrowsePopup] = useState(false);
+
   return (
     <>
+      {showProductBrowsePopup && (
+        <ProductBrowsePopup setShow={setShowProductBrowsePopup} />
+      )}
+
       <div className="order__create">
         <div className="order__create__col">
           <div className="order__create__panel">
@@ -22,9 +29,13 @@ export default function create() {
                   type="search"
                   placeholder="Search for products"
                   className="order__create__panel__form__search__input"
+                  onFocus={() => setShowProductBrowsePopup(true)}
                 />
               </div>
-              <button className="order__create__panel__form__button">
+              <button
+                className="order__create__panel__form__button"
+                onClick={() => setShowProductBrowsePopup(true)}
+              >
                 Browse
               </button>
             </div>
