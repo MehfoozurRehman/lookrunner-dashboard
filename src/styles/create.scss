@@ -7,7 +7,7 @@
   flex: 1;
 }
 .order__create__col:last-child {
-  max-width: 350px;
+  max-width: 450px;
   margin-left: 1.5em;
 }
 .order__create__panel {
@@ -36,4 +36,105 @@
 .order__create__panel__row__entry:first-child {
   color: var(--color);
   font-weight: bold;
+}
+.order__create__panel__row__entry:first-child span {
+  margin-left: 3em;
+  font-weight: 400;
+}
+.order__create__panel__form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.order__create__panel__form__search {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  flex: 1;
+  padding-left: 1em;
+  border: 1px solid var(--colorLight);
+  margin-right: 1em;
+  border-radius: 5px;
+}
+.order__create__panel__form__search svg {
+  stroke: var(--colorLight);
+}
+.order__create__panel__form__search__input {
+  flex: 1;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+  padding: 1em;
+  outline: none;
+}
+.order__create__panel__form__search__input::placeholder {
+  color: var(--colorLight);
+}
+.order__create__panel__form__button {
+  height: 40px;
+  padding: 0em 2em;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary);
+  color: white;
+  cursor: pointer;
+}
+.order__create__panel__form__button:hover {
+  background-color: var(--primaryDark);
+}
+.order__create__panel__table {
+  display: flex;
+  flex-direction: column;
+}
+.order__create__panel__table__header {
+  display: flex;
+  margin-bottom: 1em;
+}
+.order__create__panel__table__header__entry {
+  width: 100px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 1em;
+}
+.order__create__panel__table__header__entry:first-child {
+  flex: 1;
+}
+.order__create__panel__table__header__entry:last-child {
+  margin-right: calc(1em + 20px);
+}
+.order__create__panel__table__entry {
+  display: flex;
+  margin-bottom: 1em;
+}
+.order__create__panel__table__entry button {
+  padding: 0em;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.order__create__panel__table__entry button:hover svg {
+  stroke: red;
+}
+.order__create__panel__table__entry__entry {
+  width: 100px;
+  font-size: 14px;
+  display: flex;
+  margin-right: 1em;
+  align-items: center;
+}
+.order__create__panel__table__entry__entry:first-child {
+  flex: 1;
+}
+.order__create__panel__table__entry__entry__input {
+  width: 90%;
+  height: 35px;
+  padding: 0em 1em;
+  border-radius: 5px;
+  border: 1px solid var(--colorLight);
+  background-color: transparent;
+}
+.order__create__panel__table__entry__entry__content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
 }
