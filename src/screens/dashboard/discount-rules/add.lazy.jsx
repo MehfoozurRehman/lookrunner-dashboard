@@ -27,27 +27,24 @@ export default function DiscountRuleAdd() {
             </div>
           </div>
           <div className="container__main__content__details__main__row">
+            {" "}
             <div className="container__main__content__details__main__row__entry">
-              <input
-                className="container__main__content__details__main__row__entry__radio"
-                type="radio"
-                name="delivery"
-              />
-              <label for="html">Delivery percentage</label>
-              <input
-                className="container__main__content__details__main__row__entry__radio"
-                type="radio"
-                name="delivery"
-              />
-              <label for="html">Free Delivery</label>
-            </div>
-            <div className="container__main__content__details__main__row__entry">
-              <Input
-                type="text"
-                label="Delivery Percentage"
-                placeholder="Enter percentage"
-              />
-            </div>
+              {" "}
+              <CheckBox
+                label="Free Delivery"
+                labelColor="var(--colorLight)"
+                checkedColor="#2A5E59"
+                unCheckedColor="var(--backgroundColor)"
+                iconColor="#ffffff"
+              />{" "}
+              <CheckBox
+                label="Percentage Discount"
+                labelColor="var(--colorLight)"
+                checkedColor="#2A5E59"
+                unCheckedColor="var(--backgroundColor)"
+                iconColor="#ffffff"
+              />{" "}
+            </div>{" "}
           </div>
           <div className="container__main__content__details__main__row">
             <div className="container__main__content__details__main__row__entry">
@@ -232,13 +229,7 @@ export default function DiscountRuleAdd() {
           to={backLocation}
           className="container__main__content__details__buttons__button container__main__content__details__buttons__primary"
         >
-          Add
-        </Link>
-        <Link
-          to={backLocation}
-          className="container__main__content__details__buttons__button container__main__content__details__buttons__secondary"
-        >
-          Discard
+          Save
         </Link>
       </div>
     </div>
