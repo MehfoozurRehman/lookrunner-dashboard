@@ -15,6 +15,17 @@
 .container__main__content__details__main__row__entry:first-child {
   margin-right: 3em;
 }
+.container__main__content__details__main__row__entry__checkbox {
+  width: 50%;
+  display: flex;
+  margin-bottom: 1em;
+}
+.container__main__content__details__main__row__entry__checkbox__heading {
+  font-weight: bold;
+}
+.container__main__content__details__main__row__entry__checkbox:first-child {
+  margin-right: 3em;
+}
 .container__main__content__details__main__input {
   width: 100%;
   display: flex;
@@ -192,6 +203,10 @@
     flex-direction: column;
   }
   .container__main__content__details__main__row__entry {
+    width: 100%;
+    margin-right: 0em;
+  }
+  .container__main__content__details__main__row__entry__checkbox {
     width: 100%;
     margin-right: 0em;
   }

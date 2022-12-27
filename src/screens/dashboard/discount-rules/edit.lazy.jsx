@@ -35,6 +35,15 @@ export default function DiscountRuleEdit() {
           </div>
         </div>
         <div className="container__main__content__details__main__row">
+          <div className="container__main__content__details__main__row__entry__checkbox">
+            <input type="checkbox" name="checkbox" id="checkbox" />
+            <div className="container__main__content__details__main__row__entry__checkbox__heading">
+              {" "}
+              Set End date
+            </div>
+          </div>
+        </div>
+        <div className="container__main__content__details__main__row">
           <div className="container__main__content__details__main__row__entry">
             <Input type="text" label="End Date" placeholder="Enter end date" />
           </div>
