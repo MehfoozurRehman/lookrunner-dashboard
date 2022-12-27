@@ -25,7 +25,16 @@ export default function ZipcodeEdit() {
             <Select
               label="Enter Vat"
               placeholder="Vat"
-              options={[{ value: "Vat", label: "Vat" }]}
+              options={[
+                { value: "1", label: "1" },
+                { value: "2", label: "2" },
+                { value: "3", label: "3" },
+                { value: "4", label: "4" },
+                { value: "5", label: "5" },
+                { value: "6", label: "6" },
+                { value: "7", label: "7" },
+                { value: "8", label: "8" },
+              ]}
             />
           </div>
           <div className="container__main__content__details__main__row__entry">
