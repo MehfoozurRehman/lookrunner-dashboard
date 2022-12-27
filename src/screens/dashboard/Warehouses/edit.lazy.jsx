@@ -24,7 +24,7 @@ export default function WarehousesEdit() {
             <Input
               type="text"
               label="Email Address"
-              placeholder="Enter email"
+              placeholder="Email address"
             />
           </div>
           <div className="container__main__content__details__main__row__entry">

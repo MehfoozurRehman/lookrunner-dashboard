@@ -24,7 +24,7 @@ export default function WarehousesAdd() {
             <Input
               type="text"
               label="Email Address"
-              placeholder="Enter email"
+              placeholder="Email address"
             />
           </div>
           <div className="container__main__content__details__main__row__entry">
@@ -39,7 +39,7 @@ export default function WarehousesAdd() {
           to={backLocation}
           className="container__main__content__details__buttons__button container__main__content__details__buttons__primary"
         >
-          Add
+          Save
         </Link>
         <Link
           to={backLocation}
