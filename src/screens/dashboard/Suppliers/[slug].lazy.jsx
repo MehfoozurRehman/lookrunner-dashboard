@@ -16,10 +16,7 @@ export default function SupplierDetails() {
         <DetailsEntry label="City">Lahore</DetailsEntry>
         <DetailsEntry label="State">Punjab</DetailsEntry>
         <DetailsEntry label="Postal code">37000</DetailsEntry>
-        <DetailsEntry label="Description">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-          laborum accusantium dolores?
-        </DetailsEntry>
+        <DetailsEntry label="Company description"></DetailsEntry>
       </div>
       <div className="container__main__content__details__buttons">
         <Link
