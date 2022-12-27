@@ -11,7 +11,7 @@ export default function CategorieEdit() {
   return (
     <div className="container__main__content__details">
       <div className="container__main__content__details__main container__main__content__details__main__special">
-        <Input type="text" label="Name" placeholder="Enter name" />
+        <Input type="text" label="Name" placeholder="Enter Name Here" />
         <Textarea label="Description" placeholder="Enter Description" />
         <Select
           label="Parent Category"
@@ -37,7 +37,7 @@ export default function CategorieEdit() {
           to={backLocation}
           className="container__main__content__details__buttons__button container__main__content__details__buttons__primary"
         >
-          Add
+          Edit
         </Link>
         <Link
           to={backLocation}

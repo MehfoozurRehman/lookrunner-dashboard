@@ -20,7 +20,7 @@ export default function BrandEdit() {
           to={backLocation}
           className="container__main__content__details__buttons__button container__main__content__details__buttons__primary"
         >
-          Add
+          Edit
         </Link>
         <Link
           to={backLocation}
