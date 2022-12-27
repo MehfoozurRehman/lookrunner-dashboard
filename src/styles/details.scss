@@ -70,6 +70,7 @@
   text-align: center;
 }
 .container__main__content__details__buttons__primary {
+  justify-content: center;
   margin-bottom: 1em;
   background-color: var(--primary);
 }
@@ -77,6 +78,7 @@
   background-color: var(--primaryDark);
 }
 .container__main__content__details__buttons__secondary {
+  justify-content: center;
   background-color: var(--secondary);
 }
 .container__main__content__details__buttons__secondary:hover {
