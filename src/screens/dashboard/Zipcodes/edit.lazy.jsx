@@ -20,23 +20,25 @@ export default function ZipcodeEdit() {
             />
           </div>
         </div>
-        <Select
-          label="Enter VAT"
-          placeholder=" Enter VAT"
-          options={[
-            { value: "1", label: "1" },
-            { value: "2", label: "2" },
-            { value: "3", label: "3" },
-          ]}
-        />
-        <Select
-          label="Status"
-          placeholder="Status"
-          options={[
-            { value: "Active", label: "Active" },
-            { value: "Deactive", label: "Deactive" },
-          ]}
-        />
+        <div className="container__main__content__details__main__row">
+          <div className="container__main__content__details__main__row__entry">
+            <Select
+              label="Enter Vat"
+              placeholder="Vat"
+              options={[{ value: "Vat", label: "Vat" }]}
+            />
+          </div>
+          <div className="container__main__content__details__main__row__entry">
+            <Select
+              label="Status"
+              placeholder=" Active"
+              options={[
+                { value: "Active", label: "Active" },
+                { value: "Deactive", label: "Deactive" },
+              ]}
+            />
+          </div>
+        </div>
       </div>
 
       <div className="container__main__content__details__buttons">
@@ -44,7 +46,7 @@ export default function ZipcodeEdit() {
           to={backLocation}
           className="container__main__content__details__buttons__button container__main__content__details__buttons__primary"
         >
-          Save
+          Add
         </Link>
         <Link
           to={backLocation}
