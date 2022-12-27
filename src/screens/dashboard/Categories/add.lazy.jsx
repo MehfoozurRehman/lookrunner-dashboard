@@ -43,7 +43,7 @@ export default function CategorieAdd() {
           to={backLocation}
           className="container__main__content__details__buttons__button container__main__content__details__buttons__secondary"
         >
-          Discard
+          Delect
         </Link>
       </div>
     </div>
