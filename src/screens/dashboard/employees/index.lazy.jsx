@@ -100,11 +100,11 @@ export default function Employees() {
             Referred By
           </div>
           <div className="container__main__content__listing__table__header__entry">
-            Department
+            Username
           </div>
 
           <div className="container__main__content__listing__table__header__entry">
-            Username
+            Department
           </div>
           <div className="container__main__content__listing__table__header__entry">
             Role
@@ -144,16 +144,21 @@ function TableEntry() {
       <TableEntryStatus />
       <TableEntryText>john</TableEntryText>
       <TableEntryText>deved</TableEntryText>
+      <TableEntryText>+92343323454</TableEntryText>
+      <TableEntryText>Abraaa323@gmail.com</TableEntryText>
       <TableEntryDescription>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor,
         nisl eget ultricies lacinia, nisl nisl aliquam nisl, eu aliquam nisl
         nisl sit amet nisl.
       </TableEntryDescription>
-      <TableEntryText>+92-20395731</TableEntryText>
-      <TableEntryText>asm232@gmail.com</TableEntryText>
-      <TableEntryText>arsii</TableEntryText>
-      <TableEntryText>Horticulture</TableEntryText>
-      <TableEntryText>asaaam</TableEntryText>
+
+      <TableEntryText>Adbraaaaa</TableEntryText>
+      <TableEntryDescription>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor,
+        nisl eget ultricies lacinia, nisl nisl aliquam nisl, eu aliquam nisl
+        nisl sit amet nisl.
+      </TableEntryDescription>
+      <TableEntryText>Admin</TableEntryText>
     </div>
   );
 }
