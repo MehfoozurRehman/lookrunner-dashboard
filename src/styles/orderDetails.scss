@@ -416,6 +416,8 @@
   border-radius: 15px;
   border: none;
   cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
 }
 .order__details__main__customer__card__content__row__left__button:hover {
   background-color: var(--primaryDark);

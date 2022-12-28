@@ -63,7 +63,7 @@ export default function orders() {
             Order ID
           </div>
           <div className="container__main__content__listing__table__header__entry">
-            Oder Date
+            Order Date
           </div>
           <div className="container__main__content__listing__table__header__entry">
             Customer name

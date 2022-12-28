@@ -43,7 +43,7 @@ export default function ContactInfoCard() {
         />
 
         <button className="order__details__main__customer__card__content__button">
-          Reshedule return date
+          Reshedule Return Date
         </button>
       </div>
     </div>

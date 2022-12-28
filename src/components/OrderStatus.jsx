@@ -6,7 +6,7 @@ export function OrderStatus() {
   const [activeStep, setActiveStep] = useState(0);
   return (
     <div className="order__details__steps">
-      <div className="order__details__steps__heading">Order Details</div>
+      <div className="order__details__steps__heading">Delivery Details</div>
       <ScrollContainer className="order__details__steps__content">
         <Step
           label="Ordered"
