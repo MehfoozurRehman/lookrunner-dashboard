@@ -58,7 +58,7 @@ export default function Suppliers() {
             Email
           </div>
           <div className="container__main__content__listing__table__header__entry">
-            Mobile
+            Phone
           </div>
           <div className="container__main__content__listing__table__header__entry">
             Address

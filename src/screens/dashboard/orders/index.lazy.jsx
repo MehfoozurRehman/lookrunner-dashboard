@@ -69,7 +69,7 @@ export default function orders() {
             Customer name
           </div>
           <div className="container__main__content__listing__table__header__entry">
-            Mobile No.
+            Phone No.
           </div>
           <div className="container__main__content__listing__table__header__entry">
             Items

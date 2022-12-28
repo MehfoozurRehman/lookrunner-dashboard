@@ -9,7 +9,7 @@ export default function EmployeeDetails() {
       <div className="container__main__content__details__main">
         <DetailsEntry label="First Name">John Doe</DetailsEntry>
         <DetailsEntry label="Last Name">AAsmm</DetailsEntry>
-        <DetailsEntry label="Mobile No.">+33-03948567</DetailsEntry>
+        <DetailsEntry label="Phone No.">+33-03948567</DetailsEntry>
         <DetailsEntry label="Email Address">asmm333@gmail.com</DetailsEntry>
         <DetailsEntry label="Referred By">Irsie</DetailsEntry>
         <DetailsEntry label="UserName">John Doe</DetailsEntry>

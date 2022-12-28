@@ -60,8 +60,8 @@ export default function OrganizationalSetting() {
           <div className="container__main__content__details__main__row__entry">
             <Input
               type="text"
-              label="Mobile No"
-              placeholder="Enter Mobile Number"
+              label="Phone No"
+              placeholder="Enter Phone Number"
             />
           </div>
 

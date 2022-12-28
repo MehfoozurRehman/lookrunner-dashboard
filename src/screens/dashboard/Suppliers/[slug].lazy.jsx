@@ -11,7 +11,7 @@ export default function SupplierDetails() {
         <DetailsEntry label="Brand name">Stylo</DetailsEntry>
         <DetailsEntry label="Vat number">+12345678</DetailsEntry>
         <DetailsEntry label="Email Address">irsii444@gmail.com</DetailsEntry>
-        <DetailsEntry label="Mobile no.">+93 546 45667654</DetailsEntry>
+        <DetailsEntry label="Phone no.">+93 546 45667654</DetailsEntry>
         <DetailsEntry label="Address">streat #3 House no.21</DetailsEntry>
         <DetailsEntry label="City">Lahore</DetailsEntry>
         <DetailsEntry label="State">Punjab</DetailsEntry>

@@ -26,7 +26,7 @@ export default function EmployeeAdd() {
         </div>
         <div className="container__main__content__details__main__row">
           <div className="container__main__content__details__main__row__entry">
-            <Input type="text" label="Mobile" placeholder="Enter mobile no." />
+            <Input type="text" label="Phone" placeholder="Enter Phone no." />
           </div>
           <div className="container__main__content__details__main__row__entry">
             <Input type="text" label="Email" placeholder="Enter email" />

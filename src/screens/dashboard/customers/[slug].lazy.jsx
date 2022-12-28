@@ -103,7 +103,7 @@ export default function CustomerDetails() {
         </div>
         <DetailsEntry label="First Name">asasasa</DetailsEntry>
         <DetailsEntry label="Last Name">AAsmm</DetailsEntry>
-        <DetailsEntry label="Mobile No.">+33-03948567</DetailsEntry>
+        <DetailsEntry label="Phone No.">+33-03948567</DetailsEntry>
         <DetailsEntry label="Email ">asmm333@gmail.com</DetailsEntry>
         <div
           className="container__main__content__details__heading"
